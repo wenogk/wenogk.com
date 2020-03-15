@@ -37,3 +37,121 @@ https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino—v32/expe
 I initially started with a system where I had to manually check the maximum light intensity and then manually enter it as the, ‘startVal’ variable. Then every decrease by 5 units from the startVal frequency would result in a different note being played in the buzzer. Later I improved the function so it keeps detecting the light intensity and updating a, ‘high’ variable so I knew the max intensity without the need of manually entering it. So now it had auto calibration.
 
 Here’s a video of how it worked displaying the note it’s currently playing on the LCD display (I used my phone to bring it closer and further from the photo resistor to vary the light intensity):
+{% highlight c++ linenos %}
+#include <LiquidCrystal.h>
+
+const int jumpVal=5;
+
+
+const int sensorPin = 0;
+const int buzzerPin = 9;
+const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
+int lightLevel, high = 0, low = 1023;
+
+const int songLength = 1;
+int starterVal;
+
+char notes[] = "c";//dfda ag cdfdg gf "; 
+
+int beats[] = {1,1,1,1,1,1,4,4,2,1,1,1,1,1,1,4,4,2};
+
+int tempo = 113;
+
+LiquidCrystal lcd(2,3,4,5,6,7);
+
+void setup() {
+ 
+  lcd.begin(16, 2);
+  pinMode(sensorPin, INPUT);
+  pinMode(buzzerPin, OUTPUT);
+  
+ 
+}
+
+void loop() {
+
+   lightLevel = analogRead(sensorPin);
+   manualTune();
+   starterVal=map(high, 0, 1023, 0, 255);
+   lcd.setCursor(0, 0);
+   lcd.print(lightLevel);
+   lcd.setCursor(0, 1);
+    
+    int i,j, duration, prox;
+    char noteNames[] = { 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'C' };
+    if(lightLevel<(starterVal-(jumpVal))) {
+  for (j = 0; j < 8; j++)
+  {
+    int num=starterVal-(jumpVal*j);
+    if (lightLevel<num) {
+      notes[0]=noteNames[j-1];
+      lcd.clear();
+      lcd.setCursor(0, 0);
+   lcd.print(lightLevel);
+   lcd.setCursor(0, 1);
+      lcd.print(noteNames[j-1]);
+      
+      } 
+    }
+  for (i = 0; i < songLength; i++) 
+  {
+    duration = beats[i] * tempo;  
+
+    if (notes[i] == ' ')          
+    {
+      delay(duration);            
+    }
+    else                          
+    {
+      tone(buzzerPin, frequency(notes[i]), duration);
+      delay(duration);            
+    }
+    delay(tempo/5);              
+  }
+} else {
+        lcd.clear();
+      lcd.setCursor(0, 0);
+   lcd.print(lightLevel);
+   delay(100);
+        }
+ 
+}
+
+void manualTune()
+{
+ if (lightLevel < low)
+  {
+    low = lightLevel;
+  }
+
+ 
+  if (lightLevel > high)
+  {
+    high = lightLevel;
+  }
+  lightLevel = map(lightLevel, 0, 1023, 0, 255);
+  lightLevel = constrain(lightLevel, 0, 255);
+
+} 
+
+int frequency(char note) 
+{
+ 
+  int i;
+  const int numNotes = 8;  
+  char names[] = { 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'C' };
+  int frequencies[] = {262, 294, 330, 349, 392, 440, 494, 523};
+
+
+
+  for (i = 0; i < numNotes; i++)  
+  {
+    if (names[i] == note)        
+    {
+      return(frequencies[i]);    
+    }
+  }
+  return(0);  
+              
+}
+{% endhighlight %}
