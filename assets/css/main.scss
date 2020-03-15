@@ -5,7 +5,7 @@
 
 .wrapper { max-width: $default-width; margin: 0 auto; padding: 60px 20px; }
 
-.user-profile { position: absolute; top: 60px; width: 100%; max-width: 300px; text-align: center; @include transition(right .3s ease-in-out);
+.user-profile { position: absolute; width: 100%; max-width: 300px; text-align: center; @include transition(right .3s ease-in-out);
 	&.fixed { position: fixed; }
 	.compact-header {
 		.avatar { display: block; margin: 0 auto 25px;
