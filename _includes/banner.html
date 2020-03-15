@@ -1,4 +1,4 @@
-<style>header {
+<style>headerx {
     position: relative;
     background-color: black;
     height: 75vh;
@@ -7,7 +7,7 @@
     overflow: hidden;
   }
   
-  header video {
+  headerx video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,12 +22,12 @@
     transform: translateX(-50%) translateY(-50%);
   }
   
-  header .container {
+  headerx .container {
     position: relative;
     z-index: 2;
   }
   
-  header .overlay {
+  headerx .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,14 +39,14 @@
   }
   
   @media (pointer: coarse) and (hover: none) {
-    header {
+    headerx {
       background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
     }
-    header video {
+    headerx video {
       display: none;
     }
   }</style>
-<header>
+<headerx>
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
@@ -59,4 +59,4 @@
         </div>
       </div>
     </div>
-  </header>
+  </headerx>
