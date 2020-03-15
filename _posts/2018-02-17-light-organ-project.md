@@ -13,7 +13,7 @@ tags:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fpGOgDTAFmc" frameborder="0" allowfullscreen></iframe>
 
 I started tapping on my desk to a beat, and felt like I wanted to make a “beat boxing machine”. But, I didn’t have a proximity sensor to detect movements and I didn’t want to use buttons as that seemed counterintuitive. What I did find in my kit though, was a photo resistor. I figured if I could connect it and detect when the light intensity is low(when you wave ur hand over the resistor) I could set up some arbitrary values and make the buzzer make some sounds.
-
+<!--more-->
 ![My helpful screenshot]({{site.baseurl}}/assets/images/lightorgan.jpg)
 
 It was relatively straightforward setting up the breadboard with all the components with the help of the tutorials. I learned that we need a potentiometer for an LCD to adjust the brightness so that it can be made visible in any light environment.
