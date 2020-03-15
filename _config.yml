@@ -11,9 +11,9 @@ disqus: your_disqus_site
 
 # Social Accounts
 social_networks:
--  { name: facebook, url: 'http://facebook.com/iwenogk' }
+-  { name: facebook, url: '' }
 -  { name: twitter, url: '' }
--  { name: instagram, url: '' }
+-  { name: instagram, url: 'https://www.instagram.com/wenogk/' }
 -  { name: google-plus, url: '' }
 -  { name: linkedin, url: '' }
 -  { name: skype, url: '' }
