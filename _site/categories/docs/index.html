@@ -104,71 +104,9 @@
 
 
     <body>
-      <div id="scrollTrigger" ></div>
-        <style>
-  .headerx {
-    position: relative;
-    background-color: black;
-    height: 100vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .headerx video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-
-  .headerx .container {
-    position: relative;
-    z-index: 2;
-  }
-
-  .headerx .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.9;
-    z-index: 1;
-  }
-
-  @media (pointer: coarse) and (hover: none) {
-    .headerx {
-      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-    }
-    .headerx video {
-      display: none;
-    }
-  }</style>
-
-<div class="headerx">
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="http://localhost:4000/wenogk.com/assets/videos/bgVideo.mp4" type="video/mp4">
-    </video>
-    <div class="container h-100">
-      <div class="d-flex h-100 text-center align-items-center">
-
-      </div>
-    </div>
-</div>
-
         <div class="wrapper">
           <div class="sidebarThing">
-            <aside class="user-profile " role="complementary">
+            <aside class="user-profile fixed" role="complementary">
     <div class="burger">
         <input class="trigger hidden" id="toggleBurger" type="checkbox" />
         <label for="toggleBurger">
@@ -443,6 +381,7 @@ Heading...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this
     </footer>
 </article>
 
+
             </main>
         </div>
 
@@ -453,23 +392,13 @@ Heading...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this
 <script src="http://localhost:4000/wenogk.com/assets/js/jquery.fitvids.js"></script>
 <script src="http://localhost:4000/wenogk.com/assets/js/svg4everybody.min.js"></script>
 <script src="http://localhost:4000/wenogk.com/assets/js/scripts.js"></script>
-<script src="http://localhost:4000/wenogk.com/assets/js/bootstrap.min.js"></script>
 <script src="http://localhost:4000/wenogk.com/assets/js/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-<script>
-  /*$(document).scroll(function() {
-    var y = $(document).scrollTop(), //get page y value
-        header = $(".user-profile");
-    if(y >= 300)  {
-        header.css({position: "fixed"});
-    } else {
-        header.css("position", "absolute");
-    }
-});*/</script>
+
 <script>
 	// init controller
   function startStuff() {
@@ -504,7 +433,7 @@ startStuff();
               endStuff();
 					});
         }
-startScrollMagicStuff();
+if(animationPls === true) {startScrollMagicStuff()};
 </script>
 
     <script>
