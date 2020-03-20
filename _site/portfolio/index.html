@@ -215,7 +215,7 @@
 <script>
 	// init controller
   function isMobile() {
-    var isMobileCheck = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    var isMobileCheck =  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ;
 		if (isMobileCheck) {
   			return true;
 		} else {
