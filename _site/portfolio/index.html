@@ -142,8 +142,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: 0.5;
+    opacity: 0.9;
     z-index: 1;
   }
 
@@ -297,13 +296,18 @@
 });*/</script>
 <script>
 	// init controller
+  $(".user-profile").css({"top":"0", "left":"40%"});
+  $(".user-profile").addClass("fixed");
 	var controller = new ScrollMagic.Controller();
-  var action = gsap.timeline().from($("#animate2"),{duration:1, x:'-100%', ease:"back.out(2)"}).set($("#animate2"),{color:'darkgreen'},'-=0.2');
-  var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: "100%"})
+  var action = gsap.timeline().to(".user-profile",{duration:0.2, left:"0"}).to(".user-profile",{duration:1,left:"auto"});
+  var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: "100%",offset:"400"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
 					.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
-					.addTo(controller);
+					.addTo(controller)
+          .on("end", function (e) {
+						$(".user-profile").addClass("fixed");
+					});
 </script>
 
     <script>
