@@ -179,7 +179,7 @@
 <div class="spacer s2"></div>
 
         <div class="wrapper">
-
+          <div class="sidebarThing">
             <aside class="user-profile " role="complementary">
     <div class="burger">
         <input class="trigger hidden" id="toggleBurger" type="checkbox" />
@@ -239,7 +239,7 @@
         
     </ul>
 </aside>
-
+          </div>
             <main class="the-content" role="main">
                 <div class="search" role="search">
     <div>
@@ -296,18 +296,36 @@
 });*/</script>
 <script>
 	// init controller
-  $(".user-profile").css({"top":"0", "left":"40%"});
+  function startStuff() {
+  $(".user-profile").css({"top":"50%", left: "50%","transform": "translate(-50%, -50%)"});
+  $(".user-profile").css("background-color","rgba(256, 256, 256, 0.5)");
   $(".user-profile").addClass("fixed");
+  $(".mainmenu").css({display : "none"});
+}
+function endStuff() {
+  $(".user-profile").addClass("fixed");
+  $(".mainmenu").css({display : "block"});
+  $(".user-profile").css({top:"60px", left: "auto","transform": "none"});
+
+}
+
+function startScrollMagicStuff() {
+startStuff();
 	var controller = new ScrollMagic.Controller();
-  var action = gsap.timeline().to(".user-profile",{duration:0.2, left:"0"}).to(".user-profile",{duration:1,left:"auto"});
-  var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: "100%",offset:"400"})
+  var action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
+  var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
 					.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
 					.addTo(controller)
+          .on("start", function (e) {
+            startStuff();
+          })
           .on("end", function (e) {
-						$(".user-profile").addClass("fixed");
+              endStuff();
 					});
+        }
+startScrollMagicStuff();
 </script>
 
     <script>
