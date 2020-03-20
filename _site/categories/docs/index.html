@@ -105,11 +105,12 @@
 
 
     <body>
+      <div id="scrollTrigger" ></div>
         <style>
   .headerx {
     position: relative;
     background-color: black;
-    height: 100vm;
+    height: 100vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
@@ -163,15 +164,23 @@
     <div class="container h-100">
       <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-white">
-          <h1 class="display-3">Video Header 2</h1>
+          <h1 class="display-3">Video Header</h1>
           <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
         </div>
       </div>
     </div>
 </div>
+<div class="spacer s1"></div>
+
+<div class="spacer s0"></div>
+<div id="animate2" class="box1 black">
+	<p>Smurf me!</p>
+	<a href="#" class="viewsource">view source</a>
+</div>
+<div class="spacer s2"></div>
 
         <div class="wrapper">
-            
+
             <aside class="user-profile " role="complementary">
     <div class="burger">
         <input class="trigger hidden" id="toggleBurger" type="checkbox" />
@@ -457,7 +466,14 @@ Heading...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this
 <script src="http://localhost:4000/wenogk.com/assets/js/svg4everybody.min.js"></script>
 <script src="http://localhost:4000/wenogk.com/assets/js/scripts.js"></script>
 <script src="http://localhost:4000/wenogk.com/assets/js/bootstrap.min.js"></script>
-<script>$(document).scroll(function() {
+<script src="http://localhost:4000/wenogk.com/assets/js/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<script>
+  /*$(document).scroll(function() {
     var y = $(document).scrollTop(), //get page y value
         header = $(".user-profile");
     if(y >= 300)  {
@@ -465,7 +481,17 @@ Heading...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this
     } else {
         header.css("position", "absolute");
     }
-});</script>
+});*/</script>
+<script>
+	// init controller
+	var controller = new ScrollMagic.Controller();
+  var action = gsap.timeline().from($("#animate2"),{duration:1, x:'-100%', ease:"back.out(2)"}).set($("#animate2"),{color:'darkgreen'},'-=0.2');
+  var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: "100%"})
+					// animate color and top border in relation to scroll position
+					.setTween(action) // the tween durtion can be omitted and defaults to 1
+					.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
+					.addTo(controller);
+</script>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
