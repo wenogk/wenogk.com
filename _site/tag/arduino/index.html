@@ -162,10 +162,7 @@
     </video>
     <div class="container h-100">
       <div class="d-flex h-100 text-center align-items-center">
-        <div class="w-100 text-white">
-          <h1 class="display-3">Video Header</h1>
-          <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
-        </div>
+  
       </div>
     </div>
 </div>
@@ -342,15 +339,17 @@ I started tapping on my desk to a beat, and felt like I wanted to make a “beat
 <script>
 	// init controller
   function startStuff() {
-  $(".user-profile").css({"top":"50%", left: "50%","transform": "translate(-50%, -50%)"});
+  $(".user-profile").css({padding:"15px","top":"50%", left: "50%","transform": "translate(-50%, -50%)"});
   $(".user-profile").css("background-color","rgba(256, 256, 256, 0.5)");
   $(".user-profile").addClass("fixed");
   $(".mainmenu").css({display : "none"});
+  $(".avatar").css({display : "none"});
 }
 function endStuff() {
   $(".user-profile").addClass("fixed");
   $(".mainmenu").css({display : "block"});
-  $(".user-profile").css({top:"60px", left: "auto","transform": "none"});
+  $(".avatar").css({display : "block"});
+  $(".user-profile").css({padding:"0px",top:"60px", left: "auto","transform": "none"});
 
 }
 
@@ -362,7 +361,7 @@ startStuff();
   var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
-					.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
+					//.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
 					.addTo(controller)
           .on("start", function (e) {
             startStuff();
