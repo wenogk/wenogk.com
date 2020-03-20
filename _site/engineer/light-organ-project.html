@@ -158,7 +158,7 @@
 <div class="headerx">
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+      <source src="http://localhost:4000/wenogk.com/assets/videos/bgVideo.mp4" type="video/mp4">
     </video>
     <div class="container h-100">
       <div class="d-flex h-100 text-center align-items-center">
@@ -196,6 +196,9 @@
         </div>
     </div>
 
+
+
+    <p class="about-me">A rising Senior studying Computer Science. Interested in backend engineering.</p>
     
         
         <div class="mainmenu">
@@ -224,9 +227,6 @@
         </div>
         
     
-
-    <p class="about-me">A rising Senior studying Computer Science. Interested in backend engineering.</p>
-
     <ul class="socials">
         <li><a href="https://www.instagram.com/wenogk/"><svg title="instagram" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#instagram-icon"></use></svg></a></li><li><a href="https://github.com/wenogk/"><svg title="github" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#github-icon"></use></svg></a></li>
 
@@ -239,6 +239,7 @@
         
     </ul>
 </aside>
+
           </div>
             <main class="the-content" role="main">
                 <div class="search" role="search">
@@ -598,6 +599,7 @@ function endStuff() {
 function startScrollMagicStuff() {
 startStuff();
 	var controller = new ScrollMagic.Controller();
+  let pos = $("body").width() - $(".search").width();
   var action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
   var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
 					// animate color and top border in relation to scroll position
