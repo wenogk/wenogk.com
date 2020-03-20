@@ -200,6 +200,14 @@
 
 <script>
 	// init controller
+  function isMobile() {
+    var isMobileCheck = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+		if (isMobileCheck) {
+  			return true;
+		} else {
+			return false;
+		}
+  }
   function startStuff() {
   $(".user-profile").css({padding:"15px","top":"50%", left: "50%","transform": "translate(-50%, -50%)"});
   $(".user-profile").css("background-color","rgba(256, 256, 256, 0.5)");
@@ -232,7 +240,7 @@ startStuff();
               endStuff();
 					});
         }
-if(animationPls === true) {startScrollMagicStuff()};
+if((animationPls === true)&&(!isMobile())) {startScrollMagicStuff()};
 </script>
 
     <script>
