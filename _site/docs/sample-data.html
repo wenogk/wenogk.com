@@ -415,19 +415,22 @@ Heading...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this
 
 <script>
 	// init controller
-
+  function isMobileDevice() {
+      return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  };
   function startStuff() {
   $(".user-profile").css({padding:"15px","top":"50%", left: "50%","transform": "translate(-50%, -50%)"});
   $(".user-profile").css("background-color","rgba(256, 256, 256, 0.5)");
   $(".user-profile").addClass("fixed");
   $(".mainmenu").css({display : "none"});
   $(".avatar").css({display : "none"});
+  $(".socials a").css({background:"#292825"});
 }
 function endStuff() {
   $(".user-profile").addClass("fixed");
   $(".mainmenu").css({display : "block"});
   $(".avatar").css({display : "block"});
-  $(".user-profile").css({padding:"0px",top:"60px", left: "auto","transform": "none"});
+  $(".user-profile").css({"z-index":"1000",padding:"0px",top:"60px", left: "auto","transform": "none"});
 
 }
 
@@ -435,7 +438,7 @@ function startScrollMagicStuff() {
 startStuff();
 	var controller = new ScrollMagic.Controller();
   let pos = $("body").width() - $(".search").width();
-  var action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
+  var action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".socials a", {duration:1,background:""}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
   var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
@@ -448,13 +451,11 @@ startStuff();
               endStuff();
 					});
         }
-
-            let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
-
-            if (!isMobile) {
+        $(function() {
+            if (!isMobileDevice()) {
                 if(animationPls === true) {startScrollMagicStuff()};
             }
-
+          });
 
 </script>
 
