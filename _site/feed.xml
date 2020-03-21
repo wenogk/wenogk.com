@@ -5,8 +5,8 @@
     <description>A rising Senior studying Computer Science. Interested in backend engineering.</description>
     <link>http://localhost:4000/wenogk.com/</link>
     <atom:link href="http://localhost:4000/wenogk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Mar 2020 14:50:12 +0400</pubDate>
-    <lastBuildDate>Sat, 21 Mar 2020 14:50:12 +0400</lastBuildDate>
+    <pubDate>Sat, 21 Mar 2020 15:01:33 +0400</pubDate>
+    <lastBuildDate>Sat, 21 Mar 2020 15:01:33 +0400</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -247,7 +247,7 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
         <description>&lt;p&gt; &lt;/p&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wM-iwOhMG2k&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the music with my hands and play it on the computer.  I had to make some big changes to the code as I hadn’t generalized the classes enough in my previous project which is something I have to make sure I do next time. I used a library called Minim as the processing sound library didn’t allow pausing which was a vital feature in my project. I selected Fur Elise from Beethoven and the Wonder Woman soundtrack for the two songs because they are so drastic in genre, tone and the way it sounds that it almost feels like a remix mashup in a way.&lt;/p&gt;
+&lt;p&gt;I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the music with my hands and play it on the computer. &lt;!--more--&gt;  I had to make some big changes to the code as I hadn’t generalized the classes enough in my previous project which is something I have to make sure I do next time. I used a library called Minim as the processing sound library didn’t allow pausing which was a vital feature in my project. I selected Fur Elise from Beethoven and the Wonder Woman soundtrack for the two songs because they are so drastic in genre, tone and the way it sounds that it almost feels like a remix mashup in a way.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Arduino Code (C++)&lt;/strong&gt;&lt;/p&gt;
 
@@ -779,17 +779,23 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
     
       <item>
         <title>My First Software Enginneering Internship</title>
-        <description>&lt;p&gt;I recently was accepted into a software company in Oman, Al Madina Development, which has many government funded projects mainly related to security and identity documents. A few days before I started working, I had a look at their website and just wanted to see what CMS system they used and ended up finding a serious loophole on the site that allowed me to have complete control of the site’s content and edit/delete anything. Here’s a video showing you this: https://youtu.be/sUfab2-7XeA I told them of the bug and they were surprised and an engineer fixed it and they gave the credit to me. Throughout the rest of the internship, I had to learn many technologies to able to start working on projects:&lt;/p&gt;
+        <description>&lt;p&gt;I recently was accepted into a software company in Oman, Al Madina Development, which has many government funded projects mainly related to security and identity documents. A few days before I started working, I had a look at their website and just wanted to see what CMS system they used and ended up finding a serious loophole on the site that allowed me to have complete control of the site’s content and edit/delete anything. Here’s a video showing you this:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/sUfab2-7XeA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;!--more--&gt;
+&lt;p&gt;I told them of the bug and they were surprised and an engineer fixed it and they gave the credit to me. Throughout the rest of the internship, I had to learn many technologies to able to start working on projects:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Learned C#&lt;/li&gt;
   &lt;li&gt;Got the hang of Asp, Asp.net&lt;/li&gt;
   &lt;li&gt;Brushed up my SQL skills by learning more about complicated JOIN queries&lt;/li&gt;
   &lt;li&gt;Started working with git commands&lt;/li&gt;
-  &lt;li&gt;Learned about the MVC (Model View Controller) Structure and a bit of ASP.NET CORE MVC. I put up some of the sample code I wrote to get the hang of stuff, on my github: &lt;/li&gt;
+  &lt;li&gt;Learned about the MVC (Model View Controller) Structure and a bit of ASP.NET&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;https://github.com/wenogk/Almadina_Internship I couldn’t add the code I wrote for the company as they told me it wouldn’t be a good idea to do so.&lt;/p&gt;
+&lt;p&gt;CORE MVC. I put up some of the sample code I wrote to get the hang of stuff, on my github: &lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/wenogk/Almadina_Internship&quot;&gt;https://github.com/wenogk/Almadina_Internship&lt;/a&gt; I couldn’t add the code I wrote for the company as they told me it wouldn’t be a good idea to do so.&lt;/p&gt;
 </description>
         <pubDate>Sat, 08 Sep 2018 09:09:58 +0400</pubDate>
         <link>http://localhost:4000/wenogk.com/hacker/thoughts/my-first-software-enginneering-internship.html</link>

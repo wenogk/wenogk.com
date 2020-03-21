@@ -15,7 +15,7 @@ image:
 &nbsp;
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wM-iwOhMG2k" frameborder="0" allowfullscreen></iframe>
 
-I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the music with my hands and play it on the computer.  I had to make some big changes to the code as I hadn't generalized the classes enough in my previous project which is something I have to make sure I do next time. I used a library called Minim as the processing sound library didn't allow pausing which was a vital feature in my project. I selected Fur Elise from Beethoven and the Wonder Woman soundtrack for the two songs because they are so drastic in genre, tone and the way it sounds that it almost feels like a remix mashup in a way.
+I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the music with my hands and play it on the computer. <!--more-->  I had to make some big changes to the code as I hadn't generalized the classes enough in my previous project which is something I have to make sure I do next time. I used a library called Minim as the processing sound library didn't allow pausing which was a vital feature in my project. I selected Fur Elise from Beethoven and the Wonder Woman soundtrack for the two songs because they are so drastic in genre, tone and the way it sounds that it almost feels like a remix mashup in a way.
 
 **Arduino Code (C++)**
 {% highlight c++ linenos %}
