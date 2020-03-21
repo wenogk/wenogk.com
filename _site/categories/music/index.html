@@ -216,265 +216,549 @@
             <li><time datetime="2018-09-28T06:09:32+04:00" itemprop="datePublished">28 Sep, 2018</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/engineer/music/109.html">Air Music Player</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/engineer/music/Air-music-player.html">Air Music Player</a></h2>
     </header>
 
     <div class="post-content">
-        <p>  https://www.youtube.com/watch?v=wM-iwOhMG2k I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the music with my hands and play it on the computer.  I had to make some big changes to the code as I hadn’t generalized the classes enough in my previous project which is something I have to make sure I do next time. I used a library called Minim as the processing sound library didn’t allow pausing which was a vital feature in my project. I selected Fur Elise from Beethoven and the Wonder Woman soundtrack for the two songs because they are so drastic in genre, tone and the way it sounds that it almost feels like a remix mashup in a way.</p>
+        <p> </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wM-iwOhMG2k" frameborder="0" allowfullscreen=""></iframe>
+
+<p>I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the music with my hands and play it on the computer.  I had to make some big changes to the code as I hadn’t generalized the classes enough in my previous project which is something I have to make sure I do next time. I used a library called Minim as the processing sound library didn’t allow pausing which was a vital feature in my project. I selected Fur Elise from Beethoven and the Wonder Woman soundtrack for the two songs because they are so drastic in genre, tone and the way it sounds that it almost feels like a remix mashup in a way.</p>
 
 <p><strong>Arduino Code (C++)</strong></p>
 
-<p>int lightLevel;</p>
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="kt">int</span> <span class="n">lightLevel</span><span class="p">;</span>
 
-<p>void setup()
-{
- Serial.begin(9600);
-}
-void loop()
-{</p>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+ <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
 
-<p>int knob = analogRead(A0);
-  delay(1);
-  lightLevel = analogRead(A1);
-  delay(1);
-  Serial.print(lightLevel);
-  Serial.print(“,”);
-  Serial.println(knob);</p>
+  <span class="kt">int</span> <span class="n">knob</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">A0</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="n">lightLevel</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">A1</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">lightLevel</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">","</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">knob</span><span class="p">);</span>
 
-<p>}</p>
+
+<span class="p">}</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p><strong>Processing Code (Java)</strong></p>
 
-<p>import processing.serial.<em>;
-import processing.sound.</em>;
-import ddf.minim.*;
-Minim       minim;
-Minim       minim2;
-Minim       minim3;
-AudioPlayer song2;
-AudioPlayer song3;
-AudioPlayer song4;
-SoundFile song;
-Amplitude amp2;
-Serial myPort;
-AudioIn in2;
-CircleThing mainCircle;
-Snow snowfall;
-float ears= 0;
-boolean movable=false;
-PImage bg,nyu;
-boolean logoDisplay=false;
-float lightValue;
-float knobValue;
-float highLight=100;
-float lowLight=0;
-float knobScaling=1.5;
-class CircleThing {
-  public int circleX, circleY,defColor;
-  public float prevRad=0;
-  CircleThing(int cX, int cY,int defaultColor) {
-    circleX=cX;
-    circleY=cY;
-    defColor=defaultColor;
-  }
-  void draw(float cX, float cY, float soundVal,int scaling,PImage nyuImage,boolean displayImage) {</p>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+</pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">processing.serial.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">processing.sound.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ddf.minim.*</span><span class="o">;</span>
+<span class="n">Minim</span>       <span class="n">minim</span><span class="o">;</span>
+<span class="n">Minim</span>       <span class="n">minim2</span><span class="o">;</span>
+<span class="n">Minim</span>       <span class="n">minim3</span><span class="o">;</span>
+<span class="n">AudioPlayer</span> <span class="n">song2</span><span class="o">;</span>
+<span class="n">AudioPlayer</span> <span class="n">song3</span><span class="o">;</span>
+<span class="n">AudioPlayer</span> <span class="n">song4</span><span class="o">;</span>
+<span class="n">SoundFile</span> <span class="n">song</span><span class="o">;</span>
+<span class="n">Amplitude</span> <span class="n">amp2</span><span class="o">;</span>
+<span class="n">Serial</span> <span class="n">myPort</span><span class="o">;</span>
+<span class="n">AudioIn</span> <span class="n">in2</span><span class="o">;</span>
+<span class="n">CircleThing</span> <span class="n">mainCircle</span><span class="o">;</span>
+<span class="n">Snow</span> <span class="n">snowfall</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">ears</span><span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="kt">boolean</span> <span class="n">movable</span><span class="o">=</span><span class="kc">false</span><span class="o">;</span>
+<span class="n">PImage</span> <span class="n">bg</span><span class="o">,</span><span class="n">nyu</span><span class="o">;</span>
+<span class="kt">boolean</span> <span class="n">logoDisplay</span><span class="o">=</span><span class="kc">false</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">lightValue</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">knobValue</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">highLight</span><span class="o">=</span><span class="mi">100</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">lowLight</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">knobScaling</span><span class="o">=</span><span class="mf">1.5</span><span class="o">;</span>
+<span class="kd">class</span> <span class="nc">CircleThing</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="n">circleX</span><span class="o">,</span> <span class="n">circleY</span><span class="o">,</span><span class="n">defColor</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kt">float</span> <span class="n">prevRad</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
+  <span class="n">CircleThing</span><span class="o">(</span><span class="kt">int</span> <span class="n">cX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">cY</span><span class="o">,</span><span class="kt">int</span> <span class="n">defaultColor</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">circleX</span><span class="o">=</span><span class="n">cX</span><span class="o">;</span>
+    <span class="n">circleY</span><span class="o">=</span><span class="n">cY</span><span class="o">;</span>
+    <span class="n">defColor</span><span class="o">=</span><span class="n">defaultColor</span><span class="o">;</span>
+  <span class="o">}</span>
+  <span class="kt">void</span> <span class="nf">draw</span><span class="o">(</span><span class="kt">float</span> <span class="n">cX</span><span class="o">,</span> <span class="kt">float</span> <span class="n">cY</span><span class="o">,</span> <span class="kt">float</span> <span class="n">soundVal</span><span class="o">,</span><span class="kt">int</span> <span class="n">scaling</span><span class="o">,</span><span class="n">PImage</span> <span class="n">nyuImage</span><span class="o">,</span><span class="kt">boolean</span> <span class="n">displayImage</span><span class="o">)</span> <span class="o">{</span>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fill(map(soundVal,0,100,0,255)-100);
-strokeWeight(10);
-float radi=200+(100-soundVal)*knobScaling;
-//float radi =(200+soundVal*scaling);
-ellipse(cX, cY,radi, radi);
-//line(0,0,radi/2,radi/2);
-imageMode(CENTER);
-//rotate(45); if(displayImage) {
-pushMatrix(); imageMode(CENTER); translate(cX,cY); rotate(-PI/8); image(nyuImage,0,0); popMatrix(); }
-</code></pre></div></div>
+    <span class="n">fill</span><span class="o">(</span><span class="n">map</span><span class="o">(</span><span class="n">soundVal</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">100</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">255</span><span class="o">)-</span><span class="mi">100</span><span class="o">);</span>
+    <span class="n">strokeWeight</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+    <span class="kt">float</span> <span class="n">radi</span><span class="o">=</span><span class="mi">200</span><span class="o">+(</span><span class="mi">100</span><span class="o">-</span><span class="n">soundVal</span><span class="o">)*</span><span class="n">knobScaling</span><span class="o">;</span>
+    <span class="c1">//float radi =(200+soundVal*scaling);
+</span>
+    <span class="n">ellipse</span><span class="o">(</span><span class="n">cX</span><span class="o">,</span> <span class="n">cY</span><span class="o">,</span><span class="n">radi</span><span class="o">,</span> <span class="n">radi</span><span class="o">);</span>
+    <span class="c1">//line(0,0,radi/2,radi/2);
+</span>
+    <span class="n">imageMode</span><span class="o">(</span><span class="n">CENTER</span><span class="o">);</span>
+    <span class="c1">//rotate(45);
+</span>
+<span class="k">if</span><span class="o">(</span><span class="n">displayImage</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">pushMatrix</span><span class="o">();</span>
+<span class="n">imageMode</span><span class="o">(</span><span class="n">CENTER</span><span class="o">);</span>
+<span class="n">translate</span><span class="o">(</span><span class="n">cX</span><span class="o">,</span><span class="n">cY</span><span class="o">);</span>
+<span class="n">rotate</span><span class="o">(-</span><span class="n">PI</span><span class="o">/</span><span class="mi">8</span><span class="o">);</span>
+<span class="n">image</span><span class="o">(</span><span class="n">nyuImage</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+<span class="n">popMatrix</span><span class="o">();</span>
+<span class="o">}</span>
 
-<p>String s = “Made by Romeno Wenogk Fernando. wenogk@nyu.edu”;
-fill(255);
-textSize(16);
-text(s, cX+500, cY, 200, 150);
-prevRad=200+soundVal*scaling;
-  }
-}</p>
+<span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"Made by Romeno Wenogk Fernando. wenogk@nyu.edu"</span><span class="o">;</span>
+<span class="n">fill</span><span class="o">(</span><span class="mi">255</span><span class="o">);</span>
+<span class="n">textSize</span><span class="o">(</span><span class="mi">16</span><span class="o">);</span>
+<span class="n">text</span><span class="o">(</span><span class="n">s</span><span class="o">,</span> <span class="n">cX</span><span class="o">+</span><span class="mi">500</span><span class="o">,</span> <span class="n">cY</span><span class="o">,</span> <span class="mi">200</span><span class="o">,</span> <span class="mi">150</span><span class="o">);</span>
+<span class="n">prevRad</span><span class="o">=</span><span class="mi">200</span><span class="o">+</span><span class="n">soundVal</span><span class="o">*</span><span class="n">scaling</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
 
-<p>class Particle {</p>
+<span class="kd">class</span> <span class="nc">Particle</span> <span class="o">{</span>
 
-<p>float x;          // adds x position property
-  float y;          // adds y position property
-  float xVel;       // adds xvel property
-  float yVel;       // adds yvel property
-  float partsize;   // adds a size property</p>
+  <span class="kt">float</span> <span class="n">x</span><span class="o">;</span>          <span class="c1">// adds x position property
+</span>
+  <span class="kt">float</span> <span class="n">y</span><span class="o">;</span>          <span class="c1">// adds y position property
+</span>
+  <span class="kt">float</span> <span class="n">xVel</span><span class="o">;</span>       <span class="c1">// adds xvel property
+</span>
+  <span class="kt">float</span> <span class="n">yVel</span><span class="o">;</span>       <span class="c1">// adds yvel property
+</span>
+  <span class="kt">float</span> <span class="n">partsize</span><span class="o">;</span>   <span class="c1">// adds a size property
+</span>
 
-<p>//Constructor = function// float says where it is xpos/ypos
-  Particle(float xpos, float ypos) {
-    // assigning the values
-    x = xpos = random (0,600);
-    y = ypos;
-    xVel = random (-2, 2);   // random,(the length of the random)
-    yVel = random (0, 5);    // controls the speed that the snow falls
-    partsize = random (5, 10);
-  }</p>
 
-<p>}</p>
+  <span class="c1">//Constructor = function// float says where it is xpos/ypos
+</span>
+  <span class="n">Particle</span><span class="o">(</span><span class="kt">float</span> <span class="n">xpos</span><span class="o">,</span> <span class="kt">float</span> <span class="n">ypos</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// assigning the values
+</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">xpos</span> <span class="o">=</span> <span class="n">random</span> <span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">600</span><span class="o">);</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">ypos</span><span class="o">;</span>
+    <span class="n">xVel</span> <span class="o">=</span> <span class="n">random</span> <span class="o">(-</span><span class="mi">2</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>   <span class="c1">// random,(the length of the random)
+</span>
+    <span class="n">yVel</span> <span class="o">=</span> <span class="n">random</span> <span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span>    <span class="c1">// controls the speed that the snow falls
+</span>
+    <span class="n">partsize</span> <span class="o">=</span> <span class="n">random</span> <span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="mi">10</span><span class="o">);</span>
+  <span class="o">}</span>
 
-<p>class Snow {
-Particle[] particles = new Particle[0];
-int maxParticles =100;</p>
+<span class="o">}</span>
 
-<p>Snow() {
-}
-void setMax(int val) {
-maxParticles=val;
-}
-void draw(float ears2) {
-  float ears =100- ears2;
-particles = (Particle[]) append(particles, new Particle(300, 0));
-  if (particles.length&gt;maxParticles) {
-    particles = (Particle[]) subset(particles, 1);
-  }
-  for (int i=0; i&lt;particles.length; i++) {
-      particles[i].partsize *=0.975;  //make the snow stay reduce size
-      particles[i].x += particles[i].xVel;
-      particles[i].y += particles[i].yVel;
-     if(ears&gt;30) {
-      particles[i].yVel +=0.2; <br />
-     } else if(ears&gt;50) {
-       particles[i].yVel +=0.3;
-     }
-     else if(ears&gt;70) {
-       particles[i].yVel +=0.4;
-     } else if(ears&gt;90) {
-       particles[i].yVel +=0.6;
-     } else {
-       particles[i].yVel-=0.1; //reverse gravity
-     }
-    ellipse(particles[i].x, particles[i].y, particles[i].partsize, particles[i].partsize);
-  }
-}
-}</p>
+<span class="kd">class</span> <span class="nc">Snow</span> <span class="o">{</span>
+<span class="n">Particle</span><span class="o">[]</span> <span class="n">particles</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Particle</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
+<span class="kt">int</span> <span class="n">maxParticles</span> <span class="o">=</span><span class="mi">100</span><span class="o">;</span>
 
-<p>void setup() {
-  size(640, 440);
-  background(90);
-  amp2 = new Amplitude(this);
-  in2 = new AudioIn(this, 0);
-  in2.start();
-  amp2.input(in2);<br />
-  mainCircle= new CircleThing(width/2,height/2,45);
-  snowfall= new Snow();
-  bg = loadImage(“bg.jpg”);
-  bg.resize(width,height);
-  nyu=loadImage(“nyu.png”);
-  nyu.resize(int(nyu.width<em>0.5),int(nyu.height</em>0.5));
-  printArray(Serial.list());
-String portname=Serial.list()[6];
-println(portname);
-myPort = new Serial(this,portname,9600);
-myPort.clear();
-myPort.bufferUntil(‘\n’);
- //song = new SoundFile(this, “ww.mp3”);</p>
+<span class="n">Snow</span><span class="o">()</span> <span class="o">{</span>
+<span class="o">}</span>
+<span class="kt">void</span> <span class="nf">setMax</span><span class="o">(</span><span class="kt">int</span> <span class="n">val</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">maxParticles</span><span class="o">=</span><span class="n">val</span><span class="o">;</span>
+<span class="o">}</span>
+<span class="kt">void</span> <span class="nf">draw</span><span class="o">(</span><span class="kt">float</span> <span class="n">ears2</span><span class="o">)</span> <span class="o">{</span>
+  <span class="kt">float</span> <span class="n">ears</span> <span class="o">=</span><span class="mi">100</span><span class="o">-</span> <span class="n">ears2</span><span class="o">;</span>
+<span class="n">particles</span> <span class="o">=</span> <span class="o">(</span><span class="n">Particle</span><span class="o">[])</span> <span class="n">append</span><span class="o">(</span><span class="n">particles</span><span class="o">,</span> <span class="k">new</span> <span class="n">Particle</span><span class="o">(</span><span class="mi">300</span><span class="o">,</span> <span class="mi">0</span><span class="o">));</span>
+  <span class="k">if</span> <span class="o">(</span><span class="n">particles</span><span class="o">.</span><span class="na">length</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span><span class="n">maxParticles</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">particles</span> <span class="o">=</span> <span class="o">(</span><span class="n">Particle</span><span class="o">[])</span> <span class="n">subset</span><span class="o">(</span><span class="n">particles</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="o">;</span><span class="n">particles</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+      <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">partsize</span> <span class="o">*=</span><span class="mf">0.975</span><span class="o">;</span>  <span class="c1">//make the snow stay reduce size
+</span>
+      <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">x</span> <span class="o">+=</span> <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">xVel</span><span class="o">;</span>
+      <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">y</span> <span class="o">+=</span> <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">yVel</span><span class="o">;</span>
+     <span class="k">if</span><span class="o">(</span><span class="n">ears</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span><span class="mi">30</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">yVel</span> <span class="o">+=</span><span class="mf">0.2</span><span class="o">;</span>   
+     <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">ears</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span><span class="mi">50</span><span class="o">)</span> <span class="o">{</span>
+       <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">yVel</span> <span class="o">+=</span><span class="mf">0.3</span><span class="o">;</span>
+     <span class="o">}</span>
+     <span class="k">else</span> <span class="nf">if</span><span class="o">(</span><span class="n">ears</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span><span class="mi">70</span><span class="o">)</span> <span class="o">{</span>
+       <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">yVel</span> <span class="o">+=</span><span class="mf">0.4</span><span class="o">;</span>
+     <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">ears</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span><span class="mi">90</span><span class="o">)</span> <span class="o">{</span>
+       <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">yVel</span> <span class="o">+=</span><span class="mf">0.6</span><span class="o">;</span>
+     <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+       <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">yVel</span><span class="o">-=</span><span class="mf">0.1</span><span class="o">;</span> <span class="c1">//reverse gravity
+</span>
+     <span class="o">}</span>
+    <span class="n">ellipse</span><span class="o">(</span><span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">x</span><span class="o">,</span> <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">y</span><span class="o">,</span> <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">partsize</span><span class="o">,</span> <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">partsize</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="o">}</span>
 
-<p>// Loop the sound forever
-  // (well, at least until stop() is called)
-  //song.loop();</p>
+<span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">size</span><span class="o">(</span><span class="mi">640</span><span class="o">,</span> <span class="mi">440</span><span class="o">);</span>
+  <span class="n">background</span><span class="o">(</span><span class="mi">90</span><span class="o">);</span>
+  <span class="n">amp2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Amplitude</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+  <span class="n">in2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AudioIn</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+  <span class="n">in2</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+  <span class="n">amp2</span><span class="o">.</span><span class="na">input</span><span class="o">(</span><span class="n">in2</span><span class="o">);</span>  
+  <span class="n">mainCircle</span><span class="o">=</span> <span class="k">new</span> <span class="n">CircleThing</span><span class="o">(</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="o">,</span><span class="n">height</span><span class="o">/</span><span class="mi">2</span><span class="o">,</span><span class="mi">45</span><span class="o">);</span>
+  <span class="n">snowfall</span><span class="o">=</span> <span class="k">new</span> <span class="n">Snow</span><span class="o">();</span>
+  <span class="n">bg</span> <span class="o">=</span> <span class="n">loadImage</span><span class="o">(</span><span class="s">"bg.jpg"</span><span class="o">);</span>
+  <span class="n">bg</span><span class="o">.</span><span class="na">resize</span><span class="o">(</span><span class="n">width</span><span class="o">,</span><span class="n">height</span><span class="o">);</span>
+  <span class="n">nyu</span><span class="o">=</span><span class="n">loadImage</span><span class="o">(</span><span class="s">"nyu.png"</span><span class="o">);</span>
+  <span class="n">nyu</span><span class="o">.</span><span class="na">resize</span><span class="o">(</span><span class="kt">int</span><span class="o">(</span><span class="n">nyu</span><span class="o">.</span><span class="na">width</span><span class="o">*</span><span class="mf">0.5</span><span class="o">),</span><span class="kt">int</span><span class="o">(</span><span class="n">nyu</span><span class="o">.</span><span class="na">height</span><span class="o">*</span><span class="mf">0.5</span><span class="o">));</span>
+  <span class="n">printArray</span><span class="o">(</span><span class="n">Serial</span><span class="o">.</span><span class="na">list</span><span class="o">());</span>
+<span class="n">String</span> <span class="n">portname</span><span class="o">=</span><span class="n">Serial</span><span class="o">.</span><span class="na">list</span><span class="o">()[</span><span class="mi">6</span><span class="o">];</span>
+<span class="n">println</span><span class="o">(</span><span class="n">portname</span><span class="o">);</span>
+<span class="n">myPort</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Serial</span><span class="o">(</span><span class="k">this</span><span class="o">,</span><span class="n">portname</span><span class="o">,</span><span class="mi">9600</span><span class="o">);</span>
+<span class="n">myPort</span><span class="o">.</span><span class="na">clear</span><span class="o">();</span>
+<span class="n">myPort</span><span class="o">.</span><span class="na">bufferUntil</span><span class="o">(</span><span class="sc">'\n'</span><span class="o">);</span>
+ <span class="c1">//song = new SoundFile(this, "ww.mp3");
+</span>
 
-<p>minim = new Minim(this);
-  minim2 = new Minim(this);
-  minim3 = new Minim(this);
-  song2 = minim.loadFile(“ww.mp3”, 1024);
-  song3 = minim2.loadFile(“bee.mp3”, 1024);
-  song4 = minim2.loadFile(“fetty.mp3”, 1024);
-  song2.play();
-  song3.play();
-  song4.play();
-}</p>
+  <span class="c1">// Loop the sound forever
+</span>
+  <span class="c1">// (well, at least until stop() is called)
+</span>
+  <span class="c1">//song.loop();
+</span>
 
-<p>void draw() {
-  background(bg);
-  //ears=amp2.analyze();
-  ears=map(lightValue,lowLight,highLight,0,100);
-  if((100-ears)&gt;45) {
-  song4.play();
-  song2.pause();
-  song3.pause();
-  }
-  else if((100-ears)&gt;25) {
-  song3.play();
-  song2.pause();
-  song4.pause();
-  }  else if((100-ears)&gt;10) {
-  song3.pause();
-  song2.play();
-  song4.pause();
-  } else {
-  song2.pause();
-  song3.pause();
-  song4.pause();
-  }</p>
+  <span class="n">minim</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Minim</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+  <span class="n">minim2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Minim</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+  <span class="n">minim3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Minim</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+  <span class="n">song2</span> <span class="o">=</span> <span class="n">minim</span><span class="o">.</span><span class="na">loadFile</span><span class="o">(</span><span class="s">"ww.mp3"</span><span class="o">,</span> <span class="mi">1024</span><span class="o">);</span>
+  <span class="n">song3</span> <span class="o">=</span> <span class="n">minim2</span><span class="o">.</span><span class="na">loadFile</span><span class="o">(</span><span class="s">"bee.mp3"</span><span class="o">,</span> <span class="mi">1024</span><span class="o">);</span>
+  <span class="n">song4</span> <span class="o">=</span> <span class="n">minim2</span><span class="o">.</span><span class="na">loadFile</span><span class="o">(</span><span class="s">"fetty.mp3"</span><span class="o">,</span> <span class="mi">1024</span><span class="o">);</span>
+  <span class="n">song2</span><span class="o">.</span><span class="na">play</span><span class="o">();</span>
+  <span class="n">song3</span><span class="o">.</span><span class="na">play</span><span class="o">();</span>
+  <span class="n">song4</span><span class="o">.</span><span class="na">play</span><span class="o">();</span>
+<span class="o">}</span>      
 
-<p>println(100-ears);
-   stroke(255); 
-  strokeWeight(1);
-  //println(ears);
-  fill(255);
-  snowfall.draw(ears);
-  stroke(75); 
-  float xpos,ypos;
-  if(!movable) { 
-    xpos=lerp(width/2,mouseX,0.01);
-    ypos=lerp(height/2,mouseY,0.01);
-  } else {
-  //mainCircle.draw(mouseX,mouseY,ears,290,nyu,logoDisplay); 
-   xpos=lerp(mouseX,width/2,0.01);
-    ypos=lerp(mouseY,height/2,0.01);
-  }
-  mainCircle.draw(xpos,ypos,ears,290,nyu,logoDisplay);</p>
+<span class="kt">void</span> <span class="nf">draw</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">background</span><span class="o">(</span><span class="n">bg</span><span class="o">);</span>
+  <span class="c1">//ears=amp2.analyze();
+</span>
+  <span class="n">ears</span><span class="o">=</span><span class="n">map</span><span class="o">(</span><span class="n">lightValue</span><span class="o">,</span><span class="n">lowLight</span><span class="o">,</span><span class="n">highLight</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">100</span><span class="o">);</span>
+  <span class="k">if</span><span class="o">((</span><span class="mi">100</span><span class="o">-</span><span class="n">ears</span><span class="o">)&amp;</span><span class="n">gt</span><span class="o">;</span><span class="mi">45</span><span class="o">)</span> <span class="o">{</span>
+  <span class="n">song4</span><span class="o">.</span><span class="na">play</span><span class="o">();</span>
+  <span class="n">song2</span><span class="o">.</span><span class="na">pause</span><span class="o">();</span>
+  <span class="n">song3</span><span class="o">.</span><span class="na">pause</span><span class="o">();</span>
+  <span class="o">}</span>
+  <span class="k">else</span> <span class="nf">if</span><span class="o">((</span><span class="mi">100</span><span class="o">-</span><span class="n">ears</span><span class="o">)&amp;</span><span class="n">gt</span><span class="o">;</span><span class="mi">25</span><span class="o">)</span> <span class="o">{</span>
+  <span class="n">song3</span><span class="o">.</span><span class="na">play</span><span class="o">();</span>
+  <span class="n">song2</span><span class="o">.</span><span class="na">pause</span><span class="o">();</span>
+  <span class="n">song4</span><span class="o">.</span><span class="na">pause</span><span class="o">();</span>
+  <span class="o">}</span>  <span class="k">else</span> <span class="k">if</span><span class="o">((</span><span class="mi">100</span><span class="o">-</span><span class="n">ears</span><span class="o">)&amp;</span><span class="n">gt</span><span class="o">;</span><span class="mi">10</span><span class="o">)</span> <span class="o">{</span>
+  <span class="n">song3</span><span class="o">.</span><span class="na">pause</span><span class="o">();</span>
+  <span class="n">song2</span><span class="o">.</span><span class="na">play</span><span class="o">();</span>
+  <span class="n">song4</span><span class="o">.</span><span class="na">pause</span><span class="o">();</span>
+  <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+  <span class="n">song2</span><span class="o">.</span><span class="na">pause</span><span class="o">();</span>
+  <span class="n">song3</span><span class="o">.</span><span class="na">pause</span><span class="o">();</span>
+  <span class="n">song4</span><span class="o">.</span><span class="na">pause</span><span class="o">();</span>
+  <span class="o">}</span>
 
-<p>highLight();
-knobScaling=map(knobValue,0,255,0,1);
-}</p>
+  <span class="n">println</span><span class="o">(</span><span class="mi">100</span><span class="o">-</span><span class="n">ears</span><span class="o">);</span>
+   <span class="n">stroke</span><span class="o">(</span><span class="mi">255</span><span class="o">);</span>
+  <span class="n">strokeWeight</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+  <span class="c1">//println(ears);
+</span>
+  <span class="n">fill</span><span class="o">(</span><span class="mi">255</span><span class="o">);</span>
+  <span class="n">snowfall</span><span class="o">.</span><span class="na">draw</span><span class="o">(</span><span class="n">ears</span><span class="o">);</span>
+  <span class="n">stroke</span><span class="o">(</span><span class="mi">75</span><span class="o">);</span>
+  <span class="kt">float</span> <span class="n">xpos</span><span class="o">,</span><span class="n">ypos</span><span class="o">;</span>
+  <span class="k">if</span><span class="o">(!</span><span class="n">movable</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">xpos</span><span class="o">=</span><span class="n">lerp</span><span class="o">(</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="o">,</span><span class="n">mouseX</span><span class="o">,</span><span class="mf">0.01</span><span class="o">);</span>
+    <span class="n">ypos</span><span class="o">=</span><span class="n">lerp</span><span class="o">(</span><span class="n">height</span><span class="o">/</span><span class="mi">2</span><span class="o">,</span><span class="n">mouseY</span><span class="o">,</span><span class="mf">0.01</span><span class="o">);</span>
+  <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+  <span class="c1">//mainCircle.draw(mouseX,mouseY,ears,290,nyu,logoDisplay);
+</span>
+   <span class="n">xpos</span><span class="o">=</span><span class="n">lerp</span><span class="o">(</span><span class="n">mouseX</span><span class="o">,</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="o">,</span><span class="mf">0.01</span><span class="o">);</span>
+    <span class="n">ypos</span><span class="o">=</span><span class="n">lerp</span><span class="o">(</span><span class="n">mouseY</span><span class="o">,</span><span class="n">height</span><span class="o">/</span><span class="mi">2</span><span class="o">,</span><span class="mf">0.01</span><span class="o">);</span>
+  <span class="o">}</span>
+  <span class="n">mainCircle</span><span class="o">.</span><span class="na">draw</span><span class="o">(</span><span class="n">xpos</span><span class="o">,</span><span class="n">ypos</span><span class="o">,</span><span class="n">ears</span><span class="o">,</span><span class="mi">290</span><span class="o">,</span><span class="n">nyu</span><span class="o">,</span><span class="n">logoDisplay</span><span class="o">);</span>
 
-<p>void mousePressed() {
-movable=!movable;
-}</p>
+<span class="n">highLight</span><span class="o">();</span>
+<span class="n">knobScaling</span><span class="o">=</span><span class="n">map</span><span class="o">(</span><span class="n">knobValue</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">255</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">1</span><span class="o">);</span>
+<span class="o">}</span>
 
-<p>void keyPressed() {
-logoDisplay=!logoDisplay;</p>
+<span class="kt">void</span> <span class="nf">mousePressed</span><span class="o">()</span> <span class="o">{</span>
+<span class="n">movable</span><span class="o">=!</span><span class="n">movable</span><span class="o">;</span>
+<span class="o">}</span>
 
-<p>}</p>
+<span class="kt">void</span> <span class="nf">keyPressed</span><span class="o">()</span> <span class="o">{</span>
+<span class="n">logoDisplay</span><span class="o">=!</span><span class="n">logoDisplay</span><span class="o">;</span>
 
-<p>void serialEvent(Serial myPort){
-String s=myPort.readStringUntil(‘\n’);
-s=trim(s);
-//println(s);
-if (s!=null){
-int values[]=int(split(s,’,’));
-lightValue=values[0];
-knobValue=values[1];
-}
-}</p>
+<span class="o">}</span>
 
-<p>void highLight() {
-if(lightValue&gt;highLight) {
-highLight=lightValue;
-}
-if(lightValue&lt;lowLight) {
-lowLight=lightValue;
-}
-}</p>
+<span class="kt">void</span> <span class="nf">serialEvent</span><span class="o">(</span><span class="n">Serial</span> <span class="n">myPort</span><span class="o">){</span>
+<span class="n">String</span> <span class="n">s</span><span class="o">=</span><span class="n">myPort</span><span class="o">.</span><span class="na">readStringUntil</span><span class="o">(</span><span class="sc">'\n'</span><span class="o">);</span>
+<span class="n">s</span><span class="o">=</span><span class="n">trim</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+<span class="c1">//println(s);
+</span>
+<span class="k">if</span> <span class="o">(</span><span class="n">s</span><span class="o">!=</span><span class="kc">null</span><span class="o">){</span>
+<span class="kt">int</span> <span class="n">values</span><span class="o">[]=</span><span class="kt">int</span><span class="o">(</span><span class="n">split</span><span class="o">(</span><span class="n">s</span><span class="o">,</span><span class="sc">','</span><span class="o">));</span>
+<span class="n">lightValue</span><span class="o">=</span><span class="n">values</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
+<span class="n">knobValue</span><span class="o">=</span><span class="n">values</span><span class="o">[</span><span class="mi">1</span><span class="o">];</span>
+<span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">highLight</span><span class="o">()</span> <span class="o">{</span>
+<span class="k">if</span><span class="o">(</span><span class="n">lightValue</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span><span class="n">highLight</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">highLight</span><span class="o">=</span><span class="n">lightValue</span><span class="o">;</span>
+<span class="o">}</span>
+<span class="k">if</span><span class="o">(</span><span class="n">lightValue</span><span class="o">&amp;</span><span class="n">lt</span><span class="o">;</span><span class="n">lowLight</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">lowLight</span><span class="o">=</span><span class="n">lightValue</span><span class="o">;</span>
+<span class="o">}</span>
+<span class="o">}</span></pre></td></tr></tbody></table></code></pre></figure>
+
 
 
         
-            <p><a href="/engineer/music/109.html" role="button">Read More</a></p>
+            <p><a href="/engineer/music/Air-music-player.html" role="button">Read More</a></p>
         
     </div>
 
     <footer class="post-footer">
         <div class="share">Share
             <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Air Music Player&p[summary]=  https://www.youtube.com/watch?v=wM-iwOhMG2k I took my previous project where I visualized music through the microphone and reversed it....&p[url]=http://localhost:4000/wenogk.com/engineer/music/109.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/music/109.html&text=  https://www.youtube.com/watch?v=wM-iwOhMG2k I took my previous project where I visualized music through the microphone and reversed it....&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Air Music Player&p[summary]= 
+
+
+I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the mu...&p[url]=http://localhost:4000/wenogk.com/engineer/music/Air-music-player.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/music/Air-music-player.html&text= 
+
+
+I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the mu...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         

@@ -12,10 +12,13 @@ categories:
 image:
     feature: Air-Music-Player.jpeg
 ---
-&nbsp; https://www.youtube.com/watch?v=wM-iwOhMG2k I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the music with my hands and play it on the computer.  I had to make some big changes to the code as I hadn't generalized the classes enough in my previous project which is something I have to make sure I do next time. I used a library called Minim as the processing sound library didn't allow pausing which was a vital feature in my project. I selected Fur Elise from Beethoven and the Wonder Woman soundtrack for the two songs because they are so drastic in genre, tone and the way it sounds that it almost feels like a remix mashup in a way. 
+&nbsp;
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wM-iwOhMG2k" frameborder="0" allowfullscreen></iframe>
 
-**Arduino Code (C++)** 
+I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the music with my hands and play it on the computer.  I had to make some big changes to the code as I hadn't generalized the classes enough in my previous project which is something I have to make sure I do next time. I used a library called Minim as the processing sound library didn't allow pausing which was a vital feature in my project. I selected Fur Elise from Beethoven and the Wonder Woman soundtrack for the two songs because they are so drastic in genre, tone and the way it sounds that it almost feels like a remix mashup in a way.
 
+**Arduino Code (C++)**
+{% highlight c++ linenos %}
 int lightLevel;
 
 void setup()
@@ -32,13 +35,13 @@ void loop()
   Serial.print(lightLevel);
   Serial.print(",");
   Serial.println(knob);
-  
+
 
 }
+{% endhighlight %}
 
-
-**Processing Code (Java)** 
-
+**Processing Code (Java)**
+{% highlight java linenos %}
 import processing.serial.*;
 import processing.sound.*;
 import ddf.minim.*;
@@ -72,7 +75,7 @@ class CircleThing {
     defColor=defaultColor;
   }
   void draw(float cX, float cY, float soundVal,int scaling,PImage nyuImage,boolean displayImage) {
-  
+
     fill(map(soundVal,0,100,0,255)-100);
     strokeWeight(10);
     float radi=200+(100-soundVal)*knobScaling;
@@ -116,7 +119,7 @@ class Particle {
     yVel = random (0, 5);    // controls the speed that the snow falls
     partsize = random (5, 10);
   }
-  
+
 }
 
 class Snow {
@@ -179,7 +182,7 @@ myPort.bufferUntil('\n');
   // Loop the sound forever
   // (well, at least until stop() is called)
   //song.loop();
-  
+
   minim = new Minim(this);
   minim2 = new Minim(this);
   minim3 = new Minim(this);
@@ -213,25 +216,25 @@ void draw() {
   song3.pause();
   song4.pause();
   }
- 
+
   println(100-ears);
-   stroke(255); 
+   stroke(255);
   strokeWeight(1);
   //println(ears);
   fill(255);
   snowfall.draw(ears);
-  stroke(75); 
+  stroke(75);
   float xpos,ypos;
-  if(!movable) { 
+  if(!movable) {
     xpos=lerp(width/2,mouseX,0.01);
     ypos=lerp(height/2,mouseY,0.01);
   } else {
-  //mainCircle.draw(mouseX,mouseY,ears,290,nyu,logoDisplay); 
+  //mainCircle.draw(mouseX,mouseY,ears,290,nyu,logoDisplay);
    xpos=lerp(mouseX,width/2,0.01);
     ypos=lerp(mouseY,height/2,0.01);
   }
   mainCircle.draw(xpos,ypos,ears,290,nyu,logoDisplay);
- 
+
 highLight();
 knobScaling=map(knobValue,0,255,0,1);
 }
@@ -264,3 +267,4 @@ if(lightValue&lt;lowLight) {
 lowLight=lightValue;
 }
 }
+{% endhighlight %}
