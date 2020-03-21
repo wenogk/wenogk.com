@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Sample Data | Romeno Wenogk &mdash; Hacker </title>
-    <meta property="og:title" content="Sample Data | Romeno Wenogk &mdash; Hacker " />
-    <meta name="twitter:title" content="Sample Data | Romeno Wenogk &mdash; Hacker " />
+    <title>Air Music Player | Romeno Wenogk &mdash; Hacker </title>
+    <meta property="og:title" content="Air Music Player | Romeno Wenogk &mdash; Hacker " />
+    <meta name="twitter:title" content="Air Music Player | Romeno Wenogk &mdash; Hacker " />
 
     <meta name="description" content="A rising Senior studying Computer Science. Interested in backend engineering.">
     <meta name="description" property="og:description" content="A rising Senior studying Computer Science. Interested in backend engineering." />
@@ -17,7 +17,7 @@
     
     <meta name="twitter:site" content="@your_handler" />
     
-    <meta property="og:url" content="http://localhost:4000/wenogk.com/docs/sample-data.html" />
+    <meta property="og:url" content="http://localhost:4000/wenogk.com/engineer/music/109.html" />
 
     <meta property="og:image" content="" />
     <meta name="twitter:image" content="" />
@@ -96,7 +96,7 @@
     
     <link rel="stylesheet" href="http://localhost:4000/wenogk.com/assets/css/main.css">
 
-    <link rel="canonical" href="http://localhost:4000/wenogk.com/docs/sample-data.html">
+    <link rel="canonical" href="http://localhost:4000/wenogk.com/engineer/music/109.html">
 
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/wenogk.com/feed.xml">
 
@@ -210,188 +210,264 @@
                 <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
         <ul>
-            <li><time datetime="2016-03-11T23:56:00+04:00" itemprop="datePublished">11 Mar, 2016</time></li>
-            
-                
-                <li class="cats">
-                    
-                        <a href="/wenogk.com/categories/docs/">docs</a>
-                    
-                </li>
-                
+            <li><time datetime="2018-09-28T06:09:32+04:00" itemprop="datePublished">28 Sep, 2018</time></li>
             
         </ul>
-        <h2 itemprop="name headline">Sample Data</h2>
+        <h2 itemprop="name headline">Air Music Player</h2>
     </header>
 
     <div class="post-content">
-        <p>Markdown (or Textile), Liquid, HTML &amp; CSS go in. Static sites come out ready for deployment.</p>
+        <p>  https://www.youtube.com/watch?v=wM-iwOhMG2k I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the music with my hands and play it on the computer.  I had to make some big changes to the code as I hadn’t generalized the classes enough in my previous project which is something I have to make sure I do next time. I used a library called Minim as the processing sound library didn’t allow pausing which was a vital feature in my project. I selected Fur Elise from Beethoven and the Wonder Woman soundtrack for the two songs because they are so drastic in genre, tone and the way it sounds that it almost feels like a remix mashup in a way.</p>
 
-<h4 id="headings">Headings</h4>
+<p><strong>Arduino Code (C++)</strong></p>
 
-<h1 id="heading-1">Heading 1</h1>
+<p>int lightLevel;</p>
 
-<h2 id="heading-2">Heading 2</h2>
+<p>void setup()
+{
+ Serial.begin(9600);
+}
+void loop()
+{</p>
 
-<h3 id="heading-3">Heading 3</h3>
+<p>int knob = analogRead(A0);
+  delay(1);
+  lightLevel = analogRead(A1);
+  delay(1);
+  Serial.print(lightLevel);
+  Serial.print(“,”);
+  Serial.println(knob);</p>
 
-<h4 id="heading-4">Heading 4</h4>
+<p>}</p>
 
-<h5 id="heading-5">Heading 5</h5>
+<p><strong>Processing Code (Java)</strong></p>
 
-<h6 id="heading-6">Heading 6</h6>
+<p>import processing.serial.<em>;
+import processing.sound.</em>;
+import ddf.minim.*;
+Minim       minim;
+Minim       minim2;
+Minim       minim3;
+AudioPlayer song2;
+AudioPlayer song3;
+AudioPlayer song4;
+SoundFile song;
+Amplitude amp2;
+Serial myPort;
+AudioIn in2;
+CircleThing mainCircle;
+Snow snowfall;
+float ears= 0;
+boolean movable=false;
+PImage bg,nyu;
+boolean logoDisplay=false;
+float lightValue;
+float knobValue;
+float highLight=100;
+float lowLight=0;
+float knobScaling=1.5;
+class CircleThing {
+  public int circleX, circleY,defColor;
+  public float prevRad=0;
+  CircleThing(int cX, int cY,int defaultColor) {
+    circleX=cX;
+    circleY=cY;
+    defColor=defaultColor;
+  }
+  void draw(float cX, float cY, float soundVal,int scaling,PImage nyuImage,boolean displayImage) {</p>
 
-<h4 id="blockquote">Blockquote</h4>
-
-<blockquote>
-  <p>No more databases, comment moderation, or pesky updates to install—just your content.</p>
-</blockquote>
-
-<h4 id="unordered-list">Unordered List</h4>
-
-<ul>
-  <li>Jekyll
-    <ul>
-      <li>Nested Jekyll</li>
-      <li>Nested Ruby</li>
-    </ul>
-  </li>
-  <li>Ruby</li>
-  <li>Markdown</li>
-  <li>Liquid</li>
-</ul>
-
-<h4 id="ordered-list">Ordered List</h4>
-
-<ol>
-  <li>Jekyll
-    <ol>
-      <li>Nested Jekyll</li>
-      <li>Nested Ruby</li>
-    </ol>
-  </li>
-  <li>Ruby</li>
-  <li>Markdown</li>
-  <li>Liquid</li>
-</ol>
-
-<h4 id="link">Link</h4>
-
-<p>This is <a href="http://example.com/" title="Title">an example</a> inline link.</p>
-
-<h4 id="paragraph-w-strong-em-etc">Paragraph w/ strong, em, etc.</h4>
-
-<p>These are just a few of the <em>available</em> <strong>configuration</strong> options. Many configuration options can <strike>either</strike> be specified as flags on the <abbr title="Command Line Tool">command line</abbr>, or alternatively (and more commonly) they can be specified in a _config.yml file at the root of the source directory. Jekyll will <a href="http://joro.me/" target="_blank">automatically use</a> the options from this file when run. For example, if you place the following lines in your _config.yml file.</p>
-
-<h4 id="image">Image</h4>
-<figure class="aligncenter">
-	<img src="https://images.unsplash.com/photo-1449452198679-05c7fd30f416?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;s=73181f1c6d56b933b30de2bfe21fdf3b" />
-	<figcaption>Photo by <a href="https://unsplash.com/rmaedavis" target="_blank">Rachel Davis</a>.</figcaption>
-</figure>
-
-<h4 id="video">Video</h4>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iWowJBRMtpc" frameborder="0" allowfullscreen=""></iframe>
-
-<h4 id="default-code-block">Default Code Block</h4>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is code blog.
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fill(map(soundVal,0,100,0,255)-100);
+strokeWeight(10);
+float radi=200+(100-soundVal)*knobScaling;
+//float radi =(200+soundVal*scaling);
+ellipse(cX, cY,radi, radi);
+//line(0,0,radi/2,radi/2);
+imageMode(CENTER);
+//rotate(45); if(displayImage) {
+pushMatrix(); imageMode(CENTER); translate(cX,cY); rotate(-PI/8); image(nyuImage,0,0); popMatrix(); }
 </code></pre></div></div>
 
-<h4 id="styled-code-block">Styled Code Block</h4>
+<p>String s = “Made by Romeno Wenogk Fernando. wenogk@nyu.edu”;
+fill(255);
+textSize(16);
+text(s, cX+500, cY, 200, 150);
+prevRad=200+soundVal*scaling;
+  }
+}</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-</pre></td><td class="code"><pre><span class="c1">#!/usr/bin/ruby
-</span>
-<span class="vg">$LOAD_PATH</span> <span class="o">&lt;&lt;</span> <span class="s1">'.'</span>
-<span class="nb">require</span> <span class="s2">"support"</span>
+<p>class Particle {</p>
 
-<span class="k">class</span> <span class="nc">Decade</span>
-<span class="kp">include</span> <span class="no">Week</span>
-   <span class="n">no_of_yrs</span><span class="o">=</span><span class="mi">10</span>
-   <span class="k">def</span> <span class="nf">no_of_months</span>
-      <span class="nb">puts</span> <span class="no">Week</span><span class="o">::</span><span class="no">FIRST_DAY</span>
-      <span class="n">number</span><span class="o">=</span><span class="mi">10</span><span class="o">*</span><span class="mi">12</span>
-      <span class="nb">puts</span> <span class="n">number</span>
-   <span class="k">end</span>
-<span class="k">end</span>
-<span class="n">d1</span><span class="o">=</span><span class="no">Decade</span><span class="p">.</span><span class="nf">new</span>
-<span class="nb">puts</span> <span class="no">Week</span><span class="o">::</span><span class="no">FIRST_DAY</span>
-<span class="no">Week</span><span class="p">.</span><span class="nf">weeks_in_month</span>
-<span class="no">Week</span><span class="p">.</span><span class="nf">weeks_in_year</span>
-<span class="n">d1</span><span class="p">.</span><span class="nf">no_of_months</span></pre></td></tr></tbody></table></code></pre></figure>
+<p>float x;          // adds x position property
+  float y;          // adds y position property
+  float xVel;       // adds xvel property
+  float yVel;       // adds yvel property
+  float partsize;   // adds a size property</p>
 
-<h4 id="definition-lists">Definition Lists</h4>
+<p>//Constructor = function// float says where it is xpos/ypos
+  Particle(float xpos, float ypos) {
+    // assigning the values
+    x = xpos = random (0,600);
+    y = ypos;
+    xVel = random (-2, 2);   // random,(the length of the random)
+    yVel = random (0, 5);    // controls the speed that the snow falls
+    partsize = random (5, 10);
+  }</p>
 
-<dl>
-    <dt>Definition Title</dt>
-    <dd>Definition Description</dd>
-</dl>
+<p>}</p>
 
-<h4 id="paragraphs-w-aligned-images">Paragraphs w/ Aligned Images</h4>
+<p>class Snow {
+Particle[] particles = new Particle[0];
+int maxParticles =100;</p>
 
-<p>The Jekyll gem makes a jekyll executable available to you in your Terminal window. You can use this command in a number of ways.</p>
+<p>Snow() {
+}
+void setMax(int val) {
+maxParticles=val;
+}
+void draw(float ears2) {
+  float ears =100- ears2;
+particles = (Particle[]) append(particles, new Particle(300, 0));
+  if (particles.length&gt;maxParticles) {
+    particles = (Particle[]) subset(particles, 1);
+  }
+  for (int i=0; i&lt;particles.length; i++) {
+      particles[i].partsize *=0.975;  //make the snow stay reduce size
+      particles[i].x += particles[i].xVel;
+      particles[i].y += particles[i].yVel;
+     if(ears&gt;30) {
+      particles[i].yVel +=0.2; <br />
+     } else if(ears&gt;50) {
+       particles[i].yVel +=0.3;
+     }
+     else if(ears&gt;70) {
+       particles[i].yVel +=0.4;
+     } else if(ears&gt;90) {
+       particles[i].yVel +=0.6;
+     } else {
+       particles[i].yVel-=0.1; //reverse gravity
+     }
+    ellipse(particles[i].x, particles[i].y, particles[i].partsize, particles[i].partsize);
+  }
+}
+}</p>
 
-<figure class="alignleft">
-	<img width="250" src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;s=3f9c78df0edb464244bbabb04d1797d8" />
-	<figcaption>Photo by <a href="https://unsplash.com/dustinlee" target="_blank">Dustin Lee</a>.</figcaption>
-</figure>
+<p>void setup() {
+  size(640, 440);
+  background(90);
+  amp2 = new Amplitude(this);
+  in2 = new AudioIn(this, 0);
+  in2.start();
+  amp2.input(in2);<br />
+  mainCircle= new CircleThing(width/2,height/2,45);
+  snowfall= new Snow();
+  bg = loadImage(“bg.jpg”);
+  bg.resize(width,height);
+  nyu=loadImage(“nyu.png”);
+  nyu.resize(int(nyu.width<em>0.5),int(nyu.height</em>0.5));
+  printArray(Serial.list());
+String portname=Serial.list()[6];
+println(portname);
+myPort = new Serial(this,portname,9600);
+myPort.clear();
+myPort.bufferUntil(‘\n’);
+ //song = new SoundFile(this, “ww.mp3”);</p>
 
-<p>This site aims to be a comprehensive guide to Jekyll. We’ll cover topics such as getting your site up and running, creating and managing your content, customizing the way your site works and looks, deploying to various environments, and give you some advice on participating in the future development of Jekyll itself.</p>
+<p>// Loop the sound forever
+  // (well, at least until stop() is called)
+  //song.loop();</p>
 
-<p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.</p>
+<p>minim = new Minim(this);
+  minim2 = new Minim(this);
+  minim3 = new Minim(this);
+  song2 = minim.loadFile(“ww.mp3”, 1024);
+  song3 = minim2.loadFile(“bee.mp3”, 1024);
+  song4 = minim2.loadFile(“fetty.mp3”, 1024);
+  song2.play();
+  song3.play();
+  song4.play();
+}</p>
 
-<figure class="alignright">
-	<img width="250" src="https://images.unsplash.com/photo-1442037025225-e1cffaa2dc23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;s=7fe04b68b0cb123bf568c6951c14b177" />
-	<figcaption>Photo by <a href="https://unsplash.com/lobostudiohamburg" target="_blank">LoboStudio Hamburg</a>.</figcaption>
-</figure>
+<p>void draw() {
+  background(bg);
+  //ears=amp2.analyze();
+  ears=map(lightValue,lowLight,highLight,0,100);
+  if((100-ears)&gt;45) {
+  song4.play();
+  song2.pause();
+  song3.pause();
+  }
+  else if((100-ears)&gt;25) {
+  song3.play();
+  song2.pause();
+  song4.pause();
+  }  else if((100-ears)&gt;10) {
+  song3.pause();
+  song2.play();
+  song4.pause();
+  } else {
+  song2.pause();
+  song3.pause();
+  song4.pause();
+  }</p>
 
-<p>Throughout this guide there are a number of small-but-handy pieces of information that can make using Jekyll easier, more interesting, and less hazardous. Here’s what to look out for.</p>
+<p>println(100-ears);
+   stroke(255); 
+  strokeWeight(1);
+  //println(ears);
+  fill(255);
+  snowfall.draw(ears);
+  stroke(75); 
+  float xpos,ypos;
+  if(!movable) { 
+    xpos=lerp(width/2,mouseX,0.01);
+    ypos=lerp(height/2,mouseY,0.01);
+  } else {
+  //mainCircle.draw(mouseX,mouseY,ears,290,nyu,logoDisplay); 
+   xpos=lerp(mouseX,width/2,0.01);
+    ypos=lerp(mouseY,height/2,0.01);
+  }
+  mainCircle.draw(xpos,ypos,ears,290,nyu,logoDisplay);</p>
 
-<p>If you come across anything along the way that we haven’t covered, or if you know of a tip you think others would find handy, please file an issue and we’ll see about including it in this guide.</p>
+<p>highLight();
+knobScaling=map(knobValue,0,255,0,1);
+}</p>
 
-<p>The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines.</p>
+<p>void mousePressed() {
+movable=!movable;
+}</p>
+
+<p>void keyPressed() {
+logoDisplay=!logoDisplay;</p>
+
+<p>}</p>
+
+<p>void serialEvent(Serial myPort){
+String s=myPort.readStringUntil(‘\n’);
+s=trim(s);
+//println(s);
+if (s!=null){
+int values[]=int(split(s,’,’));
+lightValue=values[0];
+knobValue=values[1];
+}
+}</p>
+
+<p>void highLight() {
+if(lightValue&gt;highLight) {
+highLight=lightValue;
+}
+if(lightValue&lt;lowLight) {
+lowLight=lightValue;
+}
+}</p>
 
     </div>
 
     <footer class="post-footer">
         <div class="share">Share
             <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Sample Data&p[summary]=Markdown (or Textile), Liquid, HTML &amp; CSS go in. Static sites come out ready for deployment.
-
-Headings
-
-Heading 1
-
-Heading 2
-
-Heading...&p[url]=http://localhost:4000/wenogk.com/docs/sample-data.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/wenogk.com/docs/sample-data.html&text=Markdown (or Textile), Liquid, HTML &amp; CSS go in. Static sites come out ready for deployment.
-
-Headings
-
-Heading 1
-
-Heading 2
-
-Heading...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Air Music Player&p[summary]=  https://www.youtube.com/watch?v=wM-iwOhMG2k I took my previous project where I visualized music through the microphone and reversed it....&p[url]=http://localhost:4000/wenogk.com/engineer/music/109.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/wenogk.com/engineer/music/109.html&text=  https://www.youtube.com/watch?v=wM-iwOhMG2k I took my previous project where I visualized music through the microphone and reversed it....&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -404,24 +480,6 @@ Heading...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this
     </footer>
 </article>
 
-
-<aside class="comments" role="complementary">
-    <div id="disqus_thread"></div>
-    <script>
-        var disqus_config = function () {
-            this.page.url = 'http://localhost:4000/wenogk.com/docs/sample-data.html';
-            this.page.identifier = '3/11/2016';
-        };
-        (function() {
-            var d = document, s = d.createElement('script');
-
-            s.src = '//your_disqus_site.disqus.com/embed.js';
-
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-</aside>
 
 
             </main>

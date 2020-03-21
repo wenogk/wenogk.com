@@ -5,274 +5,34 @@
     <description>A rising Senior studying Computer Science. Interested in backend engineering.</description>
     <link>http://localhost:4000/wenogk.com/</link>
     <atom:link href="http://localhost:4000/wenogk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Mar 2020 09:28:29 +0400</pubDate>
-    <lastBuildDate>Sat, 21 Mar 2020 09:28:29 +0400</lastBuildDate>
+    <pubDate>Sat, 21 Mar 2020 09:59:42 +0400</pubDate>
+    <lastBuildDate>Sat, 21 Mar 2020 09:59:42 +0400</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
-        <title>LIGHT ORGAN PROJECT.</title>
-        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/fpGOgDTAFmc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+        <title>iGem competition experience in Boston</title>
+        <description>&lt;p&gt;iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. &lt;strong&gt;Yes, biology.&lt;/strong&gt; I love delving into fields I know nothing about. I became a part of the iGem team at the beginning of this year. To be fair, it can involve a lot of engineering and computer science depending on the project the team is working on.&lt;/p&gt;
 
-&lt;p&gt;I started tapping on my desk to a beat, and felt like I wanted to make a “beat boxing machine”. But, I didn’t have a proximity sensor to detect movements and I didn’t want to use buttons as that seemed counterintuitive. What I did find in my kit though, was a photo resistor. I figured if I could connect it and detect when the light intensity is low(when you wave ur hand over the resistor) I could set up some arbitrary values and make the buzzer make some sounds.
-&lt;!--more--&gt;
-&lt;img src=&quot;/wenogk.com/assets/images/lightorgan.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This year we decided to build a device to be used in airports that is non-invasive and can detect 5 diseases using only saliva. No more blood swabs! I was the head of the computer science team. My work first entailed working on the website with the computer science team as it is one of the three things the judges will see (the presentation and the poster being the other two) and developing the WEB API for the device.&lt;/p&gt;
 
-&lt;p&gt;It was relatively straightforward setting up the breadboard with all the components with the help of the tutorials. I learned that we need a potentiometer for an LCD to adjust the brightness so that it can be made visible in any light environment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Website&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;So I wanted to make use of the dusty LCD Display that we had in our kits, I searched for some tutorials on how to connect it, and did a simple hello world.&lt;/p&gt;
+&lt;p&gt;We took inspiration from pages such as the One Plus 7 Pro Phone website with its smooth scrolling animations:&lt;/p&gt;
 
-&lt;p&gt;The next day, I started tapping on my desk to a beat, and felt like I wanted to make a “beat boxing machine”. But, I didn’t have a proximity sensor to detect movements and I didn’t want to use buttons as that seemed counterintuitive. What I did find in our kit though, was a photo resistor. I figured if I could connect it and detect when the light intensity is low(when you wave ur hand over the resistor) I could set up some arbitrary values and make the buzzer make some sounds.&lt;/p&gt;
+&lt;p&gt;I researched many scroll animation javascript libraries for weeks on end and could not get a library that seemed to work smoothly accross browsers. At the verge of giving up I just decided to inspect element (view source) of the oneplus and apple website and to my surprise they both used the same scroll animation library, &lt;em&gt;scrollmagic.js&lt;/em&gt; This was surprising because I thought they’d have implemented the animations from their own animation library or vanilla js. I started working with the scrollmagic library and once I got the hang of it I was amazed at its power. The tween and tweenmax functions allow for precise control of the timing, placement, css styles for the animations and this makes very complex animations possible. After a couple of days hacking around with the library I was able to do parallax scrolling animations just as the oneplus and apple website animations work.&lt;/p&gt;
 
-&lt;p&gt;It was relatively straightforward setting up the breadboard with all the components with the help of the tutorials. I learned that we need a potentiometer for an LCD to adjust the brightness so that it can be made visible in any light environment.&lt;/p&gt;
+&lt;p&gt;Heres the homepage link: &lt;a href=&quot;https://2019.igem.org/Team:NYU_Abu_Dhabi&quot;&gt;https://2019.igem.org/Team:NYU_Abu_Dhabi&lt;/a&gt; (the website is optimized for desktop viewing)&lt;/p&gt;
 
-&lt;p&gt;I found a function on the sparkfun website that converts frequencies into keys so I could actually play organ keys on the buzzer which was really cool. I also used code from the sparkfun examples to detect the light intensity from the photo resistor.&lt;/p&gt;
+&lt;p&gt;The github repository can be visited at&lt;/p&gt;
 
-&lt;p&gt;https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino—v32/experiment-11-using-a-piezo-buzzer&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The API&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino—v32/experiment-6-reading-a-photoresistor&lt;/p&gt;
+&lt;p&gt;Our device, when used at airports all around the world would spit out a large amount of data. We saw a massive potential in this data as it could be used to prevent disease outbreaks.&lt;/p&gt;
 
-&lt;p&gt;I initially started with a system where I had to manually check the maximum light intensity and then manually enter it as the, ‘startVal’ variable. Then every decrease by 5 units from the startVal frequency would result in a different note being played in the buzzer. Later I improved the function so it keeps detecting the light intensity and updating a, ‘high’ variable so I knew the max intensity without the need of manually entering it. So now it had auto calibration.&lt;/p&gt;
-
-&lt;p&gt;Here’s a video of how it worked displaying the note it’s currently playing on the LCD display (I used my phone to bring it closer and further from the photo resistor to vary the light intensity):&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;LiquidCrystal.h&amp;gt;
-&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jumpVal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sensorPin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buzzerPin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;en&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d6&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d7&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1023&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;songLength&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;starterVal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//dfda ag cdfdg gf &quot;; &lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;beats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tempo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;113&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;LiquidCrystal&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- 
-  &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;pinMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sensorPin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;pinMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buzzerPin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  
- 
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-   &lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;analogRead&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sensorPin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;manualTune&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;starterVal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;high&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1023&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setCursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setCursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;duration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;noteNames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'c'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'d'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'e'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'f'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'g'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'a'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'b'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'C'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;starterVal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jumpVal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;starterVal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jumpVal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;notes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;noteNames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setCursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setCursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;noteNames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-      
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;songLength&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;duration&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;beats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tempo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
-
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;notes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;          
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;duration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;            
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;                          
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;tone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buzzerPin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;frequency&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;notes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;duration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;duration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;            
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tempo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;              
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setCursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;lcd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
- 
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;manualTune&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
- 
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1023&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constrain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
-
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;frequency&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;note&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- 
-  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numNotes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
-  &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'c'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'d'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'e'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'f'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'g'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'a'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'b'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'C'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;frequencies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;262&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;294&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;330&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;349&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;392&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;440&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;494&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;523&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-
-
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numNotes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;note&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;        
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frequencies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;    
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  
-              
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
-        <pubDate>Sat, 17 Feb 2018 12:36:00 +0400</pubDate>
-        <link>http://localhost:4000/wenogk.com/engineer/light-organ-project.html</link>
-        <guid isPermaLink="true">http://localhost:4000/wenogk.com/engineer/light-organ-project.html</guid>
-        
-        <category>arduino</category>
+        <pubDate>Mon, 11 Nov 2019 06:11:30 +0400</pubDate>
+        <link>http://localhost:4000/wenogk.com/engineer/igem.html</link>
+        <guid isPermaLink="true">http://localhost:4000/wenogk.com/engineer/igem.html</guid>
         
         
         <category>engineer</category>
@@ -280,157 +40,622 @@
       </item>
     
       <item>
-        <title>Sample Data</title>
-        <description>&lt;p&gt;Markdown (or Textile), Liquid, HTML &amp;amp; CSS go in. Static sites come out ready for deployment.&lt;/p&gt;
+        <title>How I found a loophole in Facebook's messaging system when I was 14</title>
+        <description>&lt;p&gt;I was watching the news one day and I saw a report on a Palestinian man who found a bug on Facebook that allowed anyone to post on anyone’s Facebook wall but wasn’t taken seriously by Facebook so he posted on Mark Zuckerberg’s (the CEO of Facebook) account to prove himself. When I saw this I started to get interested in Computer Security and the idea of Ethical Hacking. Even though they never revealed how he did it, I was pretty sure I knew how and was intrigued in how simple it was and why I didn’t think of it - this then led me to a nonstop search for loopholes on facebook for the next few days. I was surprised when I actually did find a loophole, and it was a more serious one than the one that was reported on the news. I found a way to send a message as anyone, to anyone - meaning a hacker could send a message to your parent’s facebook as if it was you with anything they wanted to.&lt;/p&gt;
 
-&lt;h4 id=&quot;headings&quot;&gt;Headings&lt;/h4&gt;
+&lt;p&gt;The video above is a demo proof of the loophole in action all the way back in 2013. Let me explain how I did it:&lt;/p&gt;
 
-&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
+&lt;p&gt;To understand how the loophole worked you need to understand Facebook’s Email System that was introduced in 2010.&lt;/p&gt;
 
-&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;
+&lt;p&gt;“In February 2010, TechCrunch reported that Facebook was working to rewrite its messaging service to turn it into a “fully featured webmail product”, dubbed “Project Titan”.[179] The feature, unofficially dubbed a “Gmail killer” internally, was launched on November 15, 2010,[180] and allowed users to directly communicate with each other via Facebook using several different methods. Users could create their own “username@facebook.com” email address to communicate, use text messaging, or through the Facebook website or mobile app’s instant messaging chat. All messages were contained within single threads in a unified inbox.[181] The email service was terminated in February 2014 because of low uptake.”https://en.wikipedia.org/wiki/List_of_Facebook_features#Email&lt;/p&gt;
 
-&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;/h3&gt;
+&lt;p&gt;So everyone on facebook had an email called yourusername@facebook.com, as my username on facebook was iwenogk my email was iwenogk@facebook.com. A feature that was really interesting to me in this email system was that you have two emails basically the email you used to sign up to facebook, lets say for me that was wenogk1999@gmail.com and the new facebook email, iwenogk@facebook.com and if I send an email from the email that I signed up with (wenogk1999@gmail.com) to one of my friend’s facebook email’s such as sam@facebook.com - it would go to Sam’s facebook account as a PRIVATE FACEBOOK MESSAGE from my FACEBOOK account and NOT my email and this is the feature that I exploited.&lt;/p&gt;
 
-&lt;h4 id=&quot;heading-4&quot;&gt;Heading 4&lt;/h4&gt;
+&lt;p&gt;In the PHP language and basically any server scripting language, theres a mailing system where you can, “spoof” the headers of the email which is the sender, receiver, name, email content information. So I wrote a simple PHP script which spoofs a fake email from my account to my sister’s account with the email message as the message I want to send to my sister and created a small user interface to do this so I could send it to facebook.&lt;/p&gt;
 
-&lt;h5 id=&quot;heading-5&quot;&gt;Heading 5&lt;/h5&gt;
+&lt;p&gt;I then submitted a Facebook Bug report:&lt;/p&gt;
 
-&lt;h6 id=&quot;heading-6&quot;&gt;Heading 6&lt;/h6&gt;
+&lt;p&gt;—–Original Message to Facebook—–From: xxxxxxx@gmail.comTo: Subject: Mobile app bug on iOS and Android .                                               Name: Romeno Wenogk FernandoE-Mail: xxxxxxxx@gmail.comType: privacyScope: mobileDescription: Facebook has been made in order to support the social infrastructure needed to help in connecting people around the world. But, unintentional bugs like the one I found by Remote Code Execution would be a problem in the wrong hands. Please read till the end.The bug I found would allow a hacker to send a message as someone other than himself to another person without even logging in to another person’s account.Take this example, John and Melissa are FRIENDS on facebook. A hacker can send a message as John to Melissa without logging into John’s account - The hacker would just need John’s email and Melissa’s facebook username. I know that Facebook products that integrate with SMTP validate the authenticity of email messages whenever possible (with SPF, DKIM, and/or DMARC). In the absence of these authentication signatures, Facebook will display a visible warning to the user indicating that the sender of the message could not be verified - ONLY ON THE MAIN SITE (FACEBOOK.COM) .The bug works flawlessly on the phone/tablet FACEBOOK APPS on both IOS and Android. I did not use real accounts while testing the bug out, I used the test accounts provided by the Facebook Whitehat Program.This could impact people in many different ways, hackers can abuse the system to either spam people as if they were friends, a hacker can lead a person to a phishing site or a site with malware/viruses. All I’m saying is that this bug is worth fixing and that it WILL be abused if it goes to the wrong hands, I think the best thing to do is to fix this problem as soon as possible. You cannot say this is not a bug since anyone can send a message as anyone and on the mobile app the messages look very authentic and show no signs of fraud - so if you think a hacker sending a message as anyone to someone else is not a wrong thing, then this is not a bug. REMEMBER THAT THIS IS A BUG REPORTED SPECIFICALLY FOR THE MOBILE FACEBOOK APP - IT IS NOT A BUG FOR THE MAIN SITE. AND THE BUG WORKS FLAWLESSLY.Contact me at xxxxxxxxx@gmail.comProof:In order to prove this to you properly, I have recorded by iPad (which is NOT jailbroken) with iTools and uploaded a video, http://www.youtube.com/watch?v=j1zibaV-dp0&lt;/p&gt;
 
-&lt;h4 id=&quot;blockquote&quot;&gt;Blockquote&lt;/h4&gt;
+&lt;p&gt;Due to my bad luck I suppose, someone had apparently already emailed them about the same loophole. However, this didn’t bother me as I now had validation that this indeed was a real loophole and someone else thought of the exact same loophole I did.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;No more databases, comment moderation, or pesky updates to install—just your content.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Hi, We have previously been made aware of this issue and are in the process of investigating it. Thank you for submitting it to us. Please send along any additional security issues you encounter. Jeff Security Facebook&lt;/p&gt;
 
-&lt;h4 id=&quot;unordered-list&quot;&gt;Unordered List&lt;/h4&gt;
+&lt;p&gt;I got a bit hot-headed about the short reply to my bug report and inquired further about it and got this reply:&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Jekyll
-    &lt;ul&gt;
-      &lt;li&gt;Nested Jekyll&lt;/li&gt;
-      &lt;li&gt;Nested Ruby&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Ruby&lt;/li&gt;
-  &lt;li&gt;Markdown&lt;/li&gt;
-  &lt;li&gt;Liquid&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Hi Romeno,I replied to all of your previous reports.The root issue is the same in all of your reports as you have shown you can send spoofed mail and a spoofed message warning may not appear when using the mobile version of the site. The issue was reported to us by another researcher prior to your submission and is still in the process of being resolved. Sometimes a researcher will report a bug and another researcher will discover the same bug and report it to us and while a fix is being developed. This is one of those cases. If you have any other questions or concerns, please let me know and I will try to address them.Thanks,JeffSecurityFacebook&lt;/p&gt;
 
-&lt;h4 id=&quot;ordered-list&quot;&gt;Ordered List&lt;/h4&gt;
+&lt;p&gt;What shocked me however, is how the loophole was fixed within a day of my report, and my method never worked again. I felt accomplished even though I wasn’t given credit for the loophole, I felt as though I had made a change to Facebook, a billion dollar company, myself, being the mischievous 14 year old boy I was sitting in my bedroom after school with my mini laptop.&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Jekyll
-    &lt;ol&gt;
-      &lt;li&gt;Nested Jekyll&lt;/li&gt;
-      &lt;li&gt;Nested Ruby&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Ruby&lt;/li&gt;
-  &lt;li&gt;Markdown&lt;/li&gt;
-  &lt;li&gt;Liquid&lt;/li&gt;
-&lt;/ol&gt;
+</description>
+        <pubDate>Sun, 20 Jan 2019 14:01:23 +0400</pubDate>
+        <link>http://localhost:4000/wenogk.com/hacker/facebook-loophole.html</link>
+        <guid isPermaLink="true">http://localhost:4000/wenogk.com/hacker/facebook-loophole.html</guid>
+        
+        
+        <category>hacker</category>
+        
+      </item>
+    
+      <item>
+        <title>Myslsm, the social network I created from scratch for my high school (and how I made my own Alexa before it ever existed)
+</title>
+        <description>&lt;p&gt;In 2010, when I was 11 years old, My family and I went to watch The Social Network, a movie about how Facebook was founded. I was deeply motivated by this movie and I started looking into the programming language used to code facebook which was PHP at the time. I started looking into simple html, javascript tutorials first and then went on to look at some PHP tutorials - I quickly realized how powerful this tool is as I could make anything I imagined, all that was required was the thought and the code. I started with simple projects such as asking your name and information and giving you interesting facts to a small product search engine system based on keywords and a MYSQL database, which I amusingly tried to sell online in 2012:&lt;/p&gt;
 
-&lt;h4 id=&quot;link&quot;&gt;Link&lt;/h4&gt;
+&lt;p&gt;https://youtu.be/jOnrNe3bhkQ&lt;/p&gt;
 
-&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;an example&lt;/a&gt; inline link.&lt;/p&gt;
+&lt;p&gt;My dream at the time had always been to make my own social network. I started by learning how to make my own Login and Registering system including the UI, backend and database. From there it was an exponential learning experience where I kept learning and implementing features that a social network would have such as a wall, profile, like button, commenting etc. which brought me to Myslsm. My school’s name is Sri Lankan School Muscat, Slsm for short. I named the social network Myslsm for this reason.&lt;/p&gt;
 
-&lt;h4 id=&quot;paragraph-w-strong-em-etc&quot;&gt;Paragraph w/ strong, em, etc.&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Profile&lt;/strong&gt;&lt;br /&gt;
+With a profile you have an identity in myslsm.com, It contains data about you such as Photo, Name, House , Class, Phone number and a small area to write some information about yourself.&lt;/p&gt;
 
-&lt;p&gt;These are just a few of the &lt;em&gt;available&lt;/em&gt; &lt;strong&gt;configuration&lt;/strong&gt; options. Many configuration options can &lt;strike&gt;either&lt;/strike&gt; be specified as flags on the &lt;abbr title=&quot;Command Line Tool&quot;&gt;command line&lt;/abbr&gt;, or alternatively (and more commonly) they can be specified in a _config.yml file at the root of the source directory. Jekyll will &lt;a href=&quot;http://joro.me/&quot; target=&quot;_blank&quot;&gt;automatically use&lt;/a&gt; the options from this file when run. For example, if you place the following lines in your _config.yml file.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Frontyard&lt;/strong&gt;&lt;br /&gt;
+The concept is pretty much the same as in our school frontyard; where everyone is aware of the events taking place. Similarly, the Frontyard in myslsm.com is an open place where anyone can post anything. For example, the POG can post ‘Saturday evening basketball practices are cancelled’&lt;/p&gt;
 
-&lt;h4 id=&quot;image&quot;&gt;Image&lt;/h4&gt;
-&lt;figure class=&quot;aligncenter&quot;&gt;
-	&lt;img src=&quot;https://images.unsplash.com/photo-1449452198679-05c7fd30f416?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;s=73181f1c6d56b933b30de2bfe21fdf3b&quot; /&gt;
-	&lt;figcaption&gt;Photo by &lt;a href=&quot;https://unsplash.com/rmaedavis&quot; target=&quot;_blank&quot;&gt;Rachel Davis&lt;/a&gt;.&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Backyard&lt;/strong&gt;&lt;br /&gt;
+Unlike the frontyard, the backyard is a private wall where only selected people can see your posts, later you will be able to change who can view your posts, thereby personalizing it.&lt;/p&gt;
 
-&lt;h4 id=&quot;video&quot;&gt;Video&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Staffroom&lt;/strong&gt;&lt;br /&gt;
+The staffRoom is a place where teachers can share and post but only teachers can see the posts. For example, ‘Teacher Helen, please meet me on Thursday for a short meeting”&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/iWowJBRMtpc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;strong&gt;Lessons&lt;/strong&gt;&lt;br /&gt;
+“Lessons” is a feature where anyone can upload a lesson for others to learn like videos, documents, files or youtube educational videos (This will be closely monitored by me). As for now, I have already uploaded the ‘I AM ONLY A CHILD’ video and ‘The CHAOS’ by Gerard Nolst Trenité. ”&lt;/p&gt;
 
-&lt;h4 id=&quot;default-code-block&quot;&gt;Default Code Block&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Interval&lt;/strong&gt;&lt;br /&gt;
+Most of the features of the site are for educational purposes but there’s one feature for your free time, anyone can see educational, music, humor videos to entertain themselves, mostly as part of a study break. I have uploaded some popular songs for the time being.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is code blog.
+&lt;p&gt;&lt;strong&gt;Articles&lt;/strong&gt;&lt;br /&gt;
+This can act as an updated information resource for the school like an online magazine.&lt;/p&gt;
+
+&lt;h2 id=&quot;talk2&quot;&gt;&lt;strong&gt;Talk2&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;One interesting feature that I added onto Myslsm that doesn’t really fit with the other social network features was Talk2. Remember this is in around 2013 where there was no Google Assistant, no Alexa, no machine learning. I made a micro-intelligent bot that could answer questions asked as text input or speech-to-text input (look at image) such as “What is the weather like in &lt;strong&gt;_\&lt;em&gt;_?”, “What is the definition of ___\&lt;/em&gt;_?”, “Tell me about the movie ___\&lt;em&gt;_”, “Search for images of ___\&lt;/em&gt;_”, “Search for ___&lt;/strong&gt;__” and simple conversational precoded statements like, “hi” and, “how are you” and it would answer in text and voice (using the google translate voice api at the time) at the same time.&lt;/p&gt;
+
+&lt;p&gt;I now notice that I realized the power of Google in my talk2 system as the query, “Search for &lt;strong&gt;_\__” would use Google’s then, “I’m feeling lucky” search so basically it would return the first result of the google search for the ___&lt;/strong&gt; as the answer. Google is in my opinion the only entity that can find relavant information in the quadrillions of websites in the world from a single keyword, using its pagerank algorithm, which is why I feel the Google Assistant has a great advantage over Alexa.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 20 Jan 2019 06:01:17 +0400</pubDate>
+        <link>http://localhost:4000/wenogk.com/engineer/myslsm.html</link>
+        <guid isPermaLink="true">http://localhost:4000/wenogk.com/engineer/myslsm.html</guid>
+        
+        
+        <category>engineer</category>
+        
+      </item>
+    
+      <item>
+        <title>Experience: Winning the Expo 2020 University Innovation Competition</title>
+        <description>
+</description>
+        <pubDate>Mon, 03 Dec 2018 09:12:57 +0400</pubDate>
+        <link>http://localhost:4000/wenogk.com/entrepreneur/expo-2020-university-innovation-winner.html</link>
+        <guid isPermaLink="true">http://localhost:4000/wenogk.com/entrepreneur/expo-2020-university-innovation-winner.html</guid>
+        
+        
+        <category>entrepreneur</category>
+        
+      </item>
+    
+      <item>
+        <title>Story: How I got Sean Parker's attention when I was 13.</title>
+        <description>&lt;p&gt;When I was young I was devious, malicious and didn’t know the difference between right and wrong. I was 13 at the time, I had recently gotten the hang of PHP and built a social network for my school from scratch but this isn’t about that, this is about a &lt;strong&gt;hack&lt;/strong&gt;.  So I was looking at Sean Parkers Facebook Profile Page and reading some posts on it when I spontaneously decided to send him a friend request just for fun knowing that nothing would come of it. A few hours later I get a notification saying the friend request is accepted. I was ecstatic. I tried sending him messages saying hi but he wouldn’t see them or reply. The excitement then passed for a few days until I posted a funny meme and tagged some of my friends and Sean Parker in the post, because he is technically my friend now. Thousand likes. I got a thousand likes on the post. To a normal 13 year old on social media who usually gets a max of 30 likes, a thousand likes is beyond ones imagination. But I wouldn’t call myself a normal 13 year old, being the devious kid I was, I saw an opportunity. With such a large reach and with the reach being Sean Parker, the president of Facebook’s followers, I could use this to my advantage. I set up a phishing page on my web server, which is basically a clone of the facebook login page, except when a user enters their username and password, I wrote a simple PHP script where their login details are conveniently sent to me. I then posted a link to it on my Facebook saying, “Hey guys check out this new version of Facebook!”, tagging Sean Parker, the president of Facebook. Five seconds after I posted I refreshed the text file that would have the login details. Nothing. Ten seconds. Nothing again. It didn’t work.     I reloaded again. One hundred lines, with login details of Sean Parker’s following. Five seconds later. Another hundred. I was overwhelmed. I closed my mini HP laptop and started wondering why I did this in the first place. I couldn’t understand why then but I do now, I did it simply because I could, not taking a moment to see if it was right or wrong. I opened my laptop again and I see a blip in the messages section on Facebook notifying me that I have a private message. It was Sean Parker.  &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wenogk.com/wp-content/uploads/2018/10/screenshot-www.facebook.com-2018.10.18-21-24-01.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 17 Oct 2018 11:10:50 +0400</pubDate>
+        <link>http://localhost:4000/wenogk.com/hacker/thoughts/how-i-hacked-sean-parkers-facebook.html</link>
+        <guid isPermaLink="true">http://localhost:4000/wenogk.com/hacker/thoughts/how-i-hacked-sean-parkers-facebook.html</guid>
+        
+        
+        <category>hacker</category>
+        
+        <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>Designing and Laser Cutting a Cardboard Bicycle</title>
+        <description>&lt;p&gt;So I decided I want to make a bicycle, but I didn’t know how a bike worked and what exactly each component looked like. Cardboard was the material I chose to use because of its availability as it can be easily found in scraps so I’d be able to do many retries with the laser cutter (Continued)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  My first step was to research on bicycles:
+
+  
+  
+  
+
+  Turns out, figuring out the different parts and components of a bicycle was harder than I thought. I started by drawing some sketches:
+
+  
+  
+  
+
+  
+
+  
+  
+  
+
+  I started working on designing the parts on Adobe Illustrator, specifically the cogs that connect the wheels of the bicycle to the pedal cog. I, 'tested' them by putting them close to each other in the drawing and rotating one cog using the rotation tool to see how it would work.
+
+  
+  
+  
+
+
+  
+  
+  
+
+  I then improved the design of the wheels to make it actually look like a bicycle would.
+
+  
+  
+  
+
+  
+
+  
+  
+  
+
+  The next step was to laser cut! I had to undergo a training session to learn about safety measures such as cleaning the lenses and also how to optimize the illustrator settings for the best laser cut.
+
+  
+  
+  
+
+
+  
+  
+  
+
+  
+
+  
+  
+  
+
+  Putting it all together with some watch screws and tape and we get:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;styled-code-block&quot;&gt;Styled Code Block&lt;/h4&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;#!/usr/bin/ruby
-&lt;/span&gt;
-&lt;span class=&quot;vg&quot;&gt;$LOAD_PATH&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'.'&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;support&quot;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Decade&lt;/span&gt;
-&lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Week&lt;/span&gt;
-   &lt;span class=&quot;n&quot;&gt;no_of_yrs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
-   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;no_of_months&lt;/span&gt;
-      &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Week&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;FIRST_DAY&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;
-      &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;
-   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;d1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Decade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Week&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;FIRST_DAY&lt;/span&gt;
-&lt;span class=&quot;no&quot;&gt;Week&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;weeks_in_month&lt;/span&gt;
-&lt;span class=&quot;no&quot;&gt;Week&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;weeks_in_year&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;d1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;no_of_months&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;definition-lists&quot;&gt;Definition Lists&lt;/h4&gt;
-
-&lt;dl&gt;
-    &lt;dt&gt;Definition Title&lt;/dt&gt;
-    &lt;dd&gt;Definition Description&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h4 id=&quot;paragraphs-w-aligned-images&quot;&gt;Paragraphs w/ Aligned Images&lt;/h4&gt;
-
-&lt;p&gt;The Jekyll gem makes a jekyll executable available to you in your Terminal window. You can use this command in a number of ways.&lt;/p&gt;
-
-&lt;figure class=&quot;alignleft&quot;&gt;
-	&lt;img width=&quot;250&quot; src=&quot;https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;s=3f9c78df0edb464244bbabb04d1797d8&quot; /&gt;
-	&lt;figcaption&gt;Photo by &lt;a href=&quot;https://unsplash.com/dustinlee&quot; target=&quot;_blank&quot;&gt;Dustin Lee&lt;/a&gt;.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;This site aims to be a comprehensive guide to Jekyll. We’ll cover topics such as getting your site up and running, creating and managing your content, customizing the way your site works and looks, deploying to various environments, and give you some advice on participating in the future development of Jekyll itself.&lt;/p&gt;
-
-&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.&lt;/p&gt;
-
-&lt;figure class=&quot;alignright&quot;&gt;
-	&lt;img width=&quot;250&quot; src=&quot;https://images.unsplash.com/photo-1442037025225-e1cffaa2dc23?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;s=7fe04b68b0cb123bf568c6951c14b177&quot; /&gt;
-	&lt;figcaption&gt;Photo by &lt;a href=&quot;https://unsplash.com/lobostudiohamburg&quot; target=&quot;_blank&quot;&gt;LoboStudio Hamburg&lt;/a&gt;.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Throughout this guide there are a number of small-but-handy pieces of information that can make using Jekyll easier, more interesting, and less hazardous. Here’s what to look out for.&lt;/p&gt;
-
-&lt;p&gt;If you come across anything along the way that we haven’t covered, or if you know of a tip you think others would find handy, please file an issue and we’ll see about including it in this guide.&lt;/p&gt;
-
-&lt;p&gt;The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 11 Mar 2016 23:56:00 +0400</pubDate>
-        <link>http://localhost:4000/wenogk.com/docs/sample-data.html</link>
-        <guid isPermaLink="true">http://localhost:4000/wenogk.com/docs/sample-data.html</guid>
+        <pubDate>Fri, 28 Sep 2018 12:09:36 +0400</pubDate>
+        <link>http://localhost:4000/wenogk.com/engineer/designing-and-laser-cutting-a-cardboard-bicycle.html</link>
+        <guid isPermaLink="true">http://localhost:4000/wenogk.com/engineer/designing-and-laser-cutting-a-cardboard-bicycle.html</guid>
+        
+        <category>laser cutter</category>
         
         
-        <category>docs</category>
+        <category>engineer</category>
+        
+      </item>
+    
+      <item>
+        <title>Air Music Player</title>
+        <description>&lt;p&gt;  https://www.youtube.com/watch?v=wM-iwOhMG2k I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the music with my hands and play it on the computer.  I had to make some big changes to the code as I hadn’t generalized the classes enough in my previous project which is something I have to make sure I do next time. I used a library called Minim as the processing sound library didn’t allow pausing which was a vital feature in my project. I selected Fur Elise from Beethoven and the Wonder Woman soundtrack for the two songs because they are so drastic in genre, tone and the way it sounds that it almost feels like a remix mashup in a way.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Arduino Code (C++)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;int lightLevel;&lt;/p&gt;
+
+&lt;p&gt;void setup()
+{
+ Serial.begin(9600);
+}
+void loop()
+{&lt;/p&gt;
+
+&lt;p&gt;int knob = analogRead(A0);
+  delay(1);
+  lightLevel = analogRead(A1);
+  delay(1);
+  Serial.print(lightLevel);
+  Serial.print(“,”);
+  Serial.println(knob);&lt;/p&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Processing Code (Java)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;import processing.serial.&lt;em&gt;;
+import processing.sound.&lt;/em&gt;;
+import ddf.minim.*;
+Minim       minim;
+Minim       minim2;
+Minim       minim3;
+AudioPlayer song2;
+AudioPlayer song3;
+AudioPlayer song4;
+SoundFile song;
+Amplitude amp2;
+Serial myPort;
+AudioIn in2;
+CircleThing mainCircle;
+Snow snowfall;
+float ears= 0;
+boolean movable=false;
+PImage bg,nyu;
+boolean logoDisplay=false;
+float lightValue;
+float knobValue;
+float highLight=100;
+float lowLight=0;
+float knobScaling=1.5;
+class CircleThing {
+  public int circleX, circleY,defColor;
+  public float prevRad=0;
+  CircleThing(int cX, int cY,int defaultColor) {
+    circleX=cX;
+    circleY=cY;
+    defColor=defaultColor;
+  }
+  void draw(float cX, float cY, float soundVal,int scaling,PImage nyuImage,boolean displayImage) {&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fill(map(soundVal,0,100,0,255)-100);
+strokeWeight(10);
+float radi=200+(100-soundVal)*knobScaling;
+//float radi =(200+soundVal*scaling);
+ellipse(cX, cY,radi, radi);
+//line(0,0,radi/2,radi/2);
+imageMode(CENTER);
+//rotate(45); if(displayImage) {
+pushMatrix(); imageMode(CENTER); translate(cX,cY); rotate(-PI/8); image(nyuImage,0,0); popMatrix(); }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;String s = “Made by Romeno Wenogk Fernando. wenogk@nyu.edu”;
+fill(255);
+textSize(16);
+text(s, cX+500, cY, 200, 150);
+prevRad=200+soundVal*scaling;
+  }
+}&lt;/p&gt;
+
+&lt;p&gt;class Particle {&lt;/p&gt;
+
+&lt;p&gt;float x;          // adds x position property
+  float y;          // adds y position property
+  float xVel;       // adds xvel property
+  float yVel;       // adds yvel property
+  float partsize;   // adds a size property&lt;/p&gt;
+
+&lt;p&gt;//Constructor = function// float says where it is xpos/ypos
+  Particle(float xpos, float ypos) {
+    // assigning the values
+    x = xpos = random (0,600);
+    y = ypos;
+    xVel = random (-2, 2);   // random,(the length of the random)
+    yVel = random (0, 5);    // controls the speed that the snow falls
+    partsize = random (5, 10);
+  }&lt;/p&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+
+&lt;p&gt;class Snow {
+Particle[] particles = new Particle[0];
+int maxParticles =100;&lt;/p&gt;
+
+&lt;p&gt;Snow() {
+}
+void setMax(int val) {
+maxParticles=val;
+}
+void draw(float ears2) {
+  float ears =100- ears2;
+particles = (Particle[]) append(particles, new Particle(300, 0));
+  if (particles.length&amp;gt;maxParticles) {
+    particles = (Particle[]) subset(particles, 1);
+  }
+  for (int i=0; i&amp;lt;particles.length; i++) {
+      particles[i].partsize *=0.975;  //make the snow stay reduce size
+      particles[i].x += particles[i].xVel;
+      particles[i].y += particles[i].yVel;
+     if(ears&amp;gt;30) {
+      particles[i].yVel +=0.2; &lt;br /&gt;
+     } else if(ears&amp;gt;50) {
+       particles[i].yVel +=0.3;
+     }
+     else if(ears&amp;gt;70) {
+       particles[i].yVel +=0.4;
+     } else if(ears&amp;gt;90) {
+       particles[i].yVel +=0.6;
+     } else {
+       particles[i].yVel-=0.1; //reverse gravity
+     }
+    ellipse(particles[i].x, particles[i].y, particles[i].partsize, particles[i].partsize);
+  }
+}
+}&lt;/p&gt;
+
+&lt;p&gt;void setup() {
+  size(640, 440);
+  background(90);
+  amp2 = new Amplitude(this);
+  in2 = new AudioIn(this, 0);
+  in2.start();
+  amp2.input(in2);&lt;br /&gt;
+  mainCircle= new CircleThing(width/2,height/2,45);
+  snowfall= new Snow();
+  bg = loadImage(“bg.jpg”);
+  bg.resize(width,height);
+  nyu=loadImage(“nyu.png”);
+  nyu.resize(int(nyu.width&lt;em&gt;0.5),int(nyu.height&lt;/em&gt;0.5));
+  printArray(Serial.list());
+String portname=Serial.list()[6];
+println(portname);
+myPort = new Serial(this,portname,9600);
+myPort.clear();
+myPort.bufferUntil(‘\n’);
+ //song = new SoundFile(this, “ww.mp3”);&lt;/p&gt;
+
+&lt;p&gt;// Loop the sound forever
+  // (well, at least until stop() is called)
+  //song.loop();&lt;/p&gt;
+
+&lt;p&gt;minim = new Minim(this);
+  minim2 = new Minim(this);
+  minim3 = new Minim(this);
+  song2 = minim.loadFile(“ww.mp3”, 1024);
+  song3 = minim2.loadFile(“bee.mp3”, 1024);
+  song4 = minim2.loadFile(“fetty.mp3”, 1024);
+  song2.play();
+  song3.play();
+  song4.play();
+}&lt;/p&gt;
+
+&lt;p&gt;void draw() {
+  background(bg);
+  //ears=amp2.analyze();
+  ears=map(lightValue,lowLight,highLight,0,100);
+  if((100-ears)&amp;gt;45) {
+  song4.play();
+  song2.pause();
+  song3.pause();
+  }
+  else if((100-ears)&amp;gt;25) {
+  song3.play();
+  song2.pause();
+  song4.pause();
+  }  else if((100-ears)&amp;gt;10) {
+  song3.pause();
+  song2.play();
+  song4.pause();
+  } else {
+  song2.pause();
+  song3.pause();
+  song4.pause();
+  }&lt;/p&gt;
+
+&lt;p&gt;println(100-ears);
+   stroke(255); 
+  strokeWeight(1);
+  //println(ears);
+  fill(255);
+  snowfall.draw(ears);
+  stroke(75); 
+  float xpos,ypos;
+  if(!movable) { 
+    xpos=lerp(width/2,mouseX,0.01);
+    ypos=lerp(height/2,mouseY,0.01);
+  } else {
+  //mainCircle.draw(mouseX,mouseY,ears,290,nyu,logoDisplay); 
+   xpos=lerp(mouseX,width/2,0.01);
+    ypos=lerp(mouseY,height/2,0.01);
+  }
+  mainCircle.draw(xpos,ypos,ears,290,nyu,logoDisplay);&lt;/p&gt;
+
+&lt;p&gt;highLight();
+knobScaling=map(knobValue,0,255,0,1);
+}&lt;/p&gt;
+
+&lt;p&gt;void mousePressed() {
+movable=!movable;
+}&lt;/p&gt;
+
+&lt;p&gt;void keyPressed() {
+logoDisplay=!logoDisplay;&lt;/p&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+
+&lt;p&gt;void serialEvent(Serial myPort){
+String s=myPort.readStringUntil(‘\n’);
+s=trim(s);
+//println(s);
+if (s!=null){
+int values[]=int(split(s,’,’));
+lightValue=values[0];
+knobValue=values[1];
+}
+}&lt;/p&gt;
+
+&lt;p&gt;void highLight() {
+if(lightValue&amp;gt;highLight) {
+highLight=lightValue;
+}
+if(lightValue&amp;lt;lowLight) {
+lowLight=lightValue;
+}
+}&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Sep 2018 06:09:32 +0400</pubDate>
+        <link>http://localhost:4000/wenogk.com/engineer/music/109.html</link>
+        <guid isPermaLink="true">http://localhost:4000/wenogk.com/engineer/music/109.html</guid>
+        
+        
+        <category>engineer</category>
+        
+        <category>music</category>
+        
+      </item>
+    
+      <item>
+        <title>My First Software Enginneering Internship</title>
+        <description>&lt;p&gt;I recently was accepted into a software company in Oman, Al Madina Development, which has many government funded projects mainly related to security and identity documents. A few days before I started working, I had a look at their website and just wanted to see what CMS system they used and ended up finding a serious loophole on the site that allowed me to have complete control of the site’s content and edit/delete anything. Here’s a video showing you this: https://youtu.be/sUfab2-7XeA I told them of the bug and they were surprised and an engineer fixed it and they gave the credit to me. Throughout the rest of the internship, I had to learn many technologies to able to start working on projects:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Learned C#&lt;/li&gt;
+  &lt;li&gt;Got the hang of Asp, Asp.net&lt;/li&gt;
+  &lt;li&gt;Brushed up my SQL skills by learning more about complicated JOIN queries&lt;/li&gt;
+  &lt;li&gt;Started working with git commands&lt;/li&gt;
+  &lt;li&gt;Learned about the MVC (Model View Controller) Structure and a bit of ASP.NET CORE MVC. I put up some of the sample code I wrote to get the hang of stuff, on my github: &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;https://github.com/wenogk/Almadina_Internship I couldn’t add the code I wrote for the company as they told me it wouldn’t be a good idea to do so.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 Sep 2018 09:09:58 +0400</pubDate>
+        <link>http://localhost:4000/wenogk.com/hacker/thoughts/my-first-software-enginneering-internship.html</link>
+        <guid isPermaLink="true">http://localhost:4000/wenogk.com/hacker/thoughts/my-first-software-enginneering-internship.html</guid>
+        
+        
+        <category>hacker</category>
+        
+        <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>Experience: Winning an international hackathon</title>
+        <description>&lt;p&gt;It was 8pm the day before the Hackathon, my suitemate knocks on my door and challenges me…..for a table tennis match. We play table tennis, &lt;strong&gt;seriously&lt;/strong&gt;. By seriously I mean playing for six hours straight, sweating, aching legs, and raising our voices causing random students who pass by to look at us weird. It’s 2am when I go back to my room, I just fall on my bed and think of the hackathon(which starts at 6am) the next day, &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;‘No way I’m going to go for that, I’m way too tired’, _and I doze off in a flash. &lt;strong&gt;Knock knock.&lt;/strong&gt; I hear banging on my door, “Get up you have your hackathon!”. I bolted as soon as my roommate said that and checked my phone for the time, _5:50am. _Got up. Brushed my teeth. Washed my face. Ran. I was lucky it was close as the Hackathon was held my university, New York University Abu Dhabi. “_The 2018 7th ANNUAL NYUAD HACKATHON FOR SOCIAL GOOD IN THE ARAB WORLD&lt;/em&gt;”, a mouthful that does do justice to the prestige of the Hackathon with students coming from prestigious universities such as MIT, Princeton and mentors from companies like Google. I entered. I see a group of people standing and listening to one figure in the middle, deep in conversation so I sneaked in to their little circle. Everyone looked at me. I tried to fake a smile back and as I do it, I catch a glance at the ID Card one of the congregates and saw it, &lt;em&gt;Mentors. _I now turn my intention from faking a smile to hiding my utter surprise. I slide myself away from the group feeling the peering eyes lasering me. I find another door and was glad to find the hackathon finally. The initial set up was honestly very weird. There were sets of tables arranged with labels on them such as, “Education”, “Security &amp;amp; Logisitcs”,”Refugees” etc. I was told to sit at any table I preferred so I just went to the Security one as it seemed fine to me as I am (kind of) interested in the field. I met a few people on my table, one of whom was another student from NYUAD and the rest were from other universities from all around the globe. We had mentors too, with us on our table. Our task was to brainstorm ideas that relate to our table topic, Security &amp;amp; Logistics or at least use it in our ideas. We started blurting out our half thought ideas and came up with ideas from Mental Health apps to Driving Assistants. Suddenly, someone (I can’t remember who) mentioned an idea which was something like this: _An sms system(probably using Twilio) where people could report themselves safe in a natural disaster, just in case their families were worried.&lt;/em&gt; This idea grew on us and we kept improving on it, &lt;em&gt;What if someone was lost and sends our system an sms with his name, age location, small message, and their family at any time could again sms our system with their loved one’s name and age and  his family will be notified that he is safe and they will be able to get in contact. This would work well for refugees who don’t have their own phone numbers or contact methods.&lt;/em&gt; That was basically one of our final ideas that we submitted. Yes, we had to submit a set of ideas and get one of it approved by the judges to actually work on it. This rule was annoying but surprisingly worked well for us. It was time to get the results of the judges, our sms idea was approved, with a &lt;strong&gt;small&lt;/strong&gt; change. The judge who came to tell us this told it to us in a Steve Jobs, &lt;em&gt;“One More Thing” _fashion. He said at the end of saying it was approved, “You guy’s should remove the idea of the lost person sending an sms and use video cameras and facial recognition to detect their faces and match them with a photo that the families provide.”. WOW. We were all gobsmacked. It was a brilliant idea that had our concept in its skeleton but it opened up a whole new aspect the the idea. The first thing we did was research on what the possible ways to do it was. It was a 3 day hackathon so we had time to try things. We started with OpenCV for image processing and realized it wouldn’t be effective as it was used for facial recognnitionn of images which meant we’d have to split a video into frames and run OpenCV on ever single frame which was inefficient as OpenCV wasn’t optimized for this. As I did some future research I found Amazon AWS Rekognition (Yes, spelled like that). It used a convolutional neural network and did exactly what we needed it to do, find faces in a video. We knew what we needed to do so we went all in. We divided the work we needed to do, some worked on UI and Design, some on the presentation and some (including me) on the backend and the integration with Amazon AWS. We worked really hard with our mentors for two sleepless nights, going home at around 3am to sleep a few hours only to come back and work. The morning of the final day of the hackathon, we had a full working _prototype of a&lt;/em&gt; system &lt;em&gt;where a family could upload a picture of their loved one and our system would go through thousands of hours of refugee camp videos that were widely available and find where this individual is and inform the family where exactly he/she is.&lt;/em&gt; We presented and demoed our project and weren’t too confident about the final outcome. Just a second before the final winner announcement comes up, our mentor looked back in us and said, “Tough luck guys, I don’t think we got this.” and I was flabbergasted. The next second, “And the winner of the_7th ANNUAL NYUAD HACKATHON FOR SOCIAL GOOD IN THE ARAB WORLD is Boosala”. “Boosala” _means find in arabic, which we felt did justice to our app. One thing that hit me though, after all the excitement of winning, was that if my roommate didn’t wake me up, things would’ve been a little different. You can find our code and presentation here:  The hackathon was featured on many press articles: &lt;strong&gt;English Press&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;WAMDA&lt;/p&gt;
+
+&lt;p&gt;Entrepreneur ME magazine – attached&lt;/p&gt;
+
+&lt;p&gt;Abu Dhabi World magazine (English) – attached&lt;/p&gt;
+
+&lt;p&gt;Communicate magazine&lt;/p&gt;
+
+&lt;p&gt;Al Bawaba&lt;/p&gt;
+
+&lt;p&gt;world.einnews&lt;/p&gt;
+
+&lt;p&gt;Tahawul tech&lt;/p&gt;
+
+&lt;p&gt;Al-press&lt;/p&gt;
+
+&lt;p&gt;Dubai Forum&lt;/p&gt;
+
+&lt;p&gt;Toner News&lt;/p&gt;
+
+&lt;p&gt;MyNews.is&lt;/p&gt;
+
+&lt;p&gt;Arabic&lt;/p&gt;
+
+&lt;p&gt;Al Ittihad – attached&lt;/p&gt;
+
+&lt;p&gt;Al Bayan – attached&lt;/p&gt;
+
+&lt;p&gt;Al Khaleej – attached&lt;/p&gt;
+
+&lt;p&gt;Al-Ain.com&lt;/p&gt;
+
+&lt;p&gt;24.ae&lt;/p&gt;
+
+&lt;p&gt;Zawya&lt;/p&gt;
+
+&lt;p&gt;Gate.ahram&lt;/p&gt;
+
+&lt;p&gt;UAE shafaqna&lt;/p&gt;
+
+&lt;p&gt;Rjeem&lt;/p&gt;
+
+&lt;p&gt;Free Pen&lt;/p&gt;
+
+&lt;p&gt;DOT Emirates&lt;/p&gt;
+
+&lt;p&gt;Lomazoma&lt;/p&gt;
+
+&lt;p&gt;Bedayya&lt;/p&gt;
+
+&lt;p&gt;Broadcast&lt;/p&gt;
+
+&lt;p&gt;Abu Dhabi TV - Sabah Al Dar program&lt;/p&gt;
+
+&lt;p&gt;Abu Dhabi TV - Oloom Al Dar program&lt;/p&gt;
+
+&lt;p&gt;Social media&lt;/p&gt;
+
+&lt;p&gt;Wamda - Twitter&lt;/p&gt;
+
+&lt;p&gt;Abu Dhabi TV - Instagram&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wenogk.com/wp-content/uploads/2018/07/screenshot-sites.nyuad_.nyu_.edu-2018.07.02-19-20-34.png&quot;&gt; &lt;/a&gt; [Best_Wordpress_Gallery id=”2” gal_title=”Hackathon”]&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 07 Jul 2018 06:07:05 +0400</pubDate>
+        <link>http://localhost:4000/wenogk.com/hacker/thoughts/experience-winning-an-international-hackathon.html</link>
+        <guid isPermaLink="true">http://localhost:4000/wenogk.com/hacker/thoughts/experience-winning-an-international-hackathon.html</guid>
+        
+        
+        <category>hacker</category>
+        
+        <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>DJ Music Mashup (Using XBOX Kinect)</title>
+        <description>&lt;p&gt;&lt;em&gt;This is my Intro to Interactive Media - Final Class Project documentation.&lt;/em&gt; &lt;strong&gt;Background&lt;/strong&gt; My final project was a, “DJ Mixer” where the user could use his/her own hands to control and mix two songs together to play at the same time. For example, Ed Sheerans’s shape of you background music could be played with Justin Bieber singing love yourself.   &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Timeline&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Used the Minim Processing library to simply play 2 songs at the same time, one kareoke and one acapella, and was working on a volume controller which looked like this initially and worked with the cursor on the computer: 2. Integrated it to the kinect using  a library by Dan Shiffman and added pause buttons. 3. Added many more songs, removed pause buttons, instead the currently playing song could be hovered on to pause.   4. I then made many improvements to the previous version:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I improved the design a bit.&lt;/li&gt;
+  &lt;li&gt;Cropped the mp3 files of the songs to go directly to the music rather than a pause or an intro as many of the youtube videos had them.&lt;/li&gt;
+  &lt;li&gt;Made the webcam visible in a small area at the bottom.&lt;/li&gt;
+  &lt;li&gt;I also made the volume be always visible to the user as it wasn’t clear to them that that functionality was possible. 5. The final update was mainly a huge UI and Design bump which I will go over in the next section. I also added a, “DJ Training” stage in order to train users on how to move the hand around the screen to select stuff. (In the video below I use the computer cursor as the pointer for demo purposes)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Technical Aspect&lt;/strong&gt; The base of my project was not hard to make. I am glad I went with the object oriented approach as I’m sure it saved me TONS of time as I started making many upgrades to it. I created a Song class that included the functionality of instantiating the song with its song file, displaying the song on the screen, having on hover functionality for that song, playing and pausing functions. I then made an array of Song objects in a songs array and instantiated them all. This made it trivial to add new songs. Using an object oriented approach allowed me to implement the volume controller class and add in many design improvements such as font and on hover shading easily.   The controlling of the cursor was perhaps the most important part technically as it is what gives the user the ability to interact with my project so it had to be as seamless as possible which is why I focused on it a lot. The kinect integration was simple as I got the code from Dan Shiffmans website. However, the detection of the hand was VERY buggy initially and I had to make many changes to optimize it specifically for my requirement:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The first important thing I did was make the cursor return to a specific spot if there is no depth greater than the threshold value. This reduced some unintentional clicking.&lt;/li&gt;
+  &lt;li&gt;The second is that I optimized Dan Shiffman’s Kinect class to suit my needs by adding 2 counters: one totalArea counter which increments in the for loop and one handArea counter which also increments in the for loop but only when the depth is greater than the threshold value. I then only allowed the movement of the cursor if handArea/totalArea=0.065 as after some testing found that the hand is less than 6.5% of the total kinect screen.&lt;/li&gt;
+  &lt;li&gt;I made everything hover based, any song, pause button and volume control has its own counter which I use to make it function only when the cursor hovers over that part for some time. This dramatically reduced unintentional clicks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Design and Interactivity&lt;/strong&gt; As you have seem there was a bump in the design from the 90% ready project and the 100% ready project. Let me take you through some of my decisions.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The adding of icons was important as professor suggested, as it gave the users a clear idea of what would happen when clicked which is why I used icons for pause, and a sound icon near the volume controllers. This worked well in practice as I didn’t have to explain much to the users, they simply knew what to do.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wenogk.com/wp-content/uploads/2018/06/Screen-Shot-2018-05-08-at-10.31.38-PM-240x300.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;        I added a hover shade effect when a user hovers over a song name and a color change to the pause buttons when hovered. I did this so that first time users would know that the song is indeed clickable (or pause button). It almost gives the, ‘hyperlink’ feel to the user which is familiar to them and hence serves my project better in terms of interaction.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I worked hard on the volume controller, which is why it has its own class. I wanted to design it just like a volume controller in a dj rack where the user could move a knob along a slider in order to control the volume. I did this so the user could relate what they see to a volume knob in a sound mixer in order to know what the volume controller does.  The background of the volume controller initially were horizontal, equally spaced lines but I decided to make it random constantly moving lines to give it a live feel so that the user knows that something can be done by using it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wenogk.com/wp-content/uploads/2018/06/8163621bd2d1e26fa3c6b99f07d0de907f88fa3e-768x576.jpg&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://wenogk.com/wp-content/uploads/2018/06/gif-83x300.gif&quot;&gt;      &lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I needed a good font as the one I selected initially wasn’t appealing to many users. I wanted a font that would be:
+    &lt;ul&gt;
+      &lt;li&gt;Easy to read&lt;/li&gt;
+      &lt;li&gt;Had some type of old-school tech feel to it (like how text is displayed on a small LED display)&lt;/li&gt;
+      &lt;li&gt;Seemed intriguing to catch some passer-by’s attention After some considerable research, I found a font called “underwood”, which seemed like a good choice as it fit my criteria.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The background image of a DJ rack that I found on google images was a nice addition as it fit my project well. The two racks seemed cohesive with the two sides (kareoke and acapella) that the user could choose songs from. Many users actually started hovering over the DJ racks themselves thinking it would do something.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 28 Jun 2018 11:06:10 +0400</pubDate>
+        <link>http://localhost:4000/wenogk.com/engineer/music/dj-music-mashup-using-xbox-kinect.html</link>
+        <guid isPermaLink="true">http://localhost:4000/wenogk.com/engineer/music/dj-music-mashup-using-xbox-kinect.html</guid>
+        
+        
+        <category>engineer</category>
+        
+        <category>music</category>
         
       </item>
     
