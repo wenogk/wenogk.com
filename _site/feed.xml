@@ -5,8 +5,8 @@
     <description>A rising Senior studying Computer Science. Interested in backend engineering.</description>
     <link>http://localhost:4000/wenogk.com/</link>
     <atom:link href="http://localhost:4000/wenogk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Mar 2020 16:01:38 +0400</pubDate>
-    <lastBuildDate>Sat, 21 Mar 2020 16:01:38 +0400</lastBuildDate>
+    <pubDate>Sat, 21 Mar 2020 16:28:55 +0400</pubDate>
+    <lastBuildDate>Sat, 21 Mar 2020 16:28:55 +0400</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -925,32 +925,27 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
 
 &lt;p&gt;&lt;strong&gt;Timeline&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Used the Minim Processing library to simply play 2 songs at the same time, one kareoke and one acapella, and was working on a volume controller which looked like this initially and worked with the cursor on the computer:&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;1) Used the Minim Processing library to simply play 2 songs at the same time, one kareoke and one acapella, and was working on a volume controller which looked like this initially and worked with the cursor on the computer:&lt;/p&gt;
+
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/klaOZvq5vY8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;ol&gt;
-  &lt;li&gt;Integrated it to the kinect using  a library by Dan Shiffman and added pause buttons.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/klaOZvq5vY8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;ol&gt;
-  &lt;li&gt;Added many more songs, removed pause buttons, instead the currently playing song could be hovered on to pause.  &lt;/li&gt;
-&lt;/ol&gt;
+
+&lt;p&gt;2) Integrated it to the kinect using  a library by Dan Shiffman and added pause buttons.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vmfNd11BjaQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;3) Added many more songs, removed pause buttons, instead the currently playing song could be hovered on to pause.  &lt;/p&gt;
+
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Hx1hjPbIwps&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;ol&gt;
-  &lt;li&gt;I then made many improvements to the previous version:
-    &lt;ul&gt;
-      &lt;li&gt;I improved the design a bit.&lt;/li&gt;
-      &lt;li&gt;Cropped the mp3 files of the songs to go directly to the music rather than a pause or an intro as many of the youtube videos had them.&lt;/li&gt;
-      &lt;li&gt;Made the webcam visible in a small area at the bottom.&lt;/li&gt;
-      &lt;li&gt;I also made the volume be always visible to the user as it wasn’t clear to them that that functionality was possible.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+
+&lt;p&gt;4) I then made many improvements to the previous version:
+    * I improved the design a bit.
+    * Cropped the mp3 files of the songs to go directly to the music rather than a pause or an intro as many of the youtube videos had them.
+    * Made the webcam visible in a small area at the bottom.
+    * I also made the volume be always visible to the user as it wasn’t clear to them that that functionality was possible.&lt;/p&gt;
+
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/G8BqVScv9_s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;ol&gt;
-  &lt;li&gt;The final update was mainly a huge UI and Design bump which I will go over in the next section. I also added a, “DJ Training” stage in order to train users on how to move the hand around the screen to select stuff. (In the video below I use the computer cursor as the pointer for demo purposes)&lt;/li&gt;
-&lt;/ol&gt;
+
+&lt;p&gt;5) The final update was mainly a huge UI and Design bump which I will go over in the next section. I also added a, “DJ Training” stage in order to train users on how to move the hand around the screen to select stuff. (In the video below I use the computer cursor as the pointer for demo purposes)&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/NqFCkTqgUcI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -961,7 +956,11 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
 &lt;ul&gt;
   &lt;li&gt;The first important thing I did was make the cursor return to a specific spot if there is no depth greater than the threshold value. This reduced some unintentional clicking.&lt;/li&gt;
   &lt;li&gt;The second is that I optimized Dan Shiffman’s Kinect class to suit my needs by adding 2 counters: one totalArea counter which increments in the for loop and one handArea counter which also increments in the for loop but only when the depth is greater than the threshold value. I then only allowed the movement of the cursor if handArea/totalArea=0.065 as after some testing found that the hand is less than 6.5% of the total kinect screen.&lt;/li&gt;
-  &lt;li&gt;I made everything hover based, any song, pause button and volume control has its own counter which I use to make it function only when the cursor hovers over that part for some time. This dramatically reduced unintentional clicks.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I made everything hover based, any song, pause button and volume control has its own counter which I use to make it function only when the cursor hovers over that part for some time. This dramatically reduced unintentional clicks.&lt;/p&gt;
+
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wyOim_4ckV0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Design and Interactivity&lt;/strong&gt;&lt;/p&gt;
@@ -972,12 +971,29 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
   &lt;li&gt;The adding of icons was important as professor suggested, as it gave the users a clear idea of what would happen when clicked which is why I used icons for pause, and a sound icon near the volume controllers. This worked well in practice as I didn’t have to explain much to the users, they simply knew what to do.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;table align=&quot;center&quot;&gt;
+&lt;tr&gt;&lt;td&gt;
+&lt;img src=&quot;/wenogk.com/assets/images/dj_1.png&quot; /&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&quot;/wenogk.com/assets/images/dj_2.png&quot; /&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
 &lt;p&gt;I added a hover shade effect when a user hovers over a song name and a color change to the pause buttons when hovered. I did this so that first time users would know that the song is indeed clickable (or pause button). It almost gives the, ‘hyperlink’ feel to the user which is familiar to them and hence serves my project better in terms of interaction.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;I worked hard on the volume controller, which is why it has its own class. I wanted to design it just like a volume controller in a dj rack where the user could move a knob along a slider in order to control the volume. I did this so the user could relate what they see to a volume knob in a sound mixer in order to know what the volume controller does.  The background of the volume controller initially were horizontal, equally spaced lines but I decided to make it random constantly moving lines to give it a live feel so that the user knows that something can be done by using it&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;I worked hard on the volume controller, which is why it has its own class. I wanted to design it just like a volume controller in a dj rack where the user could move a knob along a slider in order to control the volume. I did this so the user could relate what they see to a volume knob in a sound mixer in order to know what the volume controller does.  The background of the volume controller initially were horizontal, equally spaced lines but I decided to make it random constantly moving lines to give it a live feel so that the user knows that something can be done by using it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table align=&quot;center&quot;&gt;
+&lt;tr&gt;&lt;td&gt;
+&lt;img src=&quot;/wenogk.com/assets/images/dj_3.jpg&quot; /&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&quot;/wenogk.com/assets/images/dj_4.gif&quot; /&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
   &lt;li&gt;I needed a good font as the one I selected initially wasn’t appealing to many users. I wanted a font that would be:
     &lt;ul&gt;
       &lt;li&gt;Easy to read&lt;/li&gt;
@@ -987,7 +1003,6 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
   &lt;/li&gt;
   &lt;li&gt;The background image of a DJ rack that I found on google images was a nice addition as it fit my project well. The two racks seemed cohesive with the two sides (kareoke and acapella) that the user could choose songs from. Many users actually started hovering over the DJ racks themselves thinking it would do something.&lt;/li&gt;
 &lt;/ul&gt;
-
 </description>
         <pubDate>Thu, 28 Jun 2018 11:06:10 +0400</pubDate>
         <link>http://localhost:4000/wenogk.com/engineer/music/dj-music-mashup-using-xbox-kinect.html</link>
