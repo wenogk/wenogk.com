@@ -5,8 +5,8 @@
     <description>A rising Senior studying Computer Science. Interested in backend engineering.</description>
     <link>http://localhost:4000/wenogk.com/</link>
     <atom:link href="http://localhost:4000/wenogk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Mar 2020 15:24:20 +0400</pubDate>
-    <lastBuildDate>Sat, 21 Mar 2020 15:24:20 +0400</lastBuildDate>
+    <pubDate>Sat, 21 Mar 2020 16:01:38 +0400</pubDate>
+    <lastBuildDate>Sat, 21 Mar 2020 16:01:38 +0400</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -915,22 +915,48 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
     
       <item>
         <title>DJ Music Mashup (Using XBOX Kinect)</title>
-        <description>&lt;p&gt;&lt;em&gt;This is my Intro to Interactive Media - Final Class Project documentation.&lt;/em&gt; &lt;strong&gt;Background&lt;/strong&gt; My final project was a, “DJ Mixer” where the user could use his/her own hands to control and mix two songs together to play at the same time. For example, Ed Sheerans’s shape of you background music could be played with Justin Bieber singing love yourself.   &lt;/p&gt;
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Hx1hjPbIwps&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;em&gt;This is my Intro to Interactive Media - Final Class Project documentation.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Background&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;My final project was a, “DJ Mixer” where the user could use his/her own hands to control and mix two songs together to play at the same time. For example, Ed Sheerans’s shape of you background music could be played with Justin Bieber singing love yourself. 
+&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Timeline&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Used the Minim Processing library to simply play 2 songs at the same time, one kareoke and one acapella, and was working on a volume controller which looked like this initially and worked with the cursor on the computer: 2. Integrated it to the kinect using  a library by Dan Shiffman and added pause buttons. 3. Added many more songs, removed pause buttons, instead the currently playing song could be hovered on to pause.   4. I then made many improvements to the previous version:&lt;/li&gt;
+  &lt;li&gt;Used the Minim Processing library to simply play 2 songs at the same time, one kareoke and one acapella, and was working on a volume controller which looked like this initially and worked with the cursor on the computer:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/klaOZvq5vY8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;ol&gt;
+  &lt;li&gt;Integrated it to the kinect using  a library by Dan Shiffman and added pause buttons.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/klaOZvq5vY8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;ol&gt;
+  &lt;li&gt;Added many more songs, removed pause buttons, instead the currently playing song could be hovered on to pause.  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Hx1hjPbIwps&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;ol&gt;
+  &lt;li&gt;I then made many improvements to the previous version:
+    &lt;ul&gt;
+      &lt;li&gt;I improved the design a bit.&lt;/li&gt;
+      &lt;li&gt;Cropped the mp3 files of the songs to go directly to the music rather than a pause or an intro as many of the youtube videos had them.&lt;/li&gt;
+      &lt;li&gt;Made the webcam visible in a small area at the bottom.&lt;/li&gt;
+      &lt;li&gt;I also made the volume be always visible to the user as it wasn’t clear to them that that functionality was possible.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/G8BqVScv9_s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;ol&gt;
+  &lt;li&gt;The final update was mainly a huge UI and Design bump which I will go over in the next section. I also added a, “DJ Training” stage in order to train users on how to move the hand around the screen to select stuff. (In the video below I use the computer cursor as the pointer for demo purposes)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;I improved the design a bit.&lt;/li&gt;
-  &lt;li&gt;Cropped the mp3 files of the songs to go directly to the music rather than a pause or an intro as many of the youtube videos had them.&lt;/li&gt;
-  &lt;li&gt;Made the webcam visible in a small area at the bottom.&lt;/li&gt;
-  &lt;li&gt;I also made the volume be always visible to the user as it wasn’t clear to them that that functionality was possible. 5. The final update was mainly a huge UI and Design bump which I will go over in the next section. I also added a, “DJ Training” stage in order to train users on how to move the hand around the screen to select stuff. (In the video below I use the computer cursor as the pointer for demo purposes)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/NqFCkTqgUcI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;strong&gt;Technical Aspect&lt;/strong&gt; The base of my project was not hard to make. I am glad I went with the object oriented approach as I’m sure it saved me TONS of time as I started making many upgrades to it. I created a Song class that included the functionality of instantiating the song with its song file, displaying the song on the screen, having on hover functionality for that song, playing and pausing functions. I then made an array of Song objects in a songs array and instantiated them all. This made it trivial to add new songs. Using an object oriented approach allowed me to implement the volume controller class and add in many design improvements such as font and on hover shading easily.   The controlling of the cursor was perhaps the most important part technically as it is what gives the user the ability to interact with my project so it had to be as seamless as possible which is why I focused on it a lot. The kinect integration was simple as I got the code from Dan Shiffmans website. However, the detection of the hand was VERY buggy initially and I had to make many changes to optimize it specifically for my requirement:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Technical Aspect&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The base of my project was not hard to make. I am glad I went with the object oriented approach as I’m sure it saved me TONS of time as I started making many upgrades to it. I created a Song class that included the functionality of instantiating the song with its song file, displaying the song on the screen, having on hover functionality for that song, playing and pausing functions. I then made an array of Song objects in a songs array and instantiated them all. This made it trivial to add new songs. Using an object oriented approach allowed me to implement the volume controller class and add in many design improvements such as font and on hover shading easily.   The controlling of the cursor was perhaps the most important part technically as it is what gives the user the ability to interact with my project so it had to be as seamless as possible which is why I focused on it a lot. The kinect integration was simple as I got the code from Dan Shiffmans website. However, the detection of the hand was VERY buggy initially and I had to make many changes to optimize it specifically for my requirement:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The first important thing I did was make the cursor return to a specific spot if there is no depth greater than the threshold value. This reduced some unintentional clicking.&lt;/li&gt;
@@ -938,23 +964,20 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
   &lt;li&gt;I made everything hover based, any song, pause button and volume control has its own counter which I use to make it function only when the cursor hovers over that part for some time. This dramatically reduced unintentional clicks.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Design and Interactivity&lt;/strong&gt; As you have seem there was a bump in the design from the 90% ready project and the 100% ready project. Let me take you through some of my decisions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Design and Interactivity&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As you have seem there was a bump in the design from the 90% ready project and the 100% ready project. Let me take you through some of my decisions.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The adding of icons was important as professor suggested, as it gave the users a clear idea of what would happen when clicked which is why I used icons for pause, and a sound icon near the volume controllers. This worked well in practice as I didn’t have to explain much to the users, they simply knew what to do.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://wenogk.com/wp-content/uploads/2018/06/Screen-Shot-2018-05-08-at-10.31.38-PM-240x300.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;        I added a hover shade effect when a user hovers over a song name and a color change to the pause buttons when hovered. I did this so that first time users would know that the song is indeed clickable (or pause button). It almost gives the, ‘hyperlink’ feel to the user which is familiar to them and hence serves my project better in terms of interaction.&lt;/p&gt;
+&lt;p&gt;I added a hover shade effect when a user hovers over a song name and a color change to the pause buttons when hovered. I did this so that first time users would know that the song is indeed clickable (or pause button). It almost gives the, ‘hyperlink’ feel to the user which is familiar to them and hence serves my project better in terms of interaction.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;I worked hard on the volume controller, which is why it has its own class. I wanted to design it just like a volume controller in a dj rack where the user could move a knob along a slider in order to control the volume. I did this so the user could relate what they see to a volume knob in a sound mixer in order to know what the volume controller does.  The background of the volume controller initially were horizontal, equally spaced lines but I decided to make it random constantly moving lines to give it a live feel so that the user knows that something can be done by using it&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://wenogk.com/wp-content/uploads/2018/06/8163621bd2d1e26fa3c6b99f07d0de907f88fa3e-768x576.jpg&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://wenogk.com/wp-content/uploads/2018/06/gif-83x300.gif&quot;&gt;      &lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I worked hard on the volume controller, which is why it has its own class. I wanted to design it just like a volume controller in a dj rack where the user could move a knob along a slider in order to control the volume. I did this so the user could relate what they see to a volume knob in a sound mixer in order to know what the volume controller does.  The background of the volume controller initially were horizontal, equally spaced lines but I decided to make it random constantly moving lines to give it a live feel so that the user knows that something can be done by using it&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;I needed a good font as the one I selected initially wasn’t appealing to many users. I wanted a font that would be:
     &lt;ul&gt;
       &lt;li&gt;Easy to read&lt;/li&gt;
