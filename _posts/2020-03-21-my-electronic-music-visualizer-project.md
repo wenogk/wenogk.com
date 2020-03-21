@@ -12,12 +12,20 @@ categories:
 image:
     feature: Screen-Shot-2018-04-02-at-5.06.07-PM.png
 ---
-[xyz-ihs snippet="musicCircle"] So for my project this week I wanted to recreate some of the music videos for electronic music on youtube such as this one: https://www.youtube.com/watch?v=mBHTXQo65p8 I was interested in doing this a few months back and when I searched for tutorials they all had to do with getting some video editing software(Sony Vegas Pro) and putting in some scripts. However, now with my knowledge of processing I felt I could do it from scratch with code only and no video editing software, which is what I attempted. It isn't as seamless as the one above but the general concept is there and it can be improved. https://www.youtube.com/watch?v=-hSvjxxIrNk I also added some small features such as click to move the circle, added some text on the very right hand side so you can only see it when you move the circle and like the trapNation video has a logo in the circle, I added a logo that can be triggered by clicking the space bar. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-hSvjxxIrNk" frameborder="0" allowfullscreen></iframe>
+[xyz-ihs snippet="musicCircle"] So for my project this week I wanted to recreate some of the music videos for electronic music on youtube such as this one: <!--more-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mBHTXQo65p8 " frameborder="0" allowfullscreen></iframe>
+
+I was interested in doing this a few months back and when I searched for tutorials they all had to do with getting some video editing software(Sony Vegas Pro) and putting in some scripts. However, now with my knowledge of processing I felt I could do it from scratch with code only and no video editing software, which is what I attempted. It isn't as seamless as the one above but the general concept is there and it can be improved.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-hSvjxxIrNk" frameborder="0" allowfullscreen></iframe>
+
+I also added some small features such as click to move the circle, added some text on the very right hand side so you can only see it when you move the circle and like the trapNation video has a logo in the circle, I added a logo that can be triggered by clicking the space bar.
 
 * * *
 
-The Code is written in Java specifically for the processing environment: I created a, 'circleThing' class which is the circle in the middle that increases its size depending on the Amplitude (note:not frequency). I got the snow effect code from a website online that had a 'Particle' class and the rest of that snow code was procedural code. I enhanced it by making a 'Snow' class that created 'Particle' objects and was generalized so it was customizable. The speed of the snow fall depended on the Amplitude and when it was low I made it reverse the 'gravity' with a negative value. 
-
+The Code is written in Java specifically for the processing environment: I created a, 'circleThing' class which is the circle in the middle that increases its size depending on the Amplitude (note:not frequency). I got the snow effect code from a website online that had a 'Particle' class and the rest of that snow code was procedural code. I enhanced it by making a 'Snow' class that created 'Particle' objects and was generalized so it was customizable. The speed of the snow fall depended on the Amplitude and when it was low I made it reverse the 'gravity' with a negative value.
+{% highlight java linenos %}
 import processing.sound.*;
 
 Amplitude amp2;
@@ -104,7 +112,7 @@ particles[i].partsize *=0.975; //make the snow stay reduce size
 particles[i].x += particles[i].xVel;
 particles[i].y += particles[i].yVel;
 if(ears&gt;0.03) {
-particles[i].yVel +=0.2; 
+particles[i].yVel +=0.2;
 } else if(ears&gt;0.05) {
 particles[i].yVel +=0.4;
 }
@@ -127,7 +135,7 @@ background(90);
 amp2 = new Amplitude(this);
 in2 = new AudioIn(this, 0);
 in2.start();
-amp2.input(in2); 
+amp2.input(in2);
 mainCircle= new CircleThing(width/2,height/2,45);
 snowfall= new Snow();
 //bg = loadImage("bg.jpg");
@@ -144,12 +152,12 @@ strokeWeight(1);
 println(ears);
 fill(255);
 snowfall.draw(ears);
-stroke(75); 
+stroke(75);
 if(!movable) {
 
-mainCircle.draw(width/2,height/2,ears,190,nyu,false); 
+mainCircle.draw(width/2,height/2,ears,190,nyu,false);
 } else {
-mainCircle.draw(mouseX,mouseY,ears,190,nyu,false); 
+mainCircle.draw(mouseX,mouseY,ears,190,nyu,false);
 }
 
 }
@@ -161,3 +169,4 @@ movable=!movable;
 void keyPressed() {
 logoDisplay=!logoDisplay;
 }
+{% endhighlight %}

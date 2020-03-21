@@ -203,162 +203,334 @@
     </header>
 
     <div class="post-content">
-        <p>[xyz-ihs snippet=”musicCircle”] So for my project this week I wanted to recreate some of the music videos for electronic music on youtube such as this one: https://www.youtube.com/watch?v=mBHTXQo65p8 I was interested in doing this a few months back and when I searched for tutorials they all had to do with getting some video editing software(Sony Vegas Pro) and putting in some scripts. However, now with my knowledge of processing I felt I could do it from scratch with code only and no video editing software, which is what I attempted. It isn’t as seamless as the one above but the general concept is there and it can be improved. https://www.youtube.com/watch?v=-hSvjxxIrNk I also added some small features such as click to move the circle, added some text on the very right hand side so you can only see it when you move the circle and like the trapNation video has a logo in the circle, I added a logo that can be triggered by clicking the space bar.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-hSvjxxIrNk" frameborder="0" allowfullscreen=""></iframe>
+<p>[xyz-ihs snippet=”musicCircle”] So for my project this week I wanted to recreate some of the music videos for electronic music on youtube such as this one: <!--more--></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mBHTXQo65p8 " frameborder="0" allowfullscreen=""></iframe>
+
+<p>I was interested in doing this a few months back and when I searched for tutorials they all had to do with getting some video editing software(Sony Vegas Pro) and putting in some scripts. However, now with my knowledge of processing I felt I could do it from scratch with code only and no video editing software, which is what I attempted. It isn’t as seamless as the one above but the general concept is there and it can be improved.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-hSvjxxIrNk" frameborder="0" allowfullscreen=""></iframe>
+
+<p>I also added some small features such as click to move the circle, added some text on the very right hand side so you can only see it when you move the circle and like the trapNation video has a logo in the circle, I added a logo that can be triggered by clicking the space bar.</p>
 
 <hr />
 
 <p>The Code is written in Java specifically for the processing environment: I created a, ‘circleThing’ class which is the circle in the middle that increases its size depending on the Amplitude (note:not frequency). I got the snow effect code from a website online that had a ‘Particle’ class and the rest of that snow code was procedural code. I enhanced it by making a ‘Snow’ class that created ‘Particle’ objects and was generalized so it was customizable. The speed of the snow fall depended on the Amplitude and when it was low I made it reverse the ‘gravity’ with a negative value.</p>
 
-<p>import processing.sound.*;</p>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+</pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">processing.sound.*</span><span class="o">;</span>
 
-<p>Amplitude amp2;
-AudioIn in2;
-CircleThing mainCircle;
-Snow snowfall;
-float ears= 0;
-boolean movable=false;
-PImage bg,nyu;
-boolean logoDisplay=false;</p>
+<span class="n">Amplitude</span> <span class="n">amp2</span><span class="o">;</span>
+<span class="n">AudioIn</span> <span class="n">in2</span><span class="o">;</span>
+<span class="n">CircleThing</span> <span class="n">mainCircle</span><span class="o">;</span>
+<span class="n">Snow</span> <span class="n">snowfall</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">ears</span><span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="kt">boolean</span> <span class="n">movable</span><span class="o">=</span><span class="kc">false</span><span class="o">;</span>
+<span class="n">PImage</span> <span class="n">bg</span><span class="o">,</span><span class="n">nyu</span><span class="o">;</span>
+<span class="kt">boolean</span> <span class="n">logoDisplay</span><span class="o">=</span><span class="kc">false</span><span class="o">;</span>
 
-<p>class CircleThing {
-public int circleX, circleY,defColor;
-CircleThing(int cX, int cY,int defaultColor) {
-circleX=cX;
-circleY=cY;
-defColor=defaultColor;
-}</p>
+<span class="kd">class</span> <span class="nc">CircleThing</span> <span class="o">{</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="n">circleX</span><span class="o">,</span> <span class="n">circleY</span><span class="o">,</span><span class="n">defColor</span><span class="o">;</span>
+<span class="n">CircleThing</span><span class="o">(</span><span class="kt">int</span> <span class="n">cX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">cY</span><span class="o">,</span><span class="kt">int</span> <span class="n">defaultColor</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">circleX</span><span class="o">=</span><span class="n">cX</span><span class="o">;</span>
+<span class="n">circleY</span><span class="o">=</span><span class="n">cY</span><span class="o">;</span>
+<span class="n">defColor</span><span class="o">=</span><span class="n">defaultColor</span><span class="o">;</span>
+<span class="o">}</span>
 
-<p>void draw(int cX, int cY, float soundVal,int scaling,PImage nyuImage,boolean displayImage) {
-if(soundVal&gt;0.025) {
-fill(random(255), random(255), random(255));
-} else {
-//fill(random(255), random(255), random(255));
-fill(defColor);
-}
-strokeWeight(10);
-ellipse(cX, cY,(200+ soundVal<em>scaling), (200+soundVal</em>scaling));
-imageMode(CENTER);
-//rotate(45);
-if(displayImage) {
-pushMatrix();
-imageMode(CENTER);
-translate(cX,cY);
-rotate(-PI/8);
-image(nyuImage,0,0);
-popMatrix();
-}</p>
+<span class="kt">void</span> <span class="nf">draw</span><span class="o">(</span><span class="kt">int</span> <span class="n">cX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">cY</span><span class="o">,</span> <span class="kt">float</span> <span class="n">soundVal</span><span class="o">,</span><span class="kt">int</span> <span class="n">scaling</span><span class="o">,</span><span class="n">PImage</span> <span class="n">nyuImage</span><span class="o">,</span><span class="kt">boolean</span> <span class="n">displayImage</span><span class="o">)</span> <span class="o">{</span>
+<span class="k">if</span><span class="o">(</span><span class="n">soundVal</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span><span class="mf">0.025</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">fill</span><span class="o">(</span><span class="n">random</span><span class="o">(</span><span class="mi">255</span><span class="o">),</span> <span class="n">random</span><span class="o">(</span><span class="mi">255</span><span class="o">),</span> <span class="n">random</span><span class="o">(</span><span class="mi">255</span><span class="o">));</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="c1">//fill(random(255), random(255), random(255));
+</span>
+<span class="n">fill</span><span class="o">(</span><span class="n">defColor</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="n">strokeWeight</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+<span class="n">ellipse</span><span class="o">(</span><span class="n">cX</span><span class="o">,</span> <span class="n">cY</span><span class="o">,(</span><span class="mi">200</span><span class="o">+</span> <span class="n">soundVal</span><span class="o">*</span><span class="n">scaling</span><span class="o">),</span> <span class="o">(</span><span class="mi">200</span><span class="o">+</span><span class="n">soundVal</span><span class="o">*</span><span class="n">scaling</span><span class="o">));</span>
+<span class="n">imageMode</span><span class="o">(</span><span class="n">CENTER</span><span class="o">);</span>
+<span class="c1">//rotate(45);
+</span>
+<span class="k">if</span><span class="o">(</span><span class="n">displayImage</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">pushMatrix</span><span class="o">();</span>
+<span class="n">imageMode</span><span class="o">(</span><span class="n">CENTER</span><span class="o">);</span>
+<span class="n">translate</span><span class="o">(</span><span class="n">cX</span><span class="o">,</span><span class="n">cY</span><span class="o">);</span>
+<span class="n">rotate</span><span class="o">(-</span><span class="n">PI</span><span class="o">/</span><span class="mi">8</span><span class="o">);</span>
+<span class="n">image</span><span class="o">(</span><span class="n">nyuImage</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+<span class="n">popMatrix</span><span class="o">();</span>
+<span class="o">}</span>
 
-<p>String s = “Made by Romeno Wenogk Fernando. wenogk@nyu.edu”;
-fill(255);
-textSize(16);
-text(s, cX+500, cY, 200, 150);
-}
-}</p>
+<span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"Made by Romeno Wenogk Fernando. wenogk@nyu.edu"</span><span class="o">;</span>
+<span class="n">fill</span><span class="o">(</span><span class="mi">255</span><span class="o">);</span>
+<span class="n">textSize</span><span class="o">(</span><span class="mi">16</span><span class="o">);</span>
+<span class="n">text</span><span class="o">(</span><span class="n">s</span><span class="o">,</span> <span class="n">cX</span><span class="o">+</span><span class="mi">500</span><span class="o">,</span> <span class="n">cY</span><span class="o">,</span> <span class="mi">200</span><span class="o">,</span> <span class="mi">150</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="o">}</span>
 
-<p>class Particle {</p>
+<span class="kd">class</span> <span class="nc">Particle</span> <span class="o">{</span>
 
-<p>float x; // adds x position property
-float y; // adds y position property
-float xVel; // adds xvel property
-float yVel; // adds yvel property
-float partsize; // adds a size property</p>
+<span class="kt">float</span> <span class="n">x</span><span class="o">;</span> <span class="c1">// adds x position property
+</span>
+<span class="kt">float</span> <span class="n">y</span><span class="o">;</span> <span class="c1">// adds y position property
+</span>
+<span class="kt">float</span> <span class="n">xVel</span><span class="o">;</span> <span class="c1">// adds xvel property
+</span>
+<span class="kt">float</span> <span class="n">yVel</span><span class="o">;</span> <span class="c1">// adds yvel property
+</span>
+<span class="kt">float</span> <span class="n">partsize</span><span class="o">;</span> <span class="c1">// adds a size property
+</span>
 
-<p>//Constructor = function// float says where it is xpos/ypos
-Particle(float xpos, float ypos) {
-// assigning the values
-x = xpos = random (0,600);
-y = ypos;
-xVel = random (-2, 2); // random,(the length of the random)
-yVel = random (0, 5); // controls the speed that the snow falls
-partsize = random (5, 10);
-}</p>
 
-<p>}</p>
+<span class="c1">//Constructor = function// float says where it is xpos/ypos
+</span>
+<span class="n">Particle</span><span class="o">(</span><span class="kt">float</span> <span class="n">xpos</span><span class="o">,</span> <span class="kt">float</span> <span class="n">ypos</span><span class="o">)</span> <span class="o">{</span>
+<span class="c1">// assigning the values
+</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">xpos</span> <span class="o">=</span> <span class="n">random</span> <span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">600</span><span class="o">);</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">ypos</span><span class="o">;</span>
+<span class="n">xVel</span> <span class="o">=</span> <span class="n">random</span> <span class="o">(-</span><span class="mi">2</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span> <span class="c1">// random,(the length of the random)
+</span>
+<span class="n">yVel</span> <span class="o">=</span> <span class="n">random</span> <span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span> <span class="c1">// controls the speed that the snow falls
+</span>
+<span class="n">partsize</span> <span class="o">=</span> <span class="n">random</span> <span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="mi">10</span><span class="o">);</span>
+<span class="o">}</span>
 
-<p>class Snow {
-Particle[] particles = new Particle[0];
-int maxParticles =100;</p>
+<span class="o">}</span>
 
-<p>Snow() {
-}
-void setMax(int val) {
-maxParticles=val;
-}
-void draw(float ears) {
-particles = (Particle[]) append(particles, new Particle(300, 0));
-if (particles.length&gt;maxParticles) {
-particles = (Particle[]) subset(particles, 1);
-}
-for (int i=0; i&lt;particles.length; i++) {
-particles[i].partsize *=0.975; //make the snow stay reduce size
-particles[i].x += particles[i].xVel;
-particles[i].y += particles[i].yVel;
-if(ears&gt;0.03) {
-particles[i].yVel +=0.2; 
-} else if(ears&gt;0.05) {
-particles[i].yVel +=0.4;
-}
-else if(ears&gt;0.07) {
-particles[i].yVel +=0.6;
-} else if(ears&gt;0.09) {
-particles[i].yVel +=0.8;
-} else {
-particles[i].yVel-=0.1; //reverse gravity</p>
+<span class="kd">class</span> <span class="nc">Snow</span> <span class="o">{</span>
+<span class="n">Particle</span><span class="o">[]</span> <span class="n">particles</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Particle</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
+<span class="kt">int</span> <span class="n">maxParticles</span> <span class="o">=</span><span class="mi">100</span><span class="o">;</span>
 
-<p>}
-ellipse(particles[i].x, particles[i].y, particles[i].partsize, particles[i].partsize);
-}
-}
-}</p>
+<span class="n">Snow</span><span class="o">()</span> <span class="o">{</span>
+<span class="o">}</span>
+<span class="kt">void</span> <span class="nf">setMax</span><span class="o">(</span><span class="kt">int</span> <span class="n">val</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">maxParticles</span><span class="o">=</span><span class="n">val</span><span class="o">;</span>
+<span class="o">}</span>
+<span class="kt">void</span> <span class="nf">draw</span><span class="o">(</span><span class="kt">float</span> <span class="n">ears</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">particles</span> <span class="o">=</span> <span class="o">(</span><span class="n">Particle</span><span class="o">[])</span> <span class="n">append</span><span class="o">(</span><span class="n">particles</span><span class="o">,</span> <span class="k">new</span> <span class="n">Particle</span><span class="o">(</span><span class="mi">300</span><span class="o">,</span> <span class="mi">0</span><span class="o">));</span>
+<span class="k">if</span> <span class="o">(</span><span class="n">particles</span><span class="o">.</span><span class="na">length</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span><span class="n">maxParticles</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">particles</span> <span class="o">=</span> <span class="o">(</span><span class="n">Particle</span><span class="o">[])</span> <span class="n">subset</span><span class="o">(</span><span class="n">particles</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="o">;</span><span class="n">particles</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+<span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">partsize</span> <span class="o">*=</span><span class="mf">0.975</span><span class="o">;</span> <span class="c1">//make the snow stay reduce size
+</span>
+<span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">x</span> <span class="o">+=</span> <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">xVel</span><span class="o">;</span>
+<span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">y</span> <span class="o">+=</span> <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">yVel</span><span class="o">;</span>
+<span class="k">if</span><span class="o">(</span><span class="n">ears</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span><span class="mf">0.03</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">yVel</span> <span class="o">+=</span><span class="mf">0.2</span><span class="o">;</span>
+<span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">ears</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span><span class="mf">0.05</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">yVel</span> <span class="o">+=</span><span class="mf">0.4</span><span class="o">;</span>
+<span class="o">}</span>
+<span class="k">else</span> <span class="nf">if</span><span class="o">(</span><span class="n">ears</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span><span class="mf">0.07</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">yVel</span> <span class="o">+=</span><span class="mf">0.6</span><span class="o">;</span>
+<span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">ears</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;</span><span class="mf">0.09</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">yVel</span> <span class="o">+=</span><span class="mf">0.8</span><span class="o">;</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">yVel</span><span class="o">-=</span><span class="mf">0.1</span><span class="o">;</span> <span class="c1">//reverse gravity
+</span>
 
-<p>void setup() {
-size(640, 440);
-background(90);
-amp2 = new Amplitude(this);
-in2 = new AudioIn(this, 0);
-in2.start();
-amp2.input(in2); 
-mainCircle= new CircleThing(width/2,height/2,45);
-snowfall= new Snow();
-//bg = loadImage(“bg.jpg”);
-//bg.resize(width,height);
-//nyu=loadImage(“nyu.png”);
-//nyu.resize(int(nyu.width<em>0.5),int(nyu.height</em>0.5));
-}</p>
+<span class="o">}</span>
+<span class="n">ellipse</span><span class="o">(</span><span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">x</span><span class="o">,</span> <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">y</span><span class="o">,</span> <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">partsize</span><span class="o">,</span> <span class="n">particles</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">partsize</span><span class="o">);</span>
+<span class="o">}</span>
+<span class="o">}</span>
+<span class="o">}</span>
 
-<p>void draw() {
-background(0);
-ears=amp2.analyze();
-stroke(255);
-strokeWeight(1);
-println(ears);
-fill(255);
-snowfall.draw(ears);
-stroke(75); 
-if(!movable) {</p>
+<span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+<span class="n">size</span><span class="o">(</span><span class="mi">640</span><span class="o">,</span> <span class="mi">440</span><span class="o">);</span>
+<span class="n">background</span><span class="o">(</span><span class="mi">90</span><span class="o">);</span>
+<span class="n">amp2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Amplitude</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+<span class="n">in2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AudioIn</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+<span class="n">in2</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+<span class="n">amp2</span><span class="o">.</span><span class="na">input</span><span class="o">(</span><span class="n">in2</span><span class="o">);</span>
+<span class="n">mainCircle</span><span class="o">=</span> <span class="k">new</span> <span class="n">CircleThing</span><span class="o">(</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="o">,</span><span class="n">height</span><span class="o">/</span><span class="mi">2</span><span class="o">,</span><span class="mi">45</span><span class="o">);</span>
+<span class="n">snowfall</span><span class="o">=</span> <span class="k">new</span> <span class="n">Snow</span><span class="o">();</span>
+<span class="c1">//bg = loadImage("bg.jpg");
+</span>
+<span class="c1">//bg.resize(width,height);
+</span>
+<span class="c1">//nyu=loadImage("nyu.png");
+</span>
+<span class="c1">//nyu.resize(int(nyu.width*0.5),int(nyu.height*0.5));
+</span>
+<span class="o">}</span>
 
-<p>mainCircle.draw(width/2,height/2,ears,190,nyu,false); 
-} else {
-mainCircle.draw(mouseX,mouseY,ears,190,nyu,false); 
-}</p>
+<span class="kt">void</span> <span class="nf">draw</span><span class="o">()</span> <span class="o">{</span>
+<span class="n">background</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+<span class="n">ears</span><span class="o">=</span><span class="n">amp2</span><span class="o">.</span><span class="na">analyze</span><span class="o">();</span>
+<span class="n">stroke</span><span class="o">(</span><span class="mi">255</span><span class="o">);</span>
+<span class="n">strokeWeight</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+<span class="n">println</span><span class="o">(</span><span class="n">ears</span><span class="o">);</span>
+<span class="n">fill</span><span class="o">(</span><span class="mi">255</span><span class="o">);</span>
+<span class="n">snowfall</span><span class="o">.</span><span class="na">draw</span><span class="o">(</span><span class="n">ears</span><span class="o">);</span>
+<span class="n">stroke</span><span class="o">(</span><span class="mi">75</span><span class="o">);</span>
+<span class="k">if</span><span class="o">(!</span><span class="n">movable</span><span class="o">)</span> <span class="o">{</span>
 
-<p>}</p>
+<span class="n">mainCircle</span><span class="o">.</span><span class="na">draw</span><span class="o">(</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="o">,</span><span class="n">height</span><span class="o">/</span><span class="mi">2</span><span class="o">,</span><span class="n">ears</span><span class="o">,</span><span class="mi">190</span><span class="o">,</span><span class="n">nyu</span><span class="o">,</span><span class="kc">false</span><span class="o">);</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="n">mainCircle</span><span class="o">.</span><span class="na">draw</span><span class="o">(</span><span class="n">mouseX</span><span class="o">,</span><span class="n">mouseY</span><span class="o">,</span><span class="n">ears</span><span class="o">,</span><span class="mi">190</span><span class="o">,</span><span class="n">nyu</span><span class="o">,</span><span class="kc">false</span><span class="o">);</span>
+<span class="o">}</span>
 
-<p>void mousePressed() {
-movable=!movable;
-}</p>
+<span class="o">}</span>
 
-<p>void keyPressed() {
-logoDisplay=!logoDisplay;
-}</p>
+<span class="kt">void</span> <span class="nf">mousePressed</span><span class="o">()</span> <span class="o">{</span>
+<span class="n">movable</span><span class="o">=!</span><span class="n">movable</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kt">void</span> <span class="nf">keyPressed</span><span class="o">()</span> <span class="o">{</span>
+<span class="n">logoDisplay</span><span class="o">=!</span><span class="n">logoDisplay</span><span class="o">;</span>
+<span class="o">}</span></pre></td></tr></tbody></table></code></pre></figure>
+
 
     </div>
 
     <footer class="post-footer">
         <div class="share">Share
             <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=My Electronic Music Visualizer Project&p[summary]=[xyz-ihs snippet=”musicCircle”] So for my project this week I wanted to recreate some of the music videos for electronic music on youtube...&p[url]=http://localhost:4000/wenogk.com/engineer/music/my-electronic-music-visualizer-project.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/wenogk.com/engineer/music/my-electronic-music-visualizer-project.html&text=[xyz-ihs snippet=”musicCircle”] So for my project this week I wanted to recreate some of the music videos for electronic music on youtube...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=My Electronic Music Visualizer Project&p[summary]=
+[xyz-ihs snippet=”musicCircle”] So for my project this week I wanted to recreate some of the music videos for electronic music on youtub...&p[url]=http://localhost:4000/wenogk.com/engineer/music/my-electronic-music-visualizer-project.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/wenogk.com/engineer/music/my-electronic-music-visualizer-project.html&text=
+[xyz-ihs snippet=”musicCircle”] So for my project this week I wanted to recreate some of the music videos for electronic music on youtub...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
