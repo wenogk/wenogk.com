@@ -5,8 +5,8 @@
     <description>A rising Senior studying Computer Science. Interested in backend engineering.</description>
     <link>http://localhost:4000/wenogk.com/</link>
     <atom:link href="http://localhost:4000/wenogk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Mar 2020 11:12:18 +0400</pubDate>
-    <lastBuildDate>Sat, 21 Mar 2020 11:12:18 +0400</lastBuildDate>
+    <pubDate>Sat, 21 Mar 2020 11:36:55 +0400</pubDate>
+    <lastBuildDate>Sat, 21 Mar 2020 11:36:55 +0400</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -85,18 +85,28 @@
 </title>
         <description>&lt;p&gt;In 2010, when I was 11 years old, My family and I went to watch The Social Network, a movie about how Facebook was founded. I was deeply motivated by this movie and I started looking into the programming language used to code facebook which was PHP at the time. I started looking into simple html, javascript tutorials first and then went on to look at some PHP tutorials - I quickly realized how powerful this tool is as I could make anything I imagined, all that was required was the thought and the code. I started with simple projects such as asking your name and information and giving you interesting facts to a small product search engine system based on keywords and a MYSQL database, which I amusingly tried to sell online in 2012:&lt;/p&gt;
 
-&lt;p&gt;https://youtu.be/jOnrNe3bhkQ&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/jOnrNe3bhkQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;https://youtu.be/&lt;/p&gt;
 
 &lt;p&gt;My dream at the time had always been to make my own social network. I started by learning how to make my own Login and Registering system including the UI, backend and database. From there it was an exponential learning experience where I kept learning and implementing features that a social network would have such as a wall, profile, like button, commenting etc. which brought me to Myslsm. My school’s name is Sri Lankan School Muscat, Slsm for short. I named the social network Myslsm for this reason.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;&lt;strong&gt;Profile&lt;/strong&gt;&lt;br /&gt;
 With a profile you have an identity in myslsm.com, It contains data about you such as Photo, Name, House , Class, Phone number and a small area to write some information about yourself.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_profile.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Frontyard&lt;/strong&gt;&lt;br /&gt;
 The concept is pretty much the same as in our school frontyard; where everyone is aware of the events taking place. Similarly, the Frontyard in myslsm.com is an open place where anyone can post anything. For example, the POG can post ‘Saturday evening basketball practices are cancelled’&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_frontyard.jpg&quot; alt=&quot;frontyard&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Backyard&lt;/strong&gt;&lt;br /&gt;
 Unlike the frontyard, the backyard is a private wall where only selected people can see your posts, later you will be able to change who can view your posts, thereby personalizing it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_backyard.jpg&quot; alt=&quot;backyard&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Staffroom&lt;/strong&gt;&lt;br /&gt;
 The staffRoom is a place where teachers can share and post but only teachers can see the posts. For example, ‘Teacher Helen, please meet me on Thursday for a short meeting”&lt;/p&gt;
@@ -104,18 +114,26 @@ The staffRoom is a place where teachers can share and post but only teachers can
 &lt;p&gt;&lt;strong&gt;Lessons&lt;/strong&gt;&lt;br /&gt;
 “Lessons” is a feature where anyone can upload a lesson for others to learn like videos, documents, files or youtube educational videos (This will be closely monitored by me). As for now, I have already uploaded the ‘I AM ONLY A CHILD’ video and ‘The CHAOS’ by Gerard Nolst Trenité. ”&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_lessons.jpg&quot; alt=&quot;lessons&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Interval&lt;/strong&gt;&lt;br /&gt;
 Most of the features of the site are for educational purposes but there’s one feature for your free time, anyone can see educational, music, humor videos to entertain themselves, mostly as part of a study break. I have uploaded some popular songs for the time being.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Articles&lt;/strong&gt;&lt;br /&gt;
 This can act as an updated information resource for the school like an online magazine.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_articles.png&quot; alt=&quot;articles&quot; /&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;talk2&quot;&gt;&lt;strong&gt;Talk2&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;One interesting feature that I added onto Myslsm that doesn’t really fit with the other social network features was Talk2. Remember this is in around 2013 where there was no Google Assistant, no Alexa, no machine learning. I made a micro-intelligent bot that could answer questions asked as text input or speech-to-text input (look at image) such as “What is the weather like in &lt;strong&gt;_\&lt;em&gt;_?”, “What is the definition of ___\&lt;/em&gt;_?”, “Tell me about the movie ___\&lt;em&gt;_”, “Search for images of ___\&lt;/em&gt;_”, “Search for ___&lt;/strong&gt;__” and simple conversational precoded statements like, “hi” and, “how are you” and it would answer in text and voice (using the google translate voice api at the time) at the same time.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_talk2.png&quot; alt=&quot;talk2 1&quot; /&gt;
+&lt;img src=&quot;/wenogk.com/assets/images/myslsm_talk2_2.png&quot; alt=&quot;talk2 2&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;I now notice that I realized the power of Google in my talk2 system as the query, “Search for &lt;strong&gt;_\__” would use Google’s then, “I’m feeling lucky” search so basically it would return the first result of the google search for the ___&lt;/strong&gt; as the answer. Google is in my opinion the only entity that can find relavant information in the quadrillions of websites in the world from a single keyword, using its pagerank algorithm, which is why I feel the Google Assistant has a great advantage over Alexa.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_homepage.png&quot; alt=&quot;Homepage&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Jan 2019 06:01:17 +0400</pubDate>
         <link>http://localhost:4000/wenogk.com/engineer/myslsm.html</link>
