@@ -5,15 +5,18 @@
     <description>A rising Senior studying Computer Science. Interested in backend engineering.</description>
     <link>http://localhost:4000/wenogk.com/</link>
     <atom:link href="http://localhost:4000/wenogk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Mar 2020 10:08:27 +0400</pubDate>
-    <lastBuildDate>Sat, 21 Mar 2020 10:08:27 +0400</lastBuildDate>
+    <pubDate>Sat, 21 Mar 2020 11:12:18 +0400</pubDate>
+    <lastBuildDate>Sat, 21 Mar 2020 11:12:18 +0400</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
         <title>iGem competition experience in Boston</title>
-        <description>&lt;p&gt;iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. &lt;strong&gt;Yes, biology.&lt;/strong&gt; I love delving into fields I know nothing about. I became a part of the iGem team at the beginning of this year. To be fair, it can involve a lot of engineering and computer science depending on the project the team is working on.&lt;/p&gt;
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/VPp-tGuRDbI?autoplay=0&amp;amp;showinfo=0&amp;amp;controls=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. &lt;strong&gt;Yes, biology.&lt;/strong&gt; I love delving into fields I know nothing about. I became a part of the iGem team at the beginning of this year. To be fair, it can involve a lot of engineering and computer science depending on the project the team is working on.&lt;/p&gt;
 
 &lt;p&gt;This year we decided to build a device to be used in airports that is non-invasive and can detect 5 diseases using only saliva. No more blood swabs! I was the head of the computer science team. My work first entailed working on the website with the computer science team as it is one of the three things the judges will see (the presentation and the poster being the other two) and developing the WEB API for the device.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;&lt;strong&gt;The Website&lt;/strong&gt;&lt;/p&gt;
 

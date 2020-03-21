@@ -250,7 +250,7 @@ function endStuff() {
 function startScrollMagicStuff() {
 startStuff();
 	var controller = new ScrollMagic.Controller();
-  let pos = $("body").width() - $(".search").width();
+  let pos = $("body").width() - $(".search").width() - $(".user-profile").width();
   var action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
   var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
 					// animate color and top border in relation to scroll position

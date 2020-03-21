@@ -220,23 +220,10 @@
     </header>
 
     <div class="post-content">
-        <p>iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. <strong>Yes, biology.</strong> I love delving into fields I know nothing about. I became a part of the iGem team at the beginning of this year. To be fair, it can involve a lot of engineering and computer science depending on the project the team is working on.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VPp-tGuRDbI?autoplay=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+<p>iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. <strong>Yes, biology.</strong> I love delving into fields I know nothing about. I became a part of the iGem team at the beginning of this year. To be fair, it can involve a lot of engineering and computer science depending on the project the team is working on.</p>
 
 <p>This year we decided to build a device to be used in airports that is non-invasive and can detect 5 diseases using only saliva. No more blood swabs! I was the head of the computer science team. My work first entailed working on the website with the computer science team as it is one of the three things the judges will see (the presentation and the poster being the other two) and developing the WEB API for the device.</p>
-
-<p><strong>The Website</strong></p>
-
-<p>We took inspiration from pages such as the One Plus 7 Pro Phone website with its smooth scrolling animations:</p>
-
-<p>I researched many scroll animation javascript libraries for weeks on end and could not get a library that seemed to work smoothly accross browsers. At the verge of giving up I just decided to inspect element (view source) of the oneplus and apple website and to my surprise they both used the same scroll animation library, <em>scrollmagic.js</em> This was surprising because I thought they’d have implemented the animations from their own animation library or vanilla js. I started working with the scrollmagic library and once I got the hang of it I was amazed at its power. The tween and tweenmax functions allow for precise control of the timing, placement, css styles for the animations and this makes very complex animations possible. After a couple of days hacking around with the library I was able to do parallax scrolling animations just as the oneplus and apple website animations work.</p>
-
-<p>Heres the homepage link: <a href="https://2019.igem.org/Team:NYU_Abu_Dhabi">https://2019.igem.org/Team:NYU_Abu_Dhabi</a> (the website is optimized for desktop viewing)</p>
-
-<p>The github repository can be visited at</p>
-
-<p><strong>The API</strong></p>
-
-<p>Our device, when used at airports all around the world would spit out a large amount of data. We saw a massive potential in this data as it could be used to prevent disease outbreaks.</p>
 
 
 
@@ -248,8 +235,10 @@
     <footer class="post-footer">
         <div class="share">Share
             <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=iGem competition experience in Boston&p[summary]=iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. Yes, biology. I love del...&p[url]=http://localhost:4000/wenogk.com/engineer/igem.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/igem.html&text=iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. Yes, biology. I love del...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=iGem competition experience in Boston&p[summary]=
+iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. Yes, biology. I love de...&p[url]=http://localhost:4000/wenogk.com/engineer/igem.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/igem.html&text=
+iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. Yes, biology. I love de...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -1214,7 +1203,7 @@ function endStuff() {
 function startScrollMagicStuff() {
 startStuff();
 	var controller = new ScrollMagic.Controller();
-  let pos = $("body").width() - $(".search").width();
+  let pos = $("body").width() - $(".search").width() - $(".user-profile").width();
   var action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
   var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
 					// animate color and top border in relation to scroll position
