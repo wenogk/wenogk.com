@@ -56,8 +56,8 @@ defaults:
       comments: "true"
 
 # Serving
-url: ""
-baseurl: "/wenogk.com"
+url: "http://www.wenogk.com"
+baseurl: "/"
 
 # Includes
 include: ["_pages"]
