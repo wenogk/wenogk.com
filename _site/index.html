@@ -517,11 +517,11 @@ Heading...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this
   };
   function startStuff() {
   $(".user-profile").css({padding:"15px","top":"50%", left: "50%","transform": "translate(-50%, -50%)"});
-  $(".user-profile").css("background-color","rgba(256, 256, 256, 0.5)");
+  $(".user-profile").css("background-color","rgba(256, 256, 256, 0.7)");
   $(".user-profile").addClass("fixed");
   $(".mainmenu").css({display : "none"});
   $(".avatar").css({display : "none"});
-  $(".socials a").css({background:"#292825"});
+  //$(".socials a").css({background:"#292825"});
 }
 function endStuff() {
   $(".user-profile").addClass("fixed");
@@ -535,7 +535,7 @@ function startScrollMagicStuff() {
 startStuff();
 	var controller = new ScrollMagic.Controller();
   let pos = $("body").width() - $(".search").width();
-  var action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".socials a", {duration:1,background:"#dfdfdf"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
+  var action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
   var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1

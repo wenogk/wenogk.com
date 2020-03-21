@@ -28,7 +28,7 @@
 		li { margin: 5px;
 			a { @include flexbox(); @include align-items(); @include justify-content(); width: 40px; height: 40px; background: darken($grey-color-lightest, 6%); border-radius: 50%; @include transition(all .1s ease);
 				&:hover { background: $primary-color; }
-				svg * { fill: $white; }
+				svg * { fill: $black; }
 			}
 		}
 	}
