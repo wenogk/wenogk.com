@@ -24,7 +24,18 @@
   color: white;
   border-radius: 5px;
 }
-
+.blue {
+  background-color: #f1f1f1;
+}
+.purple {
+  background: #6200ea;
+}
+.red {
+  background:#e53935;
+}
+.green {
+  background: #2e7d32;
+}
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
   .column {
