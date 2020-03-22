@@ -19,3 +19,8 @@ All of the previous versions of my website ran on Wordpress which was hosted on 
  * I paid for shared VPS hosting, which wasn't the best therefore the website was rather slow to load.
  * Wordpress doesn't give me enough control of my own website, I found myself installing a thousand plugins to do everything I wanted whereas I could have done it in a couple of minutes if I had complete access to the code rather than having to make a PHP workaround on Wordpress's already designed system.
  * Too many dependancies, there's databases for literally everything stored in MySQL, even the wordpress admin password so when I want to backup and restore I need to restore not only all the wordpress files but also all the SQL files.
+ * Wordpress is heavy, which I think is another factor that made the website slow to load.
+
+I was intrigued by Jekyll when I first read about it.
+
+>Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. Written in Ruby by Tom Preston-Werner, GitHub's co-founder, it is distributed under the open source MIT license. ~ <a href="https://en.wikipedia.org/wiki/Jekyll_(software)" >Wikipedia</a>
