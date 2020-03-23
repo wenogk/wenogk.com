@@ -25,7 +25,7 @@ I also added some small features such as click to move the circle, added some te
 * * *
 
 The Code is written in Java specifically for the processing environment: I created a, 'circleThing' class which is the circle in the middle that increases its size depending on the Amplitude (note:not frequency). I got the snow effect code from a website online that had a 'Particle' class and the rest of that snow code was procedural code. I enhanced it by making a 'Snow' class that created 'Particle' objects and was generalized so it was customizable. The speed of the snow fall depended on the Amplitude and when it was low I made it reverse the 'gravity' with a negative value.
-{% highlight java linenos %}
+{% highlight java %}
 import processing.sound.*;
 
 Amplitude amp2;
