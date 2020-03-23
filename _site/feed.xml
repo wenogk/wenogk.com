@@ -3,11 +3,43 @@
   <channel>
     <title></title>
     <description>A rising Senior studying Computer Science. Interested in backend engineering.</description>
-    <link>http://localhost:4000/wenogk.com/</link>
-    <atom:link href="http://localhost:4000/wenogk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Mar 2020 20:51:20 +0400</pubDate>
-    <lastBuildDate>Sat, 21 Mar 2020 20:51:20 +0400</lastBuildDate>
+    <link>http://localhost:4000//</link>
+    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 23 Mar 2020 21:04:43 +0400</pubDate>
+    <lastBuildDate>Mon, 23 Mar 2020 21:04:43 +0400</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Redesigning this website</title>
+        <description>&lt;p&gt;I’ve completely redesigned and revamped my website. The stack used is Jekyll with ruby on rails and is now hosted on Github pages.&lt;/p&gt;
+
+&lt;p&gt;All of the previous versions of my website ran on Wordpress which was hosted on Hostinger. Let me list out the problems I had with it to explain why I needed this redesign. &lt;!--more--&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I paid for shared VPS hosting, which wasn’t the best therefore the website was rather slow to load.&lt;/li&gt;
+  &lt;li&gt;Wordpress doesn’t give me enough control of my own website, I found myself installing a thousand plugins to do everything I wanted whereas I could have done it in a couple of minutes if I had complete access to the code rather than having to make a PHP workaround on Wordpress’s already designed system.&lt;/li&gt;
+  &lt;li&gt;Too many dependancies, there’s databases for literally everything stored in MySQL, even the wordpress admin password so when I want to backup and restore I need to restore not only all the wordpress files but also all the SQL files.&lt;/li&gt;
+  &lt;li&gt;Wordpress is heavy, which I think is another factor that made the website slow to load.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I was intrigued by Jekyll when I first read about it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. Written in Ruby by Tom Preston-Werner, GitHub’s co-founder, it is distributed under the open source MIT license. ~ &lt;a href=&quot;https://en.wikipedia.org/wiki/Jekyll_(software)&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sun, 22 Mar 2020 10:04:01 +0400</pubDate>
+        <link>http://localhost:4000//engineer/redesign-website.html</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/redesign-website.html</guid>
+        
+        <category>jekyll</category>
+        
+        <category>website</category>
+        
+        
+        <category>engineer</category>
+        
+      </item>
     
       <item>
         <title>iGem competition experience in Boston</title>
@@ -34,8 +66,8 @@
 
 </description>
         <pubDate>Mon, 11 Nov 2019 06:11:30 +0400</pubDate>
-        <link>http://localhost:4000/wenogk.com/engineer/igem.html</link>
-        <guid isPermaLink="true">http://localhost:4000/wenogk.com/engineer/igem.html</guid>
+        <link>http://localhost:4000//engineer/igem.html</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/igem.html</guid>
         
         
         <category>engineer</category>
@@ -83,8 +115,8 @@
 &lt;p&gt;What shocked me however, is how the loophole was fixed within a day of my report, and my method never worked again. I felt accomplished even though I wasn’t given credit for the loophole, I felt as though I had made a change to Facebook, a billion dollar company, myself, being the mischievous 14 year old boy I was sitting in my bedroom after school with my mini laptop.&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Jan 2019 14:01:23 +0400</pubDate>
-        <link>http://localhost:4000/wenogk.com/hacker/facebook-loophole.html</link>
-        <guid isPermaLink="true">http://localhost:4000/wenogk.com/hacker/facebook-loophole.html</guid>
+        <link>http://localhost:4000//hacker/facebook-loophole.html</link>
+        <guid isPermaLink="true">http://localhost:4000//hacker/facebook-loophole.html</guid>
         
         
         <category>hacker</category>
@@ -105,17 +137,17 @@
 &lt;p&gt;&lt;strong&gt;Profile&lt;/strong&gt;&lt;br /&gt;
 With a profile you have an identity in myslsm.com, It contains data about you such as Photo, Name, House , Class, Phone number and a small area to write some information about yourself.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_profile.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_profile.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Frontyard&lt;/strong&gt;&lt;br /&gt;
 The concept is pretty much the same as in our school frontyard; where everyone is aware of the events taking place. Similarly, the Frontyard in myslsm.com is an open place where anyone can post anything. For example, the POG can post ‘Saturday evening basketball practices are cancelled’&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_frontyard.jpg&quot; alt=&quot;frontyard&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_frontyard.jpg&quot; alt=&quot;frontyard&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Backyard&lt;/strong&gt;&lt;br /&gt;
 Unlike the frontyard, the backyard is a private wall where only selected people can see your posts, later you will be able to change who can view your posts, thereby personalizing it.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_backyard.jpg&quot; alt=&quot;backyard&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_backyard.jpg&quot; alt=&quot;backyard&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Staffroom&lt;/strong&gt;&lt;br /&gt;
 The staffRoom is a place where teachers can share and post but only teachers can see the posts. For example, ‘Teacher Helen, please meet me on Thursday for a short meeting”&lt;/p&gt;
@@ -123,7 +155,7 @@ The staffRoom is a place where teachers can share and post but only teachers can
 &lt;p&gt;&lt;strong&gt;Lessons&lt;/strong&gt;&lt;br /&gt;
 “Lessons” is a feature where anyone can upload a lesson for others to learn like videos, documents, files or youtube educational videos (This will be closely monitored by me). As for now, I have already uploaded the ‘I AM ONLY A CHILD’ video and ‘The CHAOS’ by Gerard Nolst Trenité. ”&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_lessons.jpg&quot; alt=&quot;lessons&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_lessons.jpg&quot; alt=&quot;lessons&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Interval&lt;/strong&gt;&lt;br /&gt;
 Most of the features of the site are for educational purposes but there’s one feature for your free time, anyone can see educational, music, humor videos to entertain themselves, mostly as part of a study break. I have uploaded some popular songs for the time being.&lt;/p&gt;
@@ -131,22 +163,22 @@ Most of the features of the site are for educational purposes but there’s one 
 &lt;p&gt;&lt;strong&gt;Articles&lt;/strong&gt;&lt;br /&gt;
 This can act as an updated information resource for the school like an online magazine.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_articles.png&quot; alt=&quot;articles&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_articles.png&quot; alt=&quot;articles&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;talk2&quot;&gt;&lt;strong&gt;Talk2&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;One interesting feature that I added onto Myslsm that doesn’t really fit with the other social network features was Talk2. Remember this is in around 2013 where there was no Google Assistant, no Alexa, no machine learning. I made a micro-intelligent bot that could answer questions asked as text input or speech-to-text input (look at image) such as “What is the weather like in &lt;strong&gt;_\&lt;em&gt;_?”, “What is the definition of ___\&lt;/em&gt;_?”, “Tell me about the movie ___\&lt;em&gt;_”, “Search for images of ___\&lt;/em&gt;_”, “Search for ___&lt;/strong&gt;__” and simple conversational precoded statements like, “hi” and, “how are you” and it would answer in text and voice (using the google translate voice api at the time) at the same time.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_talk2.png&quot; alt=&quot;talk2 1&quot; /&gt;
-&lt;img src=&quot;/wenogk.com/assets/images/myslsm_talk2_2.png&quot; alt=&quot;talk2 2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_talk2.png&quot; alt=&quot;talk2 1&quot; /&gt;
+&lt;img src=&quot;//assets/images/myslsm_talk2_2.png&quot; alt=&quot;talk2 2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I now notice that I realized the power of Google in my talk2 system as the query, “Search for &lt;strong&gt;_\__” would use Google’s then, “I’m feeling lucky” search so basically it would return the first result of the google search for the ___&lt;/strong&gt; as the answer. Google is in my opinion the only entity that can find relavant information in the quadrillions of websites in the world from a single keyword, using its pagerank algorithm, which is why I feel the Google Assistant has a great advantage over Alexa.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/myslsm_homepage.png&quot; alt=&quot;Homepage&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_homepage.png&quot; alt=&quot;Homepage&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Jan 2019 06:01:17 +0400</pubDate>
-        <link>http://localhost:4000/wenogk.com/engineer/myslsm.html</link>
-        <guid isPermaLink="true">http://localhost:4000/wenogk.com/engineer/myslsm.html</guid>
+        <link>http://localhost:4000//engineer/myslsm.html</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/myslsm.html</guid>
         
         
         <category>engineer</category>
@@ -158,8 +190,8 @@ This can act as an updated information resource for the school like an online ma
         <description>
 </description>
         <pubDate>Mon, 03 Dec 2018 09:12:57 +0400</pubDate>
-        <link>http://localhost:4000/wenogk.com/entrepreneur/expo-2020-university-innovation-winner.html</link>
-        <guid isPermaLink="true">http://localhost:4000/wenogk.com/entrepreneur/expo-2020-university-innovation-winner.html</guid>
+        <link>http://localhost:4000//entrepreneur/expo-2020-university-innovation-winner.html</link>
+        <guid isPermaLink="true">http://localhost:4000//entrepreneur/expo-2020-university-innovation-winner.html</guid>
         
         
         <category>entrepreneur</category>
@@ -174,11 +206,11 @@ This can act as an updated information resource for the school like an online ma
 
 &lt;p&gt;Thousand likes. I got a thousand likes on the post. To a normal 13 year old on social media who usually gets a max of 30 likes, a thousand likes is beyond ones imagination. But I wouldn’t call myself a normal 13 year old, being the devious kid I was, I saw an opportunity. With such a large reach and with the reach being Sean Parker, the president of Facebook’s followers, I could use this to my advantage. I set up a phishing page on my web server, which is basically a clone of the facebook login page, except when a user enters their username and password, I wrote a simple PHP script where their login details are conveniently sent to me. I then posted a link to it on my Facebook saying, “Hey guys check out this new version of Facebook!”, tagging Sean Parker, the president of Facebook. Five seconds after I posted I refreshed the text file that would have the login details. Nothing. Ten seconds. Nothing again. It didn’t work.     I reloaded again. One hundred lines, with login details of Sean Parker’s following. Five seconds later. Another hundred. I was overwhelmed. I closed my mini HP laptop and started wondering why I did this in the first place. I couldn’t understand why then but I do now, I did it simply because I could, not taking a moment to see if it was right or wrong. I opened my laptop again and I see a blip in the messages section on Facebook notifying me that I have a private message. It was Sean Parker.  &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/seanparker_msg.png&quot; alt=&quot;sean&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/seanparker_msg.png&quot; alt=&quot;sean&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Oct 2018 11:10:50 +0400</pubDate>
-        <link>http://localhost:4000/wenogk.com/hacker/thoughts/how-i-hacked-sean-parkers-facebook.html</link>
-        <guid isPermaLink="true">http://localhost:4000/wenogk.com/hacker/thoughts/how-i-hacked-sean-parkers-facebook.html</guid>
+        <link>http://localhost:4000//hacker/thoughts/how-i-hacked-sean-parkers-facebook.html</link>
+        <guid isPermaLink="true">http://localhost:4000//hacker/thoughts/how-i-hacked-sean-parkers-facebook.html</guid>
         
         
         <category>hacker</category>
@@ -189,20 +221,20 @@ This can act as an updated information resource for the school like an online ma
     
       <item>
         <title>Designing and Laser Cutting a Cardboard Bicycle</title>
-        <description>&lt;p&gt;&lt;img style=&quot;width:auto;height:250px;&quot; src=&quot;/wenogk.com/assets/images/bike_8.jpeg&quot; align=&quot;center&quot; /&gt;&lt;br /&gt;
+        <description>&lt;p&gt;&lt;img style=&quot;width:auto;height:250px;&quot; src=&quot;//assets/images/bike_8.jpeg&quot; align=&quot;center&quot; /&gt;&lt;br /&gt;
 So I decided I want to make a bicycle, but I didn’t know how a bike worked and what exactly each component looked like. Cardboard was the material I chose to use because of its availability as it can be easily found in scraps so I’d be able to do many retries with the laser cutter.
 &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;My first step was to research on bicycles:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/bike_1.png&quot; alt=&quot;Bike&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/bike_1.png&quot; alt=&quot;Bike&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Turns out, figuring out the different parts and components of a bicycle was harder than I thought. I started by drawing some sketches:&lt;/p&gt;
 &lt;table align=&quot;center&quot;&gt;
 &lt;tr&gt;&lt;td&gt;
-&lt;img src=&quot;/wenogk.com/assets/images/bike_2.jpg&quot; /&gt;
+&lt;img src=&quot;//assets/images/bike_2.jpg&quot; /&gt;
 &lt;/td&gt;&lt;td&gt;
-&lt;img src=&quot;/wenogk.com/assets/images/bike_3.jpg&quot; /&gt;
+&lt;img src=&quot;//assets/images/bike_3.jpg&quot; /&gt;
 &lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 
@@ -214,11 +246,11 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
 
 &lt;table align=&quot;center&quot;&gt;
 &lt;tr&gt;&lt;td&gt;
-&lt;img src=&quot;/wenogk.com/assets/images/bike_4.jpg&quot; style=&quot;width:200px&quot; /&gt;
+&lt;img src=&quot;//assets/images/bike_4.jpg&quot; style=&quot;width:200px&quot; /&gt;
 &lt;/td&gt;&lt;td&gt;
-&lt;img src=&quot;/wenogk.com/assets/images/bike_5.jpg&quot; style=&quot;width:200px&quot; /&gt;
+&lt;img src=&quot;//assets/images/bike_5.jpg&quot; style=&quot;width:200px&quot; /&gt;
 &lt;/td&gt;&lt;td&gt;
-&lt;img src=&quot;/wenogk.com/assets/images/bike_6.jpg&quot; style=&quot;width:200px&quot; /&gt;
+&lt;img src=&quot;//assets/images/bike_6.jpg&quot; style=&quot;width:200px&quot; /&gt;
 &lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 
@@ -226,14 +258,14 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/DAOf7abyUTE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/bike_7.jpg&quot; alt=&quot;Bike&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/bike_7.jpg&quot; alt=&quot;Bike&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Putting it all together with some watch screws and tape and we get:
-&lt;img src=&quot;/wenogk.com/assets/images/bike_8.jpeg&quot; alt=&quot;Bike&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;//assets/images/bike_8.jpeg&quot; alt=&quot;Bike&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Sep 2018 12:09:36 +0400</pubDate>
-        <link>http://localhost:4000/wenogk.com/engineer/designing-and-laser-cutting-a-cardboard-bicycle.html</link>
-        <guid isPermaLink="true">http://localhost:4000/wenogk.com/engineer/designing-and-laser-cutting-a-cardboard-bicycle.html</guid>
+        <link>http://localhost:4000//engineer/designing-and-laser-cutting-a-cardboard-bicycle.html</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/designing-and-laser-cutting-a-cardboard-bicycle.html</guid>
         
         <category>laser cutter</category>
         
@@ -767,8 +799,8 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
 
 </description>
         <pubDate>Fri, 28 Sep 2018 06:09:32 +0400</pubDate>
-        <link>http://localhost:4000/wenogk.com/engineer/music/Air-music-player.html</link>
-        <guid isPermaLink="true">http://localhost:4000/wenogk.com/engineer/music/Air-music-player.html</guid>
+        <link>http://localhost:4000//engineer/music/Air-music-player.html</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/music/Air-music-player.html</guid>
         
         
         <category>engineer</category>
@@ -798,8 +830,8 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
 &lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/wenogk/Almadina_Internship&quot;&gt;https://github.com/wenogk/Almadina_Internship&lt;/a&gt; I couldn’t add the code I wrote for the company as they told me it wouldn’t be a good idea to do so.&lt;/p&gt;
 </description>
         <pubDate>Sat, 08 Sep 2018 09:09:58 +0400</pubDate>
-        <link>http://localhost:4000/wenogk.com/hacker/thoughts/my-first-software-enginneering-internship.html</link>
-        <guid isPermaLink="true">http://localhost:4000/wenogk.com/hacker/thoughts/my-first-software-enginneering-internship.html</guid>
+        <link>http://localhost:4000//hacker/thoughts/my-first-software-enginneering-internship.html</link>
+        <guid isPermaLink="true">http://localhost:4000//hacker/thoughts/my-first-software-enginneering-internship.html</guid>
         
         
         <category>hacker</category>
@@ -810,7 +842,7 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
     
       <item>
         <title>Experience: Winning an international hackathon</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/hackathon_3.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;//assets/images/hackathon_3.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It was 8pm the day before the Hackathon, my suitemate knocks on my door and challenges me…..for a table tennis match. We play table tennis, &lt;strong&gt;seriously&lt;/strong&gt;. By seriously I mean playing for six hours straight, sweating, aching legs, and raising our voices causing random students who pass by to look at us weird. It’s 2am when I go back to my room, I just fall on my bed and think of the hackathon(which starts at 6am) the next day, &lt;em&gt;‘No way I’m going to go for that, I’m way too tired’&lt;/em&gt;, and I doze off in a flash.&lt;/p&gt;
 
@@ -832,7 +864,7 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
   &lt;p&gt;What if someone was lost and sends our system an sms with his name, age location, small message, and their family at any time could again sms our system with their loved one’s name and age and  his family will be notified that he is safe and they will be able to get in contact. This would work well for refugees who don’t have their own phone numbers or contact methods.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/hackathon_5.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/hackathon_5.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;That was basically one of our final ideas that we submitted. Yes, we had to submit a set of ideas and get one of it approved by the judges to actually work on it. This rule was annoying but surprisingly worked well for us.&lt;/p&gt;
 
@@ -842,7 +874,7 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
 
 &lt;p&gt;We worked really hard with our mentors for two sleepless nights, going home at around 3am to sleep a few hours only to come back and work. The morning of the final day of the hackathon, we had a full working prototype of a system where a family could upload a picture of their loved one and our system would go through thousands of hours of refugee camp videos that were widely available and find where this individual is and inform the family where exactly he/she is.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/hackathon_4.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/hackathon_4.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We presented and demoed our project and weren’t too confident about the final outcome. Just a second before the final winner announcement comes up, our mentor looked back in us and said, “Tough luck guys, I don’t think we got this.” and I was flabbergasted. The next second, “And the winner of the7th ANNUAL NYUAD HACKATHON FOR SOCIAL GOOD IN THE ARAB WORLD is Boosala”. “Boosala” means find in arabic, which we felt did justice to our app. One thing that hit me though, after all the excitement of winning, was that if my roommate didn’t wake me up, things would’ve been a little different.&lt;/p&gt;
 
@@ -896,122 +928,20 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
   &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.instagram.com/p/BiJ7zCFlYzK/?r=wa1&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://www.instagram.com/p/BiJ7zCFlYzK/?r%3Dwa1&amp;amp;source=gmail&amp;amp;ust=1531060164721000&amp;amp;usg=AFQjCNGARJa6Or1tzWCAS_DP5elXMNmL6w&quot;&gt;Abu Dhabi TV – Instagram&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/hackathon_1.png&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/hackathon_1.png&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/hackathon_2.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/hackathon_2.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/wenogk.com/assets/images/hackathon_6.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/hackathon_6.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 07 Jul 2018 06:07:05 +0400</pubDate>
-        <link>http://localhost:4000/wenogk.com/hacker/thoughts/experience-winning-an-international-hackathon.html</link>
-        <guid isPermaLink="true">http://localhost:4000/wenogk.com/hacker/thoughts/experience-winning-an-international-hackathon.html</guid>
+        <link>http://localhost:4000//hacker/thoughts/experience-winning-an-international-hackathon.html</link>
+        <guid isPermaLink="true">http://localhost:4000//hacker/thoughts/experience-winning-an-international-hackathon.html</guid>
         
         
         <category>hacker</category>
         
         <category>thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>DJ Music Mashup (Using XBOX Kinect)</title>
-        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Hx1hjPbIwps&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;em&gt;This is my Intro to Interactive Media - Final Class Project documentation.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Background&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;My final project was a, “DJ Mixer” where the user could use his/her own hands to control and mix two songs together to play at the same time. For example, Ed Sheerans’s shape of you background music could be played with Justin Bieber singing love yourself. 
-&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Timeline&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;1) Used the Minim Processing library to simply play 2 songs at the same time, one kareoke and one acapella, and was working on a volume controller which looked like this initially and worked with the cursor on the computer:&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/klaOZvq5vY8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;2) Integrated it to the kinect using  a library by Dan Shiffman and added pause buttons.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vmfNd11BjaQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;3) Added many more songs, removed pause buttons, instead the currently playing song could be hovered on to pause.  &lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Hx1hjPbIwps&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;4) I then made many improvements to the previous version:
-    * I improved the design a bit.
-    * Cropped the mp3 files of the songs to go directly to the music rather than a pause or an intro as many of the youtube videos had them.
-    * Made the webcam visible in a small area at the bottom.
-    * I also made the volume be always visible to the user as it wasn’t clear to them that that functionality was possible.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/G8BqVScv9_s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;5) The final update was mainly a huge UI and Design bump which I will go over in the next section. I also added a, “DJ Training” stage in order to train users on how to move the hand around the screen to select stuff. (In the video below I use the computer cursor as the pointer for demo purposes)&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/NqFCkTqgUcI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;strong&gt;Technical Aspect&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The base of my project was not hard to make. I am glad I went with the object oriented approach as I’m sure it saved me TONS of time as I started making many upgrades to it. I created a Song class that included the functionality of instantiating the song with its song file, displaying the song on the screen, having on hover functionality for that song, playing and pausing functions. I then made an array of Song objects in a songs array and instantiated them all. This made it trivial to add new songs. Using an object oriented approach allowed me to implement the volume controller class and add in many design improvements such as font and on hover shading easily.   The controlling of the cursor was perhaps the most important part technically as it is what gives the user the ability to interact with my project so it had to be as seamless as possible which is why I focused on it a lot. The kinect integration was simple as I got the code from Dan Shiffmans website. However, the detection of the hand was VERY buggy initially and I had to make many changes to optimize it specifically for my requirement:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The first important thing I did was make the cursor return to a specific spot if there is no depth greater than the threshold value. This reduced some unintentional clicking.&lt;/li&gt;
-  &lt;li&gt;The second is that I optimized Dan Shiffman’s Kinect class to suit my needs by adding 2 counters: one totalArea counter which increments in the for loop and one handArea counter which also increments in the for loop but only when the depth is greater than the threshold value. I then only allowed the movement of the cursor if handArea/totalArea=0.065 as after some testing found that the hand is less than 6.5% of the total kinect screen.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;I made everything hover based, any song, pause button and volume control has its own counter which I use to make it function only when the cursor hovers over that part for some time. This dramatically reduced unintentional clicks.&lt;/p&gt;
-
-    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wyOim_4ckV0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Design and Interactivity&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;As you have seem there was a bump in the design from the 90% ready project and the 100% ready project. Let me take you through some of my decisions.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The adding of icons was important as professor suggested, as it gave the users a clear idea of what would happen when clicked which is why I used icons for pause, and a sound icon near the volume controllers. This worked well in practice as I didn’t have to explain much to the users, they simply knew what to do.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table align=&quot;center&quot;&gt;
-&lt;tr&gt;&lt;td&gt;
-&lt;img src=&quot;/wenogk.com/assets/images/dj_1.png&quot; /&gt;
-&lt;/td&gt;&lt;td&gt;
-&lt;img src=&quot;/wenogk.com/assets/images/dj_2.png&quot; /&gt;
-&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;I added a hover shade effect when a user hovers over a song name and a color change to the pause buttons when hovered. I did this so that first time users would know that the song is indeed clickable (or pause button). It almost gives the, ‘hyperlink’ feel to the user which is familiar to them and hence serves my project better in terms of interaction.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I worked hard on the volume controller, which is why it has its own class. I wanted to design it just like a volume controller in a dj rack where the user could move a knob along a slider in order to control the volume. I did this so the user could relate what they see to a volume knob in a sound mixer in order to know what the volume controller does.  The background of the volume controller initially were horizontal, equally spaced lines but I decided to make it random constantly moving lines to give it a live feel so that the user knows that something can be done by using it&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table align=&quot;center&quot;&gt;
-&lt;tr&gt;&lt;td&gt;
-&lt;img src=&quot;/wenogk.com/assets/images/dj_3.jpg&quot; /&gt;
-&lt;/td&gt;&lt;td&gt;
-&lt;img src=&quot;/wenogk.com/assets/images/dj_4.gif&quot; /&gt;
-&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I needed a good font as the one I selected initially wasn’t appealing to many users. I wanted a font that would be:
-    &lt;ul&gt;
-      &lt;li&gt;Easy to read&lt;/li&gt;
-      &lt;li&gt;Had some type of old-school tech feel to it (like how text is displayed on a small LED display)&lt;/li&gt;
-      &lt;li&gt;Seemed intriguing to catch some passer-by’s attention After some considerable research, I found a font called “underwood”, which seemed like a good choice as it fit my criteria.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The background image of a DJ rack that I found on google images was a nice addition as it fit my project well. The two racks seemed cohesive with the two sides (kareoke and acapella) that the user could choose songs from. Many users actually started hovering over the DJ racks themselves thinking it would do something.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 28 Jun 2018 11:06:10 +0400</pubDate>
-        <link>http://localhost:4000/wenogk.com/engineer/music/dj-music-mashup-using-xbox-kinect.html</link>
-        <guid isPermaLink="true">http://localhost:4000/wenogk.com/engineer/music/dj-music-mashup-using-xbox-kinect.html</guid>
-        
-        
-        <category>engineer</category>
-        
-        <category>music</category>
         
       </item>
     

@@ -17,7 +17,7 @@
     
     <meta name="twitter:site" content="@your_handler" />
     
-    <meta property="og:url" content="http://localhost:4000/wenogk.com/" />
+    <meta property="og:url" content="http://localhost:4000//" />
 
     <meta property="og:image" content="" />
     <meta name="twitter:image" content="" />
@@ -94,11 +94,11 @@
     
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     
-    <link rel="stylesheet" href="http://localhost:4000/wenogk.com/assets/css/main.css">
-
-    <link rel="canonical" href="http://localhost:4000/wenogk.com/">
-
-    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/wenogk.com/feed.xml">
+    <link rel="stylesheet" href="http://localhost:4000//assets/css/main.css">
+    <link rel="stylesheet" href="http://localhost:4000//assets/css/grid.css">
+<link rel="stylesheet" href="http://localhost:4000//assets/css/emoji.css">
+    <link rel="canonical" href="http://localhost:4000//">
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000//feed.xml">
 
 </head>
 
@@ -159,7 +159,7 @@ var animationPls = true;
 <div class="headerx">
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="http://localhost:4000/wenogk.com/assets/videos/bgVideo.mp4" type="video/mp4">
+      <source src="http://localhost:4000//assets/videos/bgVideo.mp4" type="video/mp4">
     </video>
     <div class="container h-100">
       <div class="d-flex h-100 text-center align-items-center">
@@ -179,7 +179,7 @@ var animationPls = true;
     </div>
 
     <div class="compact-header">
-        <a class="avatar" href="http://localhost:4000/wenogk.com"><img alt="Avatar" src="https://i.postimg.cc/ZKK9nJv7/IMG-20171129-084752-402.jpg" /></a>
+        <a class="avatar" href="http://localhost:4000/"><img alt="Avatar" class="profile_pic" src="https://i.postimg.cc/ZKK9nJv7/IMG-20171129-084752-402.jpg" /></a>
         <div class="my-info">
             <strong class="my-name">Romeno Wenogk</strong>
             <span class="my-job-title">Hacker</span>
@@ -192,7 +192,7 @@ var animationPls = true;
     
         
         <div class="mainmenu">
-            <a href="http://localhost:4000/wenogk.com" class="active">Home</a>
+            <a href="http://localhost:4000/" class="active">Home</a>
             
                 
             
@@ -201,7 +201,11 @@ var animationPls = true;
                 
             
                 
-                    <a href="http://localhost:4000/wenogk.com/portfolio/" >Portfolio</a>
+                    <a href="http://localhost:4000//portfolio/" >Portfolio</a>
+                
+            
+                
+            
                 
             
                 
@@ -226,21 +230,21 @@ var animationPls = true;
         
     
     <ul class="socials">
-        <li><a href="https://www.instagram.com/wenogk/"><svg title="instagram" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#instagram-icon"></use></svg></a></li><li><a href="https://github.com/wenogk/"><svg title="github" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#github-icon"></use></svg></a></li>
+        <li class="social_btn"><a href="https://www.instagram.com/wenogk/"><svg title="instagram" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#instagram-icon"></use></svg></a></li><li class="social_btn"><a href="https://github.com/wenogk/"><svg title="github" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#github-icon"></use></svg></a></li>
 
         
-            <li><a href="mailto:drf325@nyu.edu"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#email-icon"></use></svg></a></li>
+            <li class="social_btn"><a href="mailto:drf325@nyu.edu"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#email-icon"></use></svg></a></li>
         
 
         
-         <li><a href="http://localhost:4000/wenogk.com/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+         <li class="social_btn"><a href="http://localhost:4000//feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
         
     </ul>
 </aside>
 
           </div>
             <main class="the-content" role="main">
-                <div class="search" role="search">
+                <div id="scrollTriggerPinnedPosts"></div><div class="search" role="search">
     <div>
         <div class="show-results-count">0 Results</div>
         <div class="search-holder">
@@ -250,25 +254,130 @@ var animationPls = true;
     <ul id="results-container" class="results-container"></ul>
 </div>
 
+                
+<article class="post page single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-                <article class="post page single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-        <h2 itemprop="name headline">Interesting Posts</h2>
+        <h2 itemprop="name headline">First time here? Check these out.</h2>
     </header>
 
-    <div class="post-content">
-      this is cool
+    <div class="row">
+
+      <div class="column">
+        <a href ="http://www.google.com"><div class="card blue pin1">
+          <p><span class="ec ec-metal"></span>
+ Social Network I built for my highschool</p>
+        </div>
+        </a>
+      </div>
+
+      <div class="column">
+        <div class="card red pin2">
+          <p>Finding a bug on facebook <span class="ec ec-keyboard"></span></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card purple pin3">
+          <p><span class="ec ec-trophy"></span>Winning a hackathon </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card green pin4">
+          <p><span class="ec ec-twisted-rightwards-arrows"></span>
+Building a DJ mashup software using XBOX Kinect</p>
+        </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="column">
+        <div class="card red pin5">
+          <p>My first music piece <span class="ec ec-headphones"></span>
+</p>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card blue pin6">
+          <p><span class="ec ec-coffin"></span> Visualizing death</p>
+        </div>
+      </div>
+
+
+
+      <div class="column">
+        <div class="card green pin7">
+          <p><span class="ec ec-notes"></span> Building an electronic music visualizer</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card purple pin8">
+          <p><span class="ec ec-robot"></span>
+
+Building a youtube commenting bot to win $1000  <span class="ec ec-moneybag"></span><span class="ec ec-moneybag"></span>
+</p>
+        </div>
+      </div>
+    </div>
+      <h2 itemprop="name headline">Or keep scrolling to see the latest posts.</h2>
 </article>
 
                 
 <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
         <ul>
+            <li><time datetime="2020-03-22T10:04:01+04:00" itemprop="datePublished">22 Mar, 2020</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//engineer/redesign-website.html">Redesigning this website</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>I’ve completely redesigned and revamped my website. The stack used is Jekyll with ruby on rails and is now hosted on Github pages.</p>
+
+<p>All of the previous versions of my website ran on Wordpress which was hosted on Hostinger. Let me list out the problems I had with it to explain why I needed this redesign.</p>
+
+
+
+        
+            <p><a href="http://localhost:4000//engineer/redesign-website.html" role="button">Read More</a></p>
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Redesigning this website&p[summary]=I’ve completely redesigned and revamped my website. The stack used is Jekyll with ruby on rails and is now hosted on Github pages.
+
+All o...&p[url]=http://localhost:4000//engineer/redesign-website.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/redesign-website.html&text=I’ve completely redesigned and revamped my website. The stack used is Jekyll with ruby on rails and is now hosted on Github pages.
+
+All o...&hashtags=jekyll,website," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000//tag/jekyll">jekyll</a></li>
+                
+                <li><a href="http://localhost:4000//tag/website">website</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
             <li><time datetime="2019-11-11T06:11:30+04:00" itemprop="datePublished">11 Nov, 2019</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/engineer/igem.html">iGem competition experience in Boston</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//engineer/igem.html">iGem competition experience in Boston</a></h2>
     </header>
 
     <div class="post-content">
@@ -280,7 +389,7 @@ var animationPls = true;
 
 
         
-            <p><a href="http://localhost:4000/wenogk.com/engineer/igem.html" role="button">Read More</a></p>
+            <p><a href="http://localhost:4000//engineer/igem.html" role="button">Read More</a></p>
         
     </div>
 
@@ -288,9 +397,9 @@ var animationPls = true;
         <div class="share">Share
             <ul class="social-networks">
                 <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=iGem competition experience in Boston&p[summary]=
-iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. Yes, biology. I love de...&p[url]=http://localhost:4000/wenogk.com/engineer/igem.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. Yes, biology. I love de...&p[url]=http://localhost:4000//engineer/igem.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
                 <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/igem.html&text=
-iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. Yes, biology. I love de...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. Yes, biology. I love de...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -309,7 +418,7 @@ iGem, The International Genetically Engineered Machine competition is a worldwid
             <li><time datetime="2019-01-20T14:01:23+04:00" itemprop="datePublished">20 Jan, 2019</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/hacker/facebook-loophole.html">How I found a loophole in Facebook's messaging system when I was 14</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//hacker/facebook-loophole.html">How I found a loophole in Facebook's messaging system when I was 14</a></h2>
     </header>
 
     <div class="post-content">
@@ -320,15 +429,15 @@ iGem, The International Genetically Engineered Machine competition is a worldwid
 
 
         
-            <p><a href="http://localhost:4000/wenogk.com/hacker/facebook-loophole.html" role="button">Read More</a></p>
+            <p><a href="http://localhost:4000//hacker/facebook-loophole.html" role="button">Read More</a></p>
         
     </div>
 
     <footer class="post-footer">
         <div class="share">Share
             <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=How I found a loophole in Facebook's messaging system when I was 14&p[summary]=I was watching the news one day and I saw a report on a Palestinian man who found a bug on Facebook that allowed anyone to post on anyone...&p[url]=http://localhost:4000/wenogk.com/hacker/facebook-loophole.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/hacker/facebook-loophole.html&text=I was watching the news one day and I saw a report on a Palestinian man who found a bug on Facebook that allowed anyone to post on anyone...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=How I found a loophole in Facebook's messaging system when I was 14&p[summary]=I was watching the news one day and I saw a report on a Palestinian man who found a bug on Facebook that allowed anyone to post on anyone...&p[url]=http://localhost:4000//hacker/facebook-loophole.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/hacker/facebook-loophole.html&text=I was watching the news one day and I saw a report on a Palestinian man who found a bug on Facebook that allowed anyone to post on anyone...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -347,7 +456,7 @@ iGem, The International Genetically Engineered Machine competition is a worldwid
             <li><time datetime="2019-01-20T06:01:17+04:00" itemprop="datePublished">20 Jan, 2019</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/engineer/myslsm.html">Myslsm, the social network I created from scratch for my high school (and how I made my own Alexa before it ever existed)
+        <h2 itemprop="name headline"><a href="http://localhost:4000//engineer/myslsm.html">Myslsm, the social network I created from scratch for my high school (and how I made my own Alexa before it ever existed)
 </a></h2>
     </header>
 
@@ -361,7 +470,7 @@ iGem, The International Genetically Engineered Machine competition is a worldwid
 
 
         
-            <p><a href="http://localhost:4000/wenogk.com/engineer/myslsm.html" role="button">Read More</a></p>
+            <p><a href="http://localhost:4000//engineer/myslsm.html" role="button">Read More</a></p>
         
     </div>
 
@@ -369,8 +478,8 @@ iGem, The International Genetically Engineered Machine competition is a worldwid
         <div class="share">Share
             <ul class="social-networks">
                 <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Myslsm, the social network I created from scratch for my high school (and how I made my own Alexa before it ever existed)
-&p[summary]=In 2010, when I was 11 years old, My family and I went to watch The Social Network, a movie about how Facebook was founded. I was deeply ...&p[url]=http://localhost:4000/wenogk.com/engineer/myslsm.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/myslsm.html&text=In 2010, when I was 11 years old, My family and I went to watch The Social Network, a movie about how Facebook was founded. I was deeply ...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+&p[summary]=In 2010, when I was 11 years old, My family and I went to watch The Social Network, a movie about how Facebook was founded. I was deeply ...&p[url]=http://localhost:4000//engineer/myslsm.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/myslsm.html&text=In 2010, when I was 11 years old, My family and I went to watch The Social Network, a movie about how Facebook was founded. I was deeply ...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -389,7 +498,7 @@ iGem, The International Genetically Engineered Machine competition is a worldwid
             <li><time datetime="2018-12-03T09:12:57+04:00" itemprop="datePublished">3 Dec, 2018</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/entrepreneur/expo-2020-university-innovation-winner.html">Experience: Winning the Expo 2020 University Innovation Competition</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//entrepreneur/expo-2020-university-innovation-winner.html">Experience: Winning the Expo 2020 University Innovation Competition</a></h2>
     </header>
 
     <div class="post-content">
@@ -403,9 +512,9 @@ iGem, The International Genetically Engineered Machine competition is a worldwid
         <div class="share">Share
             <ul class="social-networks">
                 <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Experience: Winning the Expo 2020 University Innovation Competition&p[summary]=
-&p[url]=http://localhost:4000/wenogk.com/entrepreneur/expo-2020-university-innovation-winner.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+&p[url]=http://localhost:4000//entrepreneur/expo-2020-university-innovation-winner.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
                 <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/entrepreneur/expo-2020-university-innovation-winner.html&text=
-&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -424,7 +533,7 @@ iGem, The International Genetically Engineered Machine competition is a worldwid
             <li><time datetime="2018-10-17T11:10:50+04:00" itemprop="datePublished">17 Oct, 2018</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/hacker/thoughts/how-i-hacked-sean-parkers-facebook.html">Story: How I got Sean Parker's attention when I was 13.</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//hacker/thoughts/how-i-hacked-sean-parkers-facebook.html">Story: How I got Sean Parker's attention when I was 13.</a></h2>
     </header>
 
     <div class="post-content">
@@ -433,15 +542,15 @@ iGem, The International Genetically Engineered Machine competition is a worldwid
 
 
         
-            <p><a href="http://localhost:4000/wenogk.com/hacker/thoughts/how-i-hacked-sean-parkers-facebook.html" role="button">Read More</a></p>
+            <p><a href="http://localhost:4000//hacker/thoughts/how-i-hacked-sean-parkers-facebook.html" role="button">Read More</a></p>
         
     </div>
 
     <footer class="post-footer">
         <div class="share">Share
             <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Story: How I got Sean Parker's attention when I was 13.&p[summary]=When I was young I was devious, malicious and didn’t know the difference between right and wrong. I was 13 at the time, I had recently go...&p[url]=http://localhost:4000/wenogk.com/hacker/thoughts/how-i-hacked-sean-parkers-facebook.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/hacker/thoughts/how-i-hacked-sean-parkers-facebook.html&text=When I was young I was devious, malicious and didn’t know the difference between right and wrong. I was 13 at the time, I had recently go...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Story: How I got Sean Parker's attention when I was 13.&p[summary]=When I was young I was devious, malicious and didn’t know the difference between right and wrong. I was 13 at the time, I had recently go...&p[url]=http://localhost:4000//hacker/thoughts/how-i-hacked-sean-parkers-facebook.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/hacker/thoughts/how-i-hacked-sean-parkers-facebook.html&text=When I was young I was devious, malicious and didn’t know the difference between right and wrong. I was 13 at the time, I had recently go...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -460,17 +569,17 @@ iGem, The International Genetically Engineered Machine competition is a worldwid
             <li><time datetime="2018-09-28T12:09:36+04:00" itemprop="datePublished">28 Sep, 2018</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/engineer/designing-and-laser-cutting-a-cardboard-bicycle.html">Designing and Laser Cutting a Cardboard Bicycle</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//engineer/designing-and-laser-cutting-a-cardboard-bicycle.html">Designing and Laser Cutting a Cardboard Bicycle</a></h2>
     </header>
 
     <div class="post-content">
-        <p><img style="width:auto;height:250px;" src="/wenogk.com/assets/images/bike_8.jpeg" align="center" /><br />
+        <p><img style="width:auto;height:250px;" src="//assets/images/bike_8.jpeg" align="center" /><br />
 So I decided I want to make a bicycle, but I didn’t know how a bike worked and what exactly each component looked like. Cardboard was the material I chose to use because of its availability as it can be easily found in scraps so I’d be able to do many retries with the laser cutter.</p>
 
 
 
         
-            <p><a href="http://localhost:4000/wenogk.com/engineer/designing-and-laser-cutting-a-cardboard-bicycle.html" role="button">Read More</a></p>
+            <p><a href="http://localhost:4000//engineer/designing-and-laser-cutting-a-cardboard-bicycle.html" role="button">Read More</a></p>
         
     </div>
 
@@ -478,16 +587,16 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
         <div class="share">Share
             <ul class="social-networks">
                 <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Designing and Laser Cutting a Cardboard Bicycle&p[summary]=
-So I decided I want to make a bicycle, but I didn’t know how a bike worked and what exactly each component looked like. Cardboard was th...&p[url]=http://localhost:4000/wenogk.com/engineer/designing-and-laser-cutting-a-cardboard-bicycle.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+So I decided I want to make a bicycle, but I didn’t know how a bike worked and what exactly each component looked like. Cardboard was th...&p[url]=http://localhost:4000//engineer/designing-and-laser-cutting-a-cardboard-bicycle.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
                 <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/designing-and-laser-cutting-a-cardboard-bicycle.html&text=
-So I decided I want to make a bicycle, but I didn’t know how a bike worked and what exactly each component looked like. Cardboard was th...&hashtags=laser cutter," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+So I decided I want to make a bicycle, but I didn’t know how a bike worked and what exactly each component looked like. Cardboard was th...&hashtags=laser cutter," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
         <div class="tags">
             <ul>
                 
-                <li><a href="http://localhost:4000/wenogk.com/tag/laser cutter">laser cutter</a></li>
+                <li><a href="http://localhost:4000//tag/laser cutter">laser cutter</a></li>
                 
             </ul>
         </div>
@@ -501,7 +610,7 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
             <li><time datetime="2018-09-28T06:09:32+04:00" itemprop="datePublished">28 Sep, 2018</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/engineer/music/Air-music-player.html">Air Music Player</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//engineer/music/Air-music-player.html">Air Music Player</a></h2>
     </header>
 
     <div class="post-content">
@@ -513,7 +622,7 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
 
 
         
-            <p><a href="http://localhost:4000/wenogk.com/engineer/music/Air-music-player.html" role="button">Read More</a></p>
+            <p><a href="http://localhost:4000//engineer/music/Air-music-player.html" role="button">Read More</a></p>
         
     </div>
 
@@ -523,11 +632,11 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
                 <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Air Music Player&p[summary]= 
 
 
-I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the mu...&p[url]=http://localhost:4000/wenogk.com/engineer/music/Air-music-player.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the mu...&p[url]=http://localhost:4000//engineer/music/Air-music-player.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
                 <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/music/Air-music-player.html&text= 
 
 
-I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the mu...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the mu...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -546,7 +655,7 @@ I took my previous project where I visualized music through the microphone and r
             <li><time datetime="2018-09-08T09:09:58+04:00" itemprop="datePublished">8 Sep, 2018</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/hacker/thoughts/my-first-software-enginneering-internship.html">My First Software Enginneering Internship</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//hacker/thoughts/my-first-software-enginneering-internship.html">My First Software Enginneering Internship</a></h2>
     </header>
 
     <div class="post-content">
@@ -557,15 +666,15 @@ I took my previous project where I visualized music through the microphone and r
 
 
         
-            <p><a href="http://localhost:4000/wenogk.com/hacker/thoughts/my-first-software-enginneering-internship.html" role="button">Read More</a></p>
+            <p><a href="http://localhost:4000//hacker/thoughts/my-first-software-enginneering-internship.html" role="button">Read More</a></p>
         
     </div>
 
     <footer class="post-footer">
         <div class="share">Share
             <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=My First Software Enginneering Internship&p[summary]=I recently was accepted into a software company in Oman, Al Madina Development, which has many government funded projects mainly related ...&p[url]=http://localhost:4000/wenogk.com/hacker/thoughts/my-first-software-enginneering-internship.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/hacker/thoughts/my-first-software-enginneering-internship.html&text=I recently was accepted into a software company in Oman, Al Madina Development, which has many government funded projects mainly related ...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=My First Software Enginneering Internship&p[summary]=I recently was accepted into a software company in Oman, Al Madina Development, which has many government funded projects mainly related ...&p[url]=http://localhost:4000//hacker/thoughts/my-first-software-enginneering-internship.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/hacker/thoughts/my-first-software-enginneering-internship.html&text=I recently was accepted into a software company in Oman, Al Madina Development, which has many government funded projects mainly related ...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -584,11 +693,11 @@ I took my previous project where I visualized music through the microphone and r
             <li><time datetime="2018-07-07T06:07:05+04:00" itemprop="datePublished">7 Jul, 2018</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/hacker/thoughts/experience-winning-an-international-hackathon.html">Experience: Winning an international hackathon</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//hacker/thoughts/experience-winning-an-international-hackathon.html">Experience: Winning an international hackathon</a></h2>
     </header>
 
     <div class="post-content">
-        <p><img src="/wenogk.com/assets/images/hackathon_3.jpg" alt="profile" /></p>
+        <p><img src="//assets/images/hackathon_3.jpg" alt="profile" /></p>
 
 <p>It was 8pm the day before the Hackathon, my suitemate knocks on my door and challenges me…..for a table tennis match. We play table tennis, <strong>seriously</strong>. By seriously I mean playing for six hours straight, sweating, aching legs, and raising our voices causing random students who pass by to look at us weird. It’s 2am when I go back to my room, I just fall on my bed and think of the hackathon(which starts at 6am) the next day, <em>‘No way I’m going to go for that, I’m way too tired’</em>, and I doze off in a flash.</p>
 
@@ -597,7 +706,7 @@ I took my previous project where I visualized music through the microphone and r
 
 
         
-            <p><a href="http://localhost:4000/wenogk.com/hacker/thoughts/experience-winning-an-international-hackathon.html" role="button">Read More</a></p>
+            <p><a href="http://localhost:4000//hacker/thoughts/experience-winning-an-international-hackathon.html" role="button">Read More</a></p>
         
     </div>
 
@@ -606,10 +715,10 @@ I took my previous project where I visualized music through the microphone and r
             <ul class="social-networks">
                 <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Experience: Winning an international hackathon&p[summary]=
 
-It was 8pm the day before the Hackathon, my suitemate knocks on my door and challenges me…..for a table tennis match. We play table ten...&p[url]=http://localhost:4000/wenogk.com/hacker/thoughts/experience-winning-an-international-hackathon.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+It was 8pm the day before the Hackathon, my suitemate knocks on my door and challenges me…..for a table tennis match. We play table ten...&p[url]=http://localhost:4000//hacker/thoughts/experience-winning-an-international-hackathon.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
                 <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/hacker/thoughts/experience-winning-an-international-hackathon.html&text=
 
-It was 8pm the day before the Hackathon, my suitemate knocks on my door and challenges me…..for a table tennis match. We play table ten...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+It was 8pm the day before the Hackathon, my suitemate knocks on my door and challenges me…..for a table tennis match. We play table ten...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -628,7 +737,7 @@ It was 8pm the day before the Hackathon, my suitemate knocks on my door and chal
             <li><time datetime="2018-06-28T11:06:10+04:00" itemprop="datePublished">28 Jun, 2018</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/engineer/music/dj-music-mashup-using-xbox-kinect.html">DJ Music Mashup (Using XBOX Kinect)</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//engineer/music/dj-music-mashup-using-xbox-kinect.html">DJ Music Mashup (Using XBOX Kinect)</a></h2>
     </header>
 
     <div class="post-content">
@@ -642,7 +751,7 @@ It was 8pm the day before the Hackathon, my suitemate knocks on my door and chal
 
 
         
-            <p><a href="http://localhost:4000/wenogk.com/engineer/music/dj-music-mashup-using-xbox-kinect.html" role="button">Read More</a></p>
+            <p><a href="http://localhost:4000//engineer/music/dj-music-mashup-using-xbox-kinect.html" role="button">Read More</a></p>
         
     </div>
 
@@ -654,13 +763,13 @@ This is my Intro to Interactive Media - Final Class Project documentation.
 
 Background
 
-My final project was a, “DJ Mixer” where the use...&p[url]=http://localhost:4000/wenogk.com/engineer/music/dj-music-mashup-using-xbox-kinect.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+My final project was a, “DJ Mixer” where the use...&p[url]=http://localhost:4000//engineer/music/dj-music-mashup-using-xbox-kinect.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
                 <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/music/dj-music-mashup-using-xbox-kinect.html&text=
 This is my Intro to Interactive Media - Final Class Project documentation.
 
 Background
 
-My final project was a, “DJ Mixer” where the use...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+My final project was a, “DJ Mixer” where the use...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -679,7 +788,7 @@ My final project was a, “DJ Mixer” where the use...&hashtags=" rel="noreferr
             <li><time datetime="2018-04-07T10:04:01+04:00" itemprop="datePublished">7 Apr, 2018</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/thoughts/lifeordeath.html">Life or Death Data Visualization (video)</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//thoughts/lifeordeath.html">Life or Death Data Visualization (video)</a></h2>
     </header>
 
     <div class="post-content">
@@ -691,7 +800,7 @@ My final project was a, “DJ Mixer” where the use...&hashtags=" rel="noreferr
 
 
         
-            <p><a href="http://localhost:4000/wenogk.com/thoughts/lifeordeath.html" role="button">Read More</a></p>
+            <p><a href="http://localhost:4000//thoughts/lifeordeath.html" role="button">Read More</a></p>
         
     </div>
 
@@ -699,9 +808,9 @@ My final project was a, “DJ Mixer” where the use...&hashtags=" rel="noreferr
         <div class="share">Share
             <ul class="social-networks">
                 <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Life or Death Data Visualization (video)&p[summary]=
-So for this project I wanted to do some data visualization that could be regarded, “live”. I got some interesting rates of from http://w...&p[url]=http://localhost:4000/wenogk.com/thoughts/lifeordeath.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+So for this project I wanted to do some data visualization that could be regarded, “live”. I got some interesting rates of from http://w...&p[url]=http://localhost:4000//thoughts/lifeordeath.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
                 <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/thoughts/lifeordeath.html&text=
-So for this project I wanted to do some data visualization that could be regarded, “live”. I got some interesting rates of from http://w...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+So for this project I wanted to do some data visualization that could be regarded, “live”. I got some interesting rates of from http://w...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -720,7 +829,7 @@ So for this project I wanted to do some data visualization that could be regarde
             <li><time datetime="2018-04-02T05:04:50+04:00" itemprop="datePublished">2 Apr, 2018</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/engineer/music/my-electronic-music-visualizer-project.html">My Electronic Music Visualizer Project</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//engineer/music/my-electronic-music-visualizer-project.html">My Electronic Music Visualizer Project</a></h2>
     </header>
 
     <div class="post-content">
@@ -730,7 +839,7 @@ So for this project I wanted to do some data visualization that could be regarde
 
 
         
-            <p><a href="http://localhost:4000/wenogk.com/engineer/music/my-electronic-music-visualizer-project.html" role="button">Read More</a></p>
+            <p><a href="http://localhost:4000//engineer/music/my-electronic-music-visualizer-project.html" role="button">Read More</a></p>
         
     </div>
 
@@ -738,9 +847,9 @@ So for this project I wanted to do some data visualization that could be regarde
         <div class="share">Share
             <ul class="social-networks">
                 <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=My Electronic Music Visualizer Project&p[summary]=
-[xyz-ihs snippet=”musicCircle”] So for my project this week I wanted to recreate some of the music videos for electronic music on youtub...&p[url]=http://localhost:4000/wenogk.com/engineer/music/my-electronic-music-visualizer-project.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+[xyz-ihs snippet=”musicCircle”] So for my project this week I wanted to recreate some of the music videos for electronic music on youtub...&p[url]=http://localhost:4000//engineer/music/my-electronic-music-visualizer-project.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
                 <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/music/my-electronic-music-visualizer-project.html&text=
-[xyz-ihs snippet=”musicCircle”] So for my project this week I wanted to recreate some of the music videos for electronic music on youtub...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+[xyz-ihs snippet=”musicCircle”] So for my project this week I wanted to recreate some of the music videos for electronic music on youtub...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -759,7 +868,7 @@ So for this project I wanted to do some data visualization that could be regarde
             <li><time datetime="2018-02-17T14:02:08+04:00" itemprop="datePublished">17 Feb, 2018</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/music/creeper.html">Creeper - My First Original Electronic Music Piece</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//music/creeper.html">Creeper - My First Original Electronic Music Piece</a></h2>
     </header>
 
     <div class="post-content">
@@ -773,9 +882,9 @@ So for this project I wanted to do some data visualization that could be regarde
         <div class="share">Share
             <ul class="social-networks">
                 <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Creeper - My First Original Electronic Music Piece&p[summary]=
-&p[url]=http://localhost:4000/wenogk.com/music/creeper.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+&p[url]=http://localhost:4000//music/creeper.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
                 <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/music/creeper.html&text=
-&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -795,12 +904,12 @@ So for this project I wanted to do some data visualization that could be regarde
             
                 <li class="cats">
                     
-                        <a href="/wenogk.com/categories/engineer/">engineer</a>
+                        <a href="//categories/engineer/">engineer</a>
                     
                 </li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/wenogk.com/engineer/light-organ-project.html">LIGHT ORGAN PROJECT.</a></h2>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//engineer/light-organ-project.html">LIGHT ORGAN PROJECT.</a></h2>
     </header>
 
     <div class="post-content">
@@ -811,7 +920,7 @@ So for this project I wanted to do some data visualization that could be regarde
 
 
         
-            <p><a href="http://localhost:4000/wenogk.com/engineer/light-organ-project.html" role="button">Read More</a></p>
+            <p><a href="http://localhost:4000//engineer/light-organ-project.html" role="button">Read More</a></p>
         
     </div>
 
@@ -820,17 +929,17 @@ So for this project I wanted to do some data visualization that could be regarde
             <ul class="social-networks">
                 <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=LIGHT ORGAN PROJECT.&p[summary]=
 
-I started tapping on my desk to a beat, and felt like I wanted to make a “beat boxing machine”. But, I didn’t have a proximity sensor t...&p[url]=http://localhost:4000/wenogk.com/engineer/light-organ-project.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+I started tapping on my desk to a beat, and felt like I wanted to make a “beat boxing machine”. But, I didn’t have a proximity sensor t...&p[url]=http://localhost:4000//engineer/light-organ-project.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
                 <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/light-organ-project.html&text=
 
-I started tapping on my desk to a beat, and felt like I wanted to make a “beat boxing machine”. But, I didn’t have a proximity sensor t...&hashtags=arduino," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/wenogk.com/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+I started tapping on my desk to a beat, and felt like I wanted to make a “beat boxing machine”. But, I didn’t have a proximity sensor t...&hashtags=arduino," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
         <div class="tags">
             <ul>
                 
-                <li><a href="http://localhost:4000/wenogk.com/tag/arduino">arduino</a></li>
+                <li><a href="http://localhost:4000//tag/arduino">arduino</a></li>
                 
             </ul>
         </div>
@@ -843,14 +952,14 @@ I started tapping on my desk to a beat, and felt like I wanted to make a “beat
             </main>
         </div>
 
-        <script src="http://localhost:4000/wenogk.com/assets/js/jquery-1.12.2.min.js"></script>
-<script src="http://localhost:4000/wenogk.com/assets/js/backtotop.js"></script>
-<script src="http://localhost:4000/wenogk.com/assets/js/lunr.min.js"></script>
-<script src="http://localhost:4000/wenogk.com/assets/js/lunr-feed.js"></script>
-<script src="http://localhost:4000/wenogk.com/assets/js/jquery.fitvids.js"></script>
-<script src="http://localhost:4000/wenogk.com/assets/js/svg4everybody.min.js"></script>
-<script src="http://localhost:4000/wenogk.com/assets/js/scripts.js"></script>
-<script src="http://localhost:4000/wenogk.com/assets/js/ScrollMagic.min.js"></script>
+        <script src="http://localhost:4000//assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000//assets/js/backtotop.js"></script>
+<script src="http://localhost:4000//assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000//assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000//assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000//assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000//assets/js/scripts.js"></script>
+<script src="http://localhost:4000//assets/js/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
@@ -875,15 +984,15 @@ function endStuff() {
   $(".mainmenu").css({display : "block"});
   $(".avatar").css({display : "block"});
   $(".user-profile").css({"z-index":"1000",padding:"0px",top:"60px", left: "auto","transform": "none"});
-
+  //$(".profile_pic").attr("src","http://localhost:4000//assets/images/profile2.png");
 }
 
-function startScrollMagicStuff() {
+function startBannerScrollMagicStuff() {
 startStuff();
-	var controller = new ScrollMagic.Controller();
+	let controller = new ScrollMagic.Controller();
   let pos = $("body").width() - $(".search").width() - $(".user-profile").width();
-  var action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
-  var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
+  let action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
+  let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
 					//.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
@@ -895,13 +1004,97 @@ startStuff();
               endStuff();
 					});
         }
+function startPinnedScrollMagicStuff() {
+  function startPinStuff() {
+    $(".card").css("opacity","0");
+  }
+  startPinStuff()
+        	let controller = new ScrollMagic.Controller();
+          let pos = $("body").width() - $(".search").width() - $(".user-profile").width();
+          let cards = document.querySelectorAll(".card");
+          let action = gsap.timeline().to(cards,{duration:1,opacity:"1"}).to(cards,{duration:0.25}).to(cards,{duration:0.25}).to(cards,{duration:0.25});
+          let scene = new ScrollMagic.Scene({triggerElement: "#scrollTriggerPinnedPosts", duration: 160})
+        					// animate color and top border in relation to scroll position
+        					.setTween(action) // the tween durtion can be omitted and defaults to 1
+        				//	.addIndicators({name: "start pinned posts animation"}) // add indicators (requires plugin)
+        					.addTo(controller)
+                  .on("start", function (e) {
+                    startPinStuff();
+                  })
+                  .on("end", function (e) {
+                      //endPinStuff();
+        					});
+
+                }
         $(function() {
             if (!isMobileDevice()) {
-                if(animationPls === true) {startScrollMagicStuff()};
+                if(animationPls === true) {startBannerScrollMagicStuff();
+startPinnedScrollMagicStuff();
+                };
             } else {
               $(".headerx").css("display","none");
             }
           });
+          function floatElement (selectorVal,xVal =5,yVal=5,rotVal=1,timeVal=5,timeValAddition=5) {
+            const can = document.querySelectorAll(selectorVal);
+
+            const randomX = random(0, xVal);
+            const randomY = random(0, yVal);
+            const randomDelay = random(0, 1);
+            const randomTime = random(3, timeVal);
+            const randomTime2 = random(timeVal, timeVal+timeValAddition);
+            const randomAngle = random(0, rotVal);
+
+            TweenLite.set(can, {
+              x: randomX(-1),
+              y: randomX(1),
+              rotation: randomAngle(-1)
+            });
+
+            moveX(can, 1);
+            moveY(can, -1);
+            rotate(can, 1);
+
+            function rotate(target, direction) {
+
+              TweenLite.to(target, randomTime2(), {
+                rotation: randomAngle(direction),
+                // delay: randomDelay(),
+                ease: Sine.easeInOut,
+                onComplete: rotate,
+                onCompleteParams: [target, direction * -1]
+              });
+            }
+
+            function moveX(target, direction) {
+
+              TweenLite.to(target, randomTime(), {
+                x: randomX(direction),
+                ease: Sine.easeInOut,
+                onComplete: moveX,
+                onCompleteParams: [target, direction * -1]
+              });
+            }
+
+            function moveY(target, direction) {
+
+              TweenLite.to(target, randomTime(), {
+                y: randomY(direction),
+                ease: Sine.easeInOut,
+                onComplete: moveY,
+                onCompleteParams: [target, direction * -1]
+              });
+            }
+
+            function random(min, max) {
+              const delta = max - min;
+              return (direction = 1) => (min + delta * Math.random()) * direction;
+            }
+          }
+          for(let x=1;x<9;x++) {
+            floatElement(".pin" + x);
+          }
+          floatElement(".social_btn",5,5,10,1,1);
 
 </script>
 

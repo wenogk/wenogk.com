@@ -22,10 +22,9 @@
   text-align: center;
   color: white;
   border-radius: 5px;
-  transition: transform .2s;
 }
 .card:hover {
-  transform: scale(1.5);
+  color: black;
 }
 .blue {
   background: #0275d8;
