@@ -63,7 +63,7 @@ baseurl: "/"
 include: ["_pages"]
 
 # Outputting
-permalink: /:categories/:title.html
+permalink: /:categories/:title.ruby
 category_dir: categories
 
 # Pagination
