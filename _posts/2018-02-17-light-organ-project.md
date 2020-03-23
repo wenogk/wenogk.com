@@ -37,7 +37,7 @@ https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino—v32/expe
 I initially started with a system where I had to manually check the maximum light intensity and then manually enter it as the, ‘startVal’ variable. Then every decrease by 5 units from the startVal frequency would result in a different note being played in the buzzer. Later I improved the function so it keeps detecting the light intensity and updating a, ‘high’ variable so I knew the max intensity without the need of manually entering it. So now it had auto calibration.
 
 Here’s a video of how it worked displaying the note it’s currently playing on the LCD display (I used my phone to bring it closer and further from the photo resistor to vary the light intensity):
-{% highlight c++ linenos %}
+{% highlight c++ %}
 #include <LiquidCrystal.h>
 
 const int jumpVal=5;
