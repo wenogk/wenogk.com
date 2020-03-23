@@ -58,7 +58,7 @@ function startPinnedScrollMagicStuff() {
         	let controller = new ScrollMagic.Controller();
           let pos = $("body").width() - $(".search").width() - $(".user-profile").width();
           let cards = document.querySelectorAll(".card");
-          let action = gsap.timeline().to(cards,{duration:1,opacity:"1"}).to(cards,{duration:0.25,scale:1.4}).to(cards,{duration:0.25,scale:1});
+          let action = gsap.timeline().to(cards,{duration:1,opacity:"1"}).to(cards,{duration:0.25,scale:1.1}).to(cards,{duration:0.25,scale:1});
           let scene = new ScrollMagic.Scene({triggerElement: "#scrollTriggerPinnedPosts", duration: 160})
         					// animate color and top border in relation to scroll position
         					.setTween(action) // the tween durtion can be omitted and defaults to 1
