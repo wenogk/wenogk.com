@@ -30,7 +30,7 @@ function endStuff() {
   $(".mainmenu").css({display : "block"});
   $(".avatar").css({display : "block"});
   $(".user-profile").css({"z-index":"1000",padding:"0px",top:"60px", left: "auto","transform": "none"});
-
+  $(".profile_pic").attr("src","{{ site.baseurl | prepend: site.url }}/assets/images/profile2.png");
 }
 
 function startBannerScrollMagicStuff() {
