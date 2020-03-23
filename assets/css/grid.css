@@ -24,7 +24,7 @@
   border-radius: 5px;
 }
 .card:hover {
-  background-color:rgba(256, 256, 256);
+  background:#000000;
 }
 .blue {
   background: #0275d8;

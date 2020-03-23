@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>A rising Senior studying Computer Science. Interested in backend engineering.</description>
+    <link>http://localhost:4000//</link>
+    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 23 Mar 2020 21:49:20 +0400</pubDate>
+    <lastBuildDate>Mon, 23 Mar 2020 21:49:20 +0400</lastBuildDate>
+    <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Redesigning this website</title>
+        <description>&lt;p&gt;I’ve completely redesigned and revamped my website. The stack used is Jekyll with ruby on rails and is now hosted on Github pages.&lt;/p&gt;
+
+&lt;p&gt;All of the previous versions of my website ran on Wordpress which was hosted on Hostinger. Let me list out the problems I had with it to explain why I needed this redesign. &lt;!--more--&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I paid for shared VPS hosting, which wasn’t the best therefore the website was rather slow to load.&lt;/li&gt;
+  &lt;li&gt;Wordpress doesn’t give me enough control of my own website, I found myself installing a thousand plugins to do everything I wanted whereas I could have done it in a couple of minutes if I had complete access to the code rather than having to make a PHP workaround on Wordpress’s already designed system.&lt;/li&gt;
+  &lt;li&gt;Too many dependancies, there’s databases for literally everything stored in MySQL, even the wordpress admin password so when I want to backup and restore I need to restore not only all the wordpress files but also all the SQL files.&lt;/li&gt;
+  &lt;li&gt;Wordpress is heavy, which I think is another factor that made the website slow to load.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I was intrigued by Jekyll when I first read about it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. Written in Ruby by Tom Preston-Werner, GitHub’s co-founder, it is distributed under the open source MIT license. ~ &lt;a href=&quot;https://en.wikipedia.org/wiki/Jekyll_(software)&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sun, 22 Mar 2020 10:04:01 +0400</pubDate>
+        <link>http://localhost:4000//engineer/redesign-website.html</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/redesign-website.html</guid>
+        
+        <category>jekyll</category>
+        
+        <category>website</category>
+        
+        
+        <category>engineer</category>
+        
+      </item>
+    
+      <item>
+        <title>iGem competition experience in Boston</title>
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/VPp-tGuRDbI?autoplay=0&amp;amp;showinfo=0&amp;amp;controls=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;iGem, The International Genetically Engineered Machine competition is a worldwide synthetic biology competition. &lt;strong&gt;Yes, biology.&lt;/strong&gt; I love delving into fields I know nothing about. I became a part of the iGem team at the beginning of this year. To be fair, it can involve a lot of engineering and computer science depending on the project the team is working on.&lt;/p&gt;
+
+&lt;p&gt;This year we decided to build a device to be used in airports that is non-invasive and can detect 5 diseases using only saliva. No more blood swabs! I was the head of the computer science team. My work first entailed working on the website with the computer science team as it is one of the three things the judges will see (the presentation and the poster being the other two) and developing the WEB API for the device.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;The Website&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We took inspiration from pages such as the One Plus 7 Pro Phone website with its smooth scrolling animations:&lt;/p&gt;
+
+&lt;p&gt;I researched many scroll animation javascript libraries for weeks on end and could not get a library that seemed to work smoothly accross browsers. At the verge of giving up I just decided to inspect element (view source) of the oneplus and apple website and to my surprise they both used the same scroll animation library, &lt;em&gt;scrollmagic.js&lt;/em&gt; This was surprising because I thought they’d have implemented the animations from their own animation library or vanilla js. I started working with the scrollmagic library and once I got the hang of it I was amazed at its power. The tween and tweenmax functions allow for precise control of the timing, placement, css styles for the animations and this makes very complex animations possible. After a couple of days hacking around with the library I was able to do parallax scrolling animations just as the oneplus and apple website animations work.&lt;/p&gt;
+
+&lt;p&gt;Heres the homepage link: &lt;a href=&quot;https://2019.igem.org/Team:NYU_Abu_Dhabi&quot;&gt;https://2019.igem.org/Team:NYU_Abu_Dhabi&lt;/a&gt; (the website is optimized for desktop viewing)&lt;/p&gt;
+
+&lt;p&gt;The github repository can be visited at&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The API&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Our device, when used at airports all around the world would spit out a large amount of data. We saw a massive potential in this data as it could be used to prevent disease outbreaks.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 11 Nov 2019 06:11:30 +0400</pubDate>
+        <link>http://localhost:4000//engineer/igem.html</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/igem.html</guid>
+        
+        
+        <category>engineer</category>
+        
+      </item>
+    
+      <item>
+        <title>How I found a loophole in Facebook's messaging system when I was 14</title>
+        <description>&lt;p&gt;I was watching the news one day and I saw a report on a Palestinian man who found a bug on Facebook that allowed anyone to post on anyone’s Facebook wall but wasn’t taken seriously by Facebook so he posted on Mark Zuckerberg’s (the CEO of Facebook) account to prove himself. When I saw this I started to get interested in Computer Security and the idea of Ethical Hacking. Even though they never revealed how he did it, I was pretty sure I knew how and was intrigued in how simple it was and why I didn’t think of it - this then led me to a nonstop search for loopholes on facebook for the next few days. I was surprised when I actually did find a loophole, and it was a more serious one than the one that was reported on the news. I found a way to send a message as anyone, to anyone - meaning a hacker could send a message to your parent’s facebook as if it was you with anything they wanted to.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/j1zibaV-dp0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;The video above is a demo proof of the loophole in action all the way back in 2013. Let me explain how I did it:&lt;/p&gt;
+
+&lt;p&gt;To understand how the loophole worked you need to understand Facebook’s Email System that was introduced in 2010.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“In February 2010, TechCrunch reported that Facebook was working to rewrite its messaging service to turn it into a “fully featured webmail product”, dubbed “Project Titan”. The feature, unofficially dubbed a “Gmail killer” internally, was launched on November 15, 2010, and allowed users to directly communicate with each other via Facebook using several different methods. Users could create their own “username@facebook.com” email address to communicate, use text messaging, or through the Facebook website or mobile app’s instant messaging chat. All messages were contained within single threads in a unified inbox. The email service was terminated in February 2014 because of low uptake.” ~ &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_Facebook_features#Email&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So everyone on facebook had an email called yourusername@facebook.com, as my username on facebook was iwenogk my email was iwenogk@facebook.com. A feature that was really interesting to me in this email system was that you have two emails basically the email you used to sign up to facebook, lets say for me that was wenogk1999@gmail.com and the new facebook email, iwenogk@facebook.com and if I send an email from the email that I signed up with (wenogk1999@gmail.com) to one of my friend’s facebook email’s such as sam@facebook.com - it would go to Sam’s facebook account as a PRIVATE FACEBOOK MESSAGE from my FACEBOOK account and NOT my email and this is the feature that I exploited.&lt;/p&gt;
+
+&lt;p&gt;In the PHP language and basically any server scripting language, theres a mailing system where you can, “spoof” the headers of the email which is the sender, receiver, name, email content information. So I wrote a simple PHP script which spoofs a fake email from my account to my sister’s account with the email message as the message I want to send to my sister and created a small user interface to do this so I could send it to facebook.&lt;/p&gt;
+
+&lt;p&gt;I then submitted a Facebook Bug report:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;—–Original Message to Facebook—–&lt;br /&gt;From: xxxxxxx@gmail.com&lt;br /&gt;To: xxxx &lt;br /&gt;Subject: Mobile app bug on iOS and Android .&lt;br /&gt;                                               Name: Romeno Wenogk Fernando&lt;br /&gt;E-Mail: xxxxxxxx@gmail.com&lt;br /&gt;Type: privacyScope&lt;br /&gt;Description: Facebook has been made in order to support the social infrastructure needed to help in connecting people around the world. But, unintentional bugs like the one I found by Remote Code Execution would be a problem in the wrong hands. Please read till the end.The bug I found would allow a hacker to send a message as someone other than himself to another person without even logging in to another person’s account.Take this example, John and Melissa are FRIENDS on facebook. A hacker can send a message as John to Melissa without logging into John’s account - The hacker would just need John’s email and Melissa’s facebook username. I know that Facebook products that integrate with SMTP validate the authenticity of email messages whenever possible (with SPF, DKIM, and/or DMARC). In the absence of these authentication signatures, Facebook will display a visible warning to the user indicating that the sender of the message could not be verified - ONLY ON THE MAIN SITE (FACEBOOK.COM) .The bug works flawlessly on the phone/tablet FACEBOOK APPS on both IOS and Android. I did not use real accounts while testing the bug out, I used the test accounts provided by the Facebook Whitehat Program.This could impact people in many different ways, hackers can abuse the system to either spam people as if they were friends, a hacker can lead a person to a phishing site or a site with malware/viruses. All I’m saying is that this bug is worth fixing and that it WILL be abused if it goes to the wrong hands, I think the best thing to do is to fix this problem as soon as possible. You cannot say this is not a bug since anyone can send a message as anyone and on the mobile app the messages look very authentic and show no signs of fraud - so if you think a hacker sending a message as anyone to someone else is not a wrong thing, then this is not a bug. REMEMBER THAT THIS IS A BUG REPORTED SPECIFICALLY FOR THE MOBILE FACEBOOK APP - IT IS NOT A BUG FOR THE MAIN SITE. AND THE BUG WORKS FLAWLESSLY.Contact me at xxxxxxxxx@gmail.comProof:In order to prove this to you properly, I have recorded by iPad (which is NOT jailbroken) with iTools and uploaded a video, http://www.youtube.com/watch?v=j1zibaV-dp0&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Due to my bad luck I suppose, someone had apparently already emailed them about the same loophole. However, this didn’t bother me as I now had validation that this indeed was a real loophole and someone else thought of the exact same loophole I did.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hi, We have previously been made aware of this issue and are in the process of investigating it. Thank you for submitting it to us. Please send along any additional security issues you encounter. Jeff Security Facebook&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I got a bit hot-headed about the short reply to my bug report and inquired further about it and got this reply:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hi Romeno,I replied to all of your previous reports.The root issue is the same in all of your reports as you have shown you can send spoofed mail and a spoofed message warning may not appear when using the mobile version of the site. The issue was reported to us by another researcher prior to your submission and is still in the process of being resolved. Sometimes a researcher will report a bug and another researcher will discover the same bug and report it to us and while a fix is being developed. This is one of those cases. If you have any other questions or concerns, please let me know and I will try to address them.Thanks,JeffSecurityFacebook&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What shocked me however, is how the loophole was fixed within a day of my report, and my method never worked again. I felt accomplished even though I wasn’t given credit for the loophole, I felt as though I had made a change to Facebook, a billion dollar company, myself, being the mischievous 14 year old boy I was sitting in my bedroom after school with my mini laptop.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Jan 2019 14:01:23 +0400</pubDate>
+        <link>http://localhost:4000//hacker/facebook-loophole.html</link>
+        <guid isPermaLink="true">http://localhost:4000//hacker/facebook-loophole.html</guid>
+        
+        
+        <category>hacker</category>
+        
+      </item>
+    
+      <item>
+        <title>Myslsm, the social network I created from scratch for my high school (and how I made my own Alexa before it ever existed)
+</title>
+        <description>&lt;p&gt;In 2010, when I was 11 years old, My family and I went to watch The Social Network, a movie about how Facebook was founded. I was deeply motivated by this movie and I started looking into the programming language used to code facebook which was PHP at the time. I started looking into simple html, javascript tutorials first and then went on to look at some PHP tutorials - I quickly realized how powerful this tool is as I could make anything I imagined, all that was required was the thought and the code. I started with simple projects such as asking your name and information and giving you interesting facts to a small product search engine system based on keywords and a MYSQL database, which I amusingly tried to sell online in 2012:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/jOnrNe3bhkQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;My dream at the time had always been to make my own social network. I started by learning how to make my own Login and Registering system including the UI, backend and database. From there it was an exponential learning experience where I kept learning and implementing features that a social network would have such as a wall, profile, like button, commenting etc. which brought me to Myslsm. My school’s name is Sri Lankan School Muscat, Slsm for short. I named the social network Myslsm for this reason.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;Profile&lt;/strong&gt;&lt;br /&gt;
+With a profile you have an identity in myslsm.com, It contains data about you such as Photo, Name, House , Class, Phone number and a small area to write some information about yourself.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_profile.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Frontyard&lt;/strong&gt;&lt;br /&gt;
+The concept is pretty much the same as in our school frontyard; where everyone is aware of the events taking place. Similarly, the Frontyard in myslsm.com is an open place where anyone can post anything. For example, the POG can post ‘Saturday evening basketball practices are cancelled’&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_frontyard.jpg&quot; alt=&quot;frontyard&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Backyard&lt;/strong&gt;&lt;br /&gt;
+Unlike the frontyard, the backyard is a private wall where only selected people can see your posts, later you will be able to change who can view your posts, thereby personalizing it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_backyard.jpg&quot; alt=&quot;backyard&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Staffroom&lt;/strong&gt;&lt;br /&gt;
+The staffRoom is a place where teachers can share and post but only teachers can see the posts. For example, ‘Teacher Helen, please meet me on Thursday for a short meeting”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lessons&lt;/strong&gt;&lt;br /&gt;
+“Lessons” is a feature where anyone can upload a lesson for others to learn like videos, documents, files or youtube educational videos (This will be closely monitored by me). As for now, I have already uploaded the ‘I AM ONLY A CHILD’ video and ‘The CHAOS’ by Gerard Nolst Trenité. ”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_lessons.jpg&quot; alt=&quot;lessons&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Interval&lt;/strong&gt;&lt;br /&gt;
+Most of the features of the site are for educational purposes but there’s one feature for your free time, anyone can see educational, music, humor videos to entertain themselves, mostly as part of a study break. I have uploaded some popular songs for the time being.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Articles&lt;/strong&gt;&lt;br /&gt;
+This can act as an updated information resource for the school like an online magazine.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_articles.png&quot; alt=&quot;articles&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;talk2&quot;&gt;&lt;strong&gt;Talk2&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;One interesting feature that I added onto Myslsm that doesn’t really fit with the other social network features was Talk2. Remember this is in around 2013 where there was no Google Assistant, no Alexa, no machine learning. I made a micro-intelligent bot that could answer questions asked as text input or speech-to-text input (look at image) such as “What is the weather like in &lt;strong&gt;_\&lt;em&gt;_?”, “What is the definition of ___\&lt;/em&gt;_?”, “Tell me about the movie ___\&lt;em&gt;_”, “Search for images of ___\&lt;/em&gt;_”, “Search for ___&lt;/strong&gt;__” and simple conversational precoded statements like, “hi” and, “how are you” and it would answer in text and voice (using the google translate voice api at the time) at the same time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_talk2.png&quot; alt=&quot;talk2 1&quot; /&gt;
+&lt;img src=&quot;//assets/images/myslsm_talk2_2.png&quot; alt=&quot;talk2 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I now notice that I realized the power of Google in my talk2 system as the query, “Search for &lt;strong&gt;_\__” would use Google’s then, “I’m feeling lucky” search so basically it would return the first result of the google search for the ___&lt;/strong&gt; as the answer. Google is in my opinion the only entity that can find relavant information in the quadrillions of websites in the world from a single keyword, using its pagerank algorithm, which is why I feel the Google Assistant has a great advantage over Alexa.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_homepage.png&quot; alt=&quot;Homepage&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Jan 2019 06:01:17 +0400</pubDate>
+        <link>http://localhost:4000//engineer/myslsm.html</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/myslsm.html</guid>
+        
+        
+        <category>engineer</category>
+        
+      </item>
+    
+      <item>
+        <title>Experience: Winning the Expo 2020 University Innovation Competition</title>
+        <description>
+</description>
+        <pubDate>Mon, 03 Dec 2018 09:12:57 +0400</pubDate>
+        <link>http://localhost:4000//entrepreneur/expo-2020-university-innovation-winner.html</link>
+        <guid isPermaLink="true">http://localhost:4000//entrepreneur/expo-2020-university-innovation-winner.html</guid>
+        
+        
+        <category>entrepreneur</category>
+        
+      </item>
+    
+      <item>
+        <title>Story: How I got Sean Parker's attention when I was 13.</title>
+        <description>&lt;p&gt;When I was young I was devious, malicious and didn’t know the difference between right and wrong. I was 13 at the time, I had recently gotten the hang of PHP and built a social network for my school from scratch but this isn’t about that, this is about a &lt;strong&gt;hack&lt;/strong&gt;. &lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;So I was looking at Sean Parkers Facebook Profile Page and reading some posts on it when I spontaneously decided to send him a friend request just for fun knowing that nothing would come of it. A few hours later I get a notification saying the friend request is accepted. I was ecstatic. I tried sending him messages saying hi but he wouldn’t see them or reply. The excitement then passed for a few days until I posted a funny meme and tagged some of my friends and Sean Parker in the post, because he is technically my friend now.&lt;/p&gt;
+
+&lt;p&gt;Thousand likes. I got a thousand likes on the post. To a normal 13 year old on social media who usually gets a max of 30 likes, a thousand likes is beyond ones imagination. But I wouldn’t call myself a normal 13 year old, being the devious kid I was, I saw an opportunity. With such a large reach and with the reach being Sean Parker, the president of Facebook’s followers, I could use this to my advantage. I set up a phishing page on my web server, which is basically a clone of the facebook login page, except when a user enters their username and password, I wrote a simple PHP script where their login details are conveniently sent to me. I then posted a link to it on my Facebook saying, “Hey guys check out this new version of Facebook!”, tagging Sean Parker, the president of Facebook. Five seconds after I posted I refreshed the text file that would have the login details. Nothing. Ten seconds. Nothing again. It didn’t work.     I reloaded again. One hundred lines, with login details of Sean Parker’s following. Five seconds later. Another hundred. I was overwhelmed. I closed my mini HP laptop and started wondering why I did this in the first place. I couldn’t understand why then but I do now, I did it simply because I could, not taking a moment to see if it was right or wrong. I opened my laptop again and I see a blip in the messages section on Facebook notifying me that I have a private message. It was Sean Parker.  &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/seanparker_msg.png&quot; alt=&quot;sean&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 17 Oct 2018 11:10:50 +0400</pubDate>
+        <link>http://localhost:4000//hacker/thoughts/how-i-hacked-sean-parkers-facebook.html</link>
+        <guid isPermaLink="true">http://localhost:4000//hacker/thoughts/how-i-hacked-sean-parkers-facebook.html</guid>
+        
+        
+        <category>hacker</category>
+        
+        <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>Designing and Laser Cutting a Cardboard Bicycle</title>
+        <description>&lt;p&gt;&lt;img style=&quot;width:auto;height:250px;&quot; src=&quot;//assets/images/bike_8.jpeg&quot; align=&quot;center&quot; /&gt;&lt;br /&gt;
+So I decided I want to make a bicycle, but I didn’t know how a bike worked and what exactly each component looked like. Cardboard was the material I chose to use because of its availability as it can be easily found in scraps so I’d be able to do many retries with the laser cutter.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;My first step was to research on bicycles:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/bike_1.png&quot; alt=&quot;Bike&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Turns out, figuring out the different parts and components of a bicycle was harder than I thought. I started by drawing some sketches:&lt;/p&gt;
+&lt;table align=&quot;center&quot;&gt;
+&lt;tr&gt;&lt;td&gt;
+&lt;img src=&quot;//assets/images/bike_2.jpg&quot; /&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&quot;//assets/images/bike_3.jpg&quot; /&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;I started working on designing the parts on Adobe Illustrator, specifically the cogs that connect the wheels of the bicycle to the pedal cog. I, ‘tested’ them by putting them close to each other in the drawing and rotating one cog using the rotation tool to see how it would work.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/nbvPQfonT9c&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I then improved the design of the wheels to make it actually look like a bicycle would.&lt;/p&gt;
+
+&lt;table align=&quot;center&quot;&gt;
+&lt;tr&gt;&lt;td&gt;
+&lt;img src=&quot;//assets/images/bike_4.jpg&quot; style=&quot;width:200px&quot; /&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&quot;//assets/images/bike_5.jpg&quot; style=&quot;width:200px&quot; /&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&quot;//assets/images/bike_6.jpg&quot; style=&quot;width:200px&quot; /&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The next step was to laser cut! I had to undergo a training session to learn about safety measures such as cleaning the lenses and also how to optimize the illustrator settings for the best laser cut.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/DAOf7abyUTE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/bike_7.jpg&quot; alt=&quot;Bike&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Putting it all together with some watch screws and tape and we get:
+&lt;img src=&quot;//assets/images/bike_8.jpeg&quot; alt=&quot;Bike&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Sep 2018 12:09:36 +0400</pubDate>
+        <link>http://localhost:4000//engineer/designing-and-laser-cutting-a-cardboard-bicycle.html</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/designing-and-laser-cutting-a-cardboard-bicycle.html</guid>
+        
+        <category>laser cutter</category>
+        
+        
+        <category>engineer</category>
+        
+      </item>
+    
+      <item>
+        <title>Air Music Player</title>
+        <description>&lt;p&gt; &lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wM-iwOhMG2k&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I took my previous project where I visualized music through the microphone and reversed it. I wanted to in some form visualize the music with my hands and play it on the computer. &lt;!--more--&gt;  I had to make some big changes to the code as I hadn’t generalized the classes enough in my previous project which is something I have to make sure I do next time. I used a library called Minim as the processing sound library didn’t allow pausing which was a vital feature in my project. I selected Fur Elise from Beethoven and the Wonder Woman soundtrack for the two songs because they are so drastic in genre, tone and the way it sounds that it almost feels like a remix mashup in a way.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Arduino Code (C++)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;knob&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;analogRead&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;analogRead&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightLevel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;,&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;knob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Processing Code (Java)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;processing.serial.*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;processing.sound.*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ddf.minim.*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Minim&lt;/span&gt;       &lt;span class=&quot;n&quot;&gt;minim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Minim&lt;/span&gt;       &lt;span class=&quot;n&quot;&gt;minim2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Minim&lt;/span&gt;       &lt;span class=&quot;n&quot;&gt;minim3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;AudioPlayer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;song2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;AudioPlayer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;song3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;AudioPlayer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;song4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;SoundFile&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;song&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Amplitude&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;amp2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myPort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;AudioIn&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;CircleThing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mainCircle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Snow&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;snowfall&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;movable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;PImage&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nyu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;logoDisplay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;knobValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;highLight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lowLight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;knobScaling&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CircleThing&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;circleX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;circleY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;defColor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prevRad&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;CircleThing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;defaultColor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;circleX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;circleY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;defColor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;defaultColor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;soundVal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scaling&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PImage&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nyuImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;displayImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soundVal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;strokeWeight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soundVal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;knobScaling&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//float radi =(200+soundVal*scaling);
+&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ellipse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//line(0,0,radi/2,radi/2);
+&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;imageMode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CENTER&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//rotate(45);
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;displayImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;pushMatrix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;imageMode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CENTER&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;translate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nyuImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;popMatrix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Made by Romeno Wenogk Fernando. wenogk@nyu.edu&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;textSize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;500&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;150&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;prevRad&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soundVal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scaling&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Particle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;// adds x position property
+&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;// adds y position property
+&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xVel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;       &lt;span class=&quot;c1&quot;&gt;// adds xvel property
+&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yVel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;       &lt;span class=&quot;c1&quot;&gt;// adds yvel property
+&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;partsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// adds a size property
+&lt;/span&gt;
+
+
+  &lt;span class=&quot;c1&quot;&gt;//Constructor = function// float says where it is xpos/ypos
+&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Particle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xpos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ypos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// assigning the values
+&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xpos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;600&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ypos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;xVel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// random,(the length of the random)
+&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;yVel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// controls the speed that the snow falls
+&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;partsize&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Snow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Particle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Particle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxParticles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;Snow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setMax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;maxParticles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ears2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ears2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Particle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[])&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Particle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxParticles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Particle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[])&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;partsize&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.975&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//make the snow stay reduce size
+&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;xVel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;yVel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;yVel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;   
+     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;yVel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;70&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;yVel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;yVel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;yVel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//reverse gravity
+&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ellipse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;partsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;particles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;partsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;640&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;440&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;amp2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Amplitude&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;in2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AudioIn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;in2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;amp2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;in2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;  
+  &lt;span class=&quot;n&quot;&gt;mainCircle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CircleThing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;45&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;snowfall&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Snow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;bg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loadImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bg.jpg&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;bg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;resize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;nyu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loadImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;nyu.png&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;nyu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;resize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nyu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nyu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;printArray&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;portname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;portname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;myPort&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;portname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9600&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;myPort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;myPort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;bufferUntil&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;'\n'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;//song = new SoundFile(this, &quot;ww.mp3&quot;);
+&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// Loop the sound forever
+&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// (well, at least until stop() is called)
+&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;//song.loop();
+&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;minim&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Minim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;minim2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Minim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;minim3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Minim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;loadFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ww.mp3&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minim2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;loadFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bee.mp3&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minim2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;loadFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fetty.mp3&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;      
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;//ears=amp2.analyze();
+&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lowLight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;highLight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;45&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;song4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;stroke&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;strokeWeight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;//println(ears);
+&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;snowfall&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;stroke&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;75&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xpos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ypos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;movable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;xpos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lerp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mouseX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ypos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lerp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mouseY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;//mainCircle.draw(mouseX,mouseY,ears,290,nyu,logoDisplay);
+&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;xpos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lerp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mouseX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ypos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lerp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mouseY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;mainCircle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xpos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ypos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ears&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;290&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nyu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;logoDisplay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;highLight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;knobScaling&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;knobValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;mousePressed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;movable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;movable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;keyPressed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;logoDisplay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;logoDisplay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;serialEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Serial&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myPort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myPort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;readStringUntil&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;'\n'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//println(s);
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]=&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;','&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;lightValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;knobValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;highLight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;highLight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;highLight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lowLight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;lowLight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Fri, 28 Sep 2018 06:09:32 +0400</pubDate>
+        <link>http://localhost:4000//engineer/music/Air-music-player.html</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/music/Air-music-player.html</guid>
+        
+        
+        <category>engineer</category>
+        
+        <category>music</category>
+        
+      </item>
+    
+      <item>
+        <title>My First Software Enginneering Internship</title>
+        <description>&lt;p&gt;I recently was accepted into a software company in Oman, Al Madina Development, which has many government funded projects mainly related to security and identity documents. A few days before I started working, I had a look at their website and just wanted to see what CMS system they used and ended up finding a serious loophole on the site that allowed me to have complete control of the site’s content and edit/delete anything. Here’s a video showing you this:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/sUfab2-7XeA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;!--more--&gt;
+&lt;p&gt;I told them of the bug and they were surprised and an engineer fixed it and they gave the credit to me. Throughout the rest of the internship, I had to learn many technologies to able to start working on projects:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Learned C#&lt;/li&gt;
+  &lt;li&gt;Got the hang of Asp, Asp.net&lt;/li&gt;
+  &lt;li&gt;Brushed up my SQL skills by learning more about complicated JOIN queries&lt;/li&gt;
+  &lt;li&gt;Started working with git commands&lt;/li&gt;
+  &lt;li&gt;Learned about the MVC (Model View Controller) Structure and a bit of ASP.NET&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CORE MVC. I put up some of the sample code I wrote to get the hang of stuff, on my github: &lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/wenogk/Almadina_Internship&quot;&gt;https://github.com/wenogk/Almadina_Internship&lt;/a&gt; I couldn’t add the code I wrote for the company as they told me it wouldn’t be a good idea to do so.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 Sep 2018 09:09:58 +0400</pubDate>
+        <link>http://localhost:4000//hacker/thoughts/my-first-software-enginneering-internship.html</link>
+        <guid isPermaLink="true">http://localhost:4000//hacker/thoughts/my-first-software-enginneering-internship.html</guid>
+        
+        
+        <category>hacker</category>
+        
+        <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>Experience: Winning an international hackathon</title>
+        <description>&lt;p&gt;&lt;img src=&quot;//assets/images/hackathon_3.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It was 8pm the day before the Hackathon, my suitemate knocks on my door and challenges me…..for a table tennis match. We play table tennis, &lt;strong&gt;seriously&lt;/strong&gt;. By seriously I mean playing for six hours straight, sweating, aching legs, and raising our voices causing random students who pass by to look at us weird. It’s 2am when I go back to my room, I just fall on my bed and think of the hackathon(which starts at 6am) the next day, &lt;em&gt;‘No way I’m going to go for that, I’m way too tired’&lt;/em&gt;, and I doze off in a flash.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Knock knock.&lt;/strong&gt; I hear banging on my door, “Get up you have your hackathon!”. &lt;!--more--&gt; I bolted as soon as my roommate said that and checked my phone for the time, 5:50am. Got up. Brushed my teeth. Washed my face. Ran.&lt;/p&gt;
+
+&lt;p&gt;I was lucky it was close as the Hackathon was held my university, New York University Abu Dhabi. “The 2018 7th ANNUAL NYUAD HACKATHON FOR SOCIAL GOOD IN THE ARAB WORLD”, a mouthful that does do justice to the prestige of the Hackathon with students coming from prestigious universities such as MIT, Princeton and mentors from companies like Google.&lt;/p&gt;
+
+&lt;p&gt;I entered. I see a group of people standing and listening to one figure in the middle, deep in conversation so I sneaked in to their little circle. Everyone looked at me. I tried to fake a smile back and as I do it, I catch a glance at the ID Card one of the congregates and saw it, Mentors. I now turn my intention from faking a smile to hiding my utter surprise. I slide myself away from the group feeling the peering eyes lasering me. I find another door and was glad to find the hackathon finally.&lt;/p&gt;
+
+&lt;p&gt;The initial set up was honestly very weird. There were sets of tables arranged with labels on them such as, “Education”, “Security &amp;amp; Logisitcs”,”Refugees” etc. I was told to sit at any table I preferred so I just went to the Security one as it seemed fine to me as I am (kind of) interested in the field. I met a few people on my table, one of whom was another student from NYUAD and the rest were from other universities from all around the globe. We had mentors too, with us on our table. Our task was to brainstorm ideas that relate to our table topic, Security &amp;amp; Logistics or at least use it in our ideas. We started blurting out our half thought ideas and came up with ideas from Mental Health apps to Driving Assistants. Suddenly, someone (I can’t remember who) mentioned an idea which was something like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;An sms system(probably using Twilio) where people could report themselves safe in a natural disaster, just in case their families were worried.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This idea grew on us and we kept improving on it,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What if someone was lost and sends our system an sms with his name, age location, small message, and their family at any time could again sms our system with their loved one’s name and age and  his family will be notified that he is safe and they will be able to get in contact. This would work well for refugees who don’t have their own phone numbers or contact methods.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/hackathon_5.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That was basically one of our final ideas that we submitted. Yes, we had to submit a set of ideas and get one of it approved by the judges to actually work on it. This rule was annoying but surprisingly worked well for us.&lt;/p&gt;
+
+&lt;p&gt;It was time to get the results of the judges, our sms idea was approved, with a &lt;strong&gt;small&lt;/strong&gt; change. The judge who came to tell us this told it to us in a Steve Jobs, “One More Thing” fashion. He said at the end of saying it was approved, “You guy’s should remove the idea of the lost person sending an sms and use video cameras and facial recognition to detect their faces and match them with a photo that the families provide.”. WOW. We were all gobsmacked. It was a brilliant idea that had our concept in its skeleton but it opened up a whole new aspect to the idea.&lt;/p&gt;
+
+&lt;p&gt;The first thing we did was research on what the possible ways to do it was. It was a 3 day hackathon so we had time to try things. We started with OpenCV for image processing and realized it wouldn’t be effective as it was used for facial recognition of images which meant we’d have to split a video into frames and run OpenCV on ever single frame which was inefficient as OpenCV wasn’t optimized for this. As I did some future research I found Amazon AWS Rekognition (Yes, spelled like that). It used a convolutional neural network and did exactly what we needed it to do, find faces in a video. We knew what we needed to do so we went all in. We divided the work we needed to do, some worked on UI and Design, some on the presentation and some (including me) on the backend and the integration with Amazon AWS.&lt;/p&gt;
+
+&lt;p&gt;We worked really hard with our mentors for two sleepless nights, going home at around 3am to sleep a few hours only to come back and work. The morning of the final day of the hackathon, we had a full working prototype of a system where a family could upload a picture of their loved one and our system would go through thousands of hours of refugee camp videos that were widely available and find where this individual is and inform the family where exactly he/she is.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/hackathon_4.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We presented and demoed our project and weren’t too confident about the final outcome. Just a second before the final winner announcement comes up, our mentor looked back in us and said, “Tough luck guys, I don’t think we got this.” and I was flabbergasted. The next second, “And the winner of the7th ANNUAL NYUAD HACKATHON FOR SOCIAL GOOD IN THE ARAB WORLD is Boosala”. “Boosala” means find in arabic, which we felt did justice to our app. One thing that hit me though, after all the excitement of winning, was that if my roommate didn’t wake me up, things would’ve been a little different.&lt;/p&gt;
+
+&lt;p&gt;You can find our code and presentation here: &lt;/p&gt;
+
+&lt;p&gt;The hackathon was featured on many press articles:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;English Press&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.wamda.com/2018/05/apps-locate-missing-refugees-tackle-counterfeit-medicine-win-nyu-abu-dhabi-international-hackathon&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://www.wamda.com/2018/05/apps-locate-missing-refugees-tackle-counterfeit-medicine-win-nyu-abu-dhabi-international-hackathon&amp;amp;source=gmail&amp;amp;ust=1531060164719000&amp;amp;usg=AFQjCNF80aL9UlttIJwW3Q-FFz6jDWsOqQ&quot;&gt;WAMDA&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;Entrepreneur ME magazine – attached&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.adwonline.ae/hackers-good-world/&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://www.adwonline.ae/hackers-good-world/&amp;amp;source=gmail&amp;amp;ust=1531060164719000&amp;amp;usg=AFQjCNGUAM2BeFGjqcvI-x5EndSJ5D1PDA&quot;&gt;Abu Dhabi World magazine (English)&lt;/a&gt;&amp;nbsp;– attached&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://communicateonline.me/digital/can-machines-help-humanity-these-apps-are-the-answer/&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://communicateonline.me/digital/can-machines-help-humanity-these-apps-are-the-answer/&amp;amp;source=gmail&amp;amp;ust=1531060164719000&amp;amp;usg=AFQjCNGWtK5uUwAaSo2Xt13ELQ4VaJEPTQ&quot;&gt;Communicate magazine&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.albawaba.com/business/pr/apps-locate-missing-refugees-win-nyu-abu-dhabi%E2%80%99s-international-hackathon-1125156&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://www.albawaba.com/business/pr/apps-locate-missing-refugees-win-nyu-abu-dhabi%25E2%2580%2599s-international-hackathon-1125156&amp;amp;source=gmail&amp;amp;ust=1531060164719000&amp;amp;usg=AFQjCNHfgz8EXz-rGEACWCVF7BF3QQs6cA&quot;&gt;Al Bawaba&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://world.einnews.com/article_detail/445066136?lcode=Se6ntNGtkkbJAO1bPC01L4LRlx41W5ZD5NK3HIFg2-Q%3D&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://world.einnews.com/article_detail/445066136?lcode%3DSe6ntNGtkkbJAO1bPC01L4LRlx41W5ZD5NK3HIFg2-Q%253D&amp;amp;source=gmail&amp;amp;ust=1531060164719000&amp;amp;usg=AFQjCNE7oOB3pPE21xvrYsAwa2mGojR0TQ&quot;&gt;world.einnews&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.tahawultech.com/news/nyu-abu-dhabi-hackathon-awards/&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://www.tahawultech.com/news/nyu-abu-dhabi-hackathon-awards/&amp;amp;source=gmail&amp;amp;ust=1531060164719000&amp;amp;usg=AFQjCNFaY-WMxPYFuApLOqfptyCTHsBpMg&quot;&gt;Tahawul tech&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.al-press.com/index.php/en/2013-02-20-08-59-23/technology/19905-apps-to-locate-missing-refugees-and-tackle-counterfeit-medicine-win-nyu-abu-dhabi-s-international-hackathon&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://www.al-press.com/index.php/en/2013-02-20-08-59-23/technology/19905-apps-to-locate-missing-refugees-and-tackle-counterfeit-medicine-win-nyu-abu-dhabi-s-international-hackathon&amp;amp;source=gmail&amp;amp;ust=1531060164719000&amp;amp;usg=AFQjCNEbQrjIaKWruIDe3Z52mVGU5fu-lA&quot;&gt;Al-press&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://dubaiforum.me/apps-to-locate-refugees-and-tackle-fake-medicine-win-nyuad-awards/&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://dubaiforum.me/apps-to-locate-refugees-and-tackle-fake-medicine-win-nyuad-awards/&amp;amp;source=gmail&amp;amp;ust=1531060164720000&amp;amp;usg=AFQjCNF2uq8IXBnWS7AirRIaUwtevsGBqQ&quot;&gt;Dubai Forum&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://tonernews.com/glype/browse.php?u=y8zUQfTBYym7H8lcea9VXJ0ArUK7MlLwGTV6JLvRW4aoHRJQXgfFFibzVc%2BnmIXJZ9V5if1f7OgQ5LZaewuDz1GvFIsSWdKt7XbJXn8QIlYtoqdao4K4B65p3WVa6P%2BiM6GNAP7ssPBXtxU4OwPtVyE1tW4hvMExhJwfLQ%3D%3D&amp;amp;b=29&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://tonernews.com/glype/browse.php?u%3Dy8zUQfTBYym7H8lcea9VXJ0ArUK7MlLwGTV6JLvRW4aoHRJQXgfFFibzVc%252BnmIXJZ9V5if1f7OgQ5LZaewuDz1GvFIsSWdKt7XbJXn8QIlYtoqdao4K4B65p3WVa6P%252BiM6GNAP7ssPBXtxU4OwPtVyE1tW4hvMExhJwfLQ%253D%253D%26b%3D29&amp;amp;source=gmail&amp;amp;ust=1531060164720000&amp;amp;usg=AFQjCNHgPuKn3155K6WeRskmRNI-rA4btA&quot;&gt;Toner News&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://mynews.is/tech+blogs?s=4413&amp;amp;l=1&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://mynews.is/tech%2Bblogs?s%3D4413%26l%3D1&amp;amp;source=gmail&amp;amp;ust=1531060164720000&amp;amp;usg=AFQjCNFJyhV605x3DIXSkbtXgZp15e4Naw&quot;&gt;MyNews.is&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Arabic&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.alittihad.ae/details.php?id=33408&amp;amp;y=2018&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://www.alittihad.ae/details.php?id%3D33408%26y%3D2018&amp;amp;source=gmail&amp;amp;ust=1531060164720000&amp;amp;usg=AFQjCNEl4pS2_EuUfS-60S8vDz6MFzVJ5A&quot;&gt;Al Ittihad&lt;/a&gt;&amp;nbsp;– attached&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.albayan.ae/across-the-uae/education/2018-05-02-1.3253801&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://www.albayan.ae/across-the-uae/education/2018-05-02-1.3253801&amp;amp;source=gmail&amp;amp;ust=1531060164720000&amp;amp;usg=AFQjCNEYZFL9i2h2KSrE3UvQvF-a4WFrrg&quot;&gt;Al Bayan&lt;/a&gt;&amp;nbsp;– attached&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.alkhaleej.ae/alkhaleej/page/7b554881-569e-4d12-8887-3ed441743172&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://www.alkhaleej.ae/alkhaleej/page/7b554881-569e-4d12-8887-3ed441743172&amp;amp;source=gmail&amp;amp;ust=1531060164720000&amp;amp;usg=AFQjCNGJKjbvjKEaHLepvpgbXl50PMuZeg&quot;&gt;Al Khaleej&lt;/a&gt;&amp;nbsp;– attached&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://al-ain.com/article/newyork-abudhabi-students-application-innovation&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://al-ain.com/article/newyork-abudhabi-students-application-innovation&amp;amp;source=gmail&amp;amp;ust=1531060164720000&amp;amp;usg=AFQjCNEJZWD1Qchl7JrjlnPkX8fgYLjNPA&quot;&gt;Al-Ain.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://24.ae/article/438972/86/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D9%86%D9%8A%D9%88%D9%8A%D9%88%D8%B1%D9%83-%D8%A3%D8%A8%D9%88%D8%B8%D8%A8%D9%8A-%D8%AA%D9%83%D8%B1%D9%85-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D9%8A-%22%D8%A8%D9%88%D8%B5%D9%84%D8%A9%22-%D9%88%22%D8%AF%D9%88%D8%A7%D8%A1%22&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://24.ae/article/438972/86/%25D8%25AC%25D8%25A7%25D9%2585%25D8%25B9%25D8%25A9-%25D9%2586%25D9%258A%25D9%2588%25D9%258A%25D9%2588%25D8%25B1%25D9%2583-%25D8%25A3%25D8%25A8%25D9%2588%25D8%25B8%25D8%25A8%25D9%258A-%25D8%25AA%25D9%2583%25D8%25B1%25D9%2585-%25D8%25AA%25D8%25B7%25D8%25A8%25D9%258A%25D9%2582%25D9%258A-%2522%25D8%25A8%25D9%2588%25D8%25B5%25D9%2584%25D8%25A9%2522-%25D9%2588%2522%25D8%25AF%25D9%2588%25D8%25A7%25D8%25A1%2522&amp;amp;source=gmail&amp;amp;ust=1531060164720000&amp;amp;usg=AFQjCNF2VpgBS2v84DXSUydXrs0dMIypnA&quot;&gt;24.ae&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.zawya.com/mena/ar/story/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D9%86%D9%8A%D9%88%D9%8A%D9%88%D8%B1%D9%83_%D8%A3%D8%A8%D9%88%D8%B8%D8%A8%D9%8A_%D8%AA%D8%B3%D8%AA%D8%B6%D9%8A%D9%81_%D9%85%D8%B3%D8%A7%D8%A8%D9%82%D8%A9_%D8%A7%D9%84%D9%87%D8%A7%D9%83%D8%A7%D8%AB%D9%88%D9%86_%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9_%D9%84%D8%A5%D9%81%D8%A7%D8%AF%D8%A9_%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D9%85%D8%B9_%D9%81%D9%8A_%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A_%D9%84%D9%84%D8%B9%D8%A7%D9%85_%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86-ZAWYA20180501121705/&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://www.zawya.com/mena/ar/story/%25D8%25AC%25D8%25A7%25D9%2585%25D8%25B9%25D8%25A9_%25D9%2586%25D9%258A%25D9%2588%25D9%258A%25D9%2588%25D8%25B1%25D9%2583_%25D8%25A3%25D8%25A8%25D9%2588%25D8%25B8%25D8%25A8%25D9%258A_%25D8%25AA%25D8%25B3%25D8%25AA%25D8%25B6%25D9%258A%25D9%2581_%25D9%2585%25D8%25B3%25D8%25A7%25D8%25A8%25D9%2582%25D8%25A9_%25D8%25A7%25D9%2584%25D9%2587%25D8%25A7%25D9%2583%25D8%25A7%25D8%25AB%25D9%2588%25D9%2586_%25D8%25A7%25D9%2584%25D8%25AF%25D9%2588%25D9%2584%25D9%258A%25D8%25A9_%25D9%2584%25D8%25A5%25D9%2581%25D8%25A7%25D8%25AF%25D8%25A9_%25D8%25A7%25D9%2584%25D9%2585%25D8%25AC%25D8%25AA%25D9%2585%25D8%25B9_%25D9%2581%25D9%258A_%25D8%25A7%25D9%2584%25D8%25B9%25D8%25A7%25D9%2584%25D9%2585_%25D8%25A7%25D9%2584%25D8%25B9%25D8%25B1%25D8%25A8%25D9%258A_%25D9%2584%25D9%2584%25D8%25B9%25D8%25A7%25D9%2585_%25D8%25A7%25D9%2584%25D8%25AB%25D8%25A7%25D9%2585%25D9%2586-ZAWYA20180501121705/&amp;amp;source=gmail&amp;amp;ust=1531060164720000&amp;amp;usg=AFQjCNF_3aaOkDV7TsoFUxWs_Z8-OvUArw&quot;&gt;Zawya&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://gate.ahram.org.eg/News/1902654.aspx&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://gate.ahram.org.eg/News/1902654.aspx&amp;amp;source=gmail&amp;amp;ust=1531060164720000&amp;amp;usg=AFQjCNGWt53WHJp1Bid-ddGkZ6QZBEas-A&quot;&gt;Gate.ahram&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://uae.shafaqna.com/AR/AE/309650&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://uae.shafaqna.com/AR/AE/309650&amp;amp;source=gmail&amp;amp;ust=1531060164720000&amp;amp;usg=AFQjCNEfp86JvGxqhMpz04TzCAAX_44Haw&quot;&gt;UAE shafaqna&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.rjeem.com/406774-2/&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://www.rjeem.com/406774-2/&amp;amp;source=gmail&amp;amp;ust=1531060164720000&amp;amp;usg=AFQjCNEVS06Kx4fEYfoInSFa_VYoQtJ_6g&quot;&gt;Rjeem&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.freepen.co/1102417.html&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://www.freepen.co/1102417.html&amp;amp;source=gmail&amp;amp;ust=1531060164721000&amp;amp;usg=AFQjCNE3gTFa1QFVnwDMbji7U7BwL72ARg&quot;&gt;Free Pen&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.dotemirates.com/ar/details/104673237?from=dot&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://www.dotemirates.com/ar/details/104673237?from%3Ddot&amp;amp;source=gmail&amp;amp;ust=1531060164721000&amp;amp;usg=AFQjCNHWMN4o5i08BZKGXh3XEVBMK9rXeg&quot;&gt;DOT Emirates&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://lomazoma.com/tech/359997/%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%AD%D8%B5%D8%B1%D9%8A%D8%A7--%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D9%86%D9%8A%D9%88%D9%8A%D9%88%D8%B1%D9%83-%D8%A3%D8%A8%D9%88%D8%B8%D8%A8%D9%8A-%D8%AA%D9%83%D8%B1%D9%85-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D9%8A-%D8%A8%D9%88%D8%B5%D9%84%D8%A9-%D9%88%D8%AF%D9%88%D8%A7%D8%A1&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://lomazoma.com/tech/359997/%25D8%25AA%25D8%25B7%25D8%25A8%25D9%258A%25D9%2582%25D8%25A7%25D8%25AA-%25D8%25AD%25D8%25B5%25D8%25B1%25D9%258A%25D8%25A7--%25D8%25AC%25D8%25A7%25D9%2585%25D8%25B9%25D8%25A9-%25D9%2586%25D9%258A%25D9%2588%25D9%258A%25D9%2588%25D8%25B1%25D9%2583-%25D8%25A3%25D8%25A8%25D9%2588%25D8%25B8%25D8%25A8%25D9%258A-%25D8%25AA%25D9%2583%25D8%25B1%25D9%2585-%25D8%25AA%25D8%25B7%25D8%25A8%25D9%258A%25D9%2582%25D9%258A-%25D8%25A8%25D9%2588%25D8%25B5%25D9%2584%25D8%25A9-%25D9%2588%25D8%25AF%25D9%2588%25D8%25A7%25D8%25A1&amp;amp;source=gmail&amp;amp;ust=1531060164721000&amp;amp;usg=AFQjCNFuLw8w3G8Yu3DQB1hfhW9zGiAt2g&quot;&gt;Lomazoma&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://bedayya.com/competitions/%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D9%86-%D9%84%D9%85%D8%AD%D8%A7%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D8%BA%D8%B4%D9%88%D8%B4%D8%8C-%D9%88%D9%85%D8%B3%D8%A7/&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://bedayya.com/competitions/%25D8%25AA%25D8%25B7%25D8%25A8%25D9%258A%25D9%2582%25D8%25A7%25D9%2586-%25D9%2584%25D9%2585%25D8%25AD%25D8%25A7%25D8%25B1%25D8%25A8%25D8%25A9-%25D8%25A7%25D9%2584%25D8%25AF%25D9%2588%25D8%25A7%25D8%25A1-%25D8%25A7%25D9%2584%25D9%2585%25D8%25BA%25D8%25B4%25D9%2588%25D8%25B4%25D8%258C-%25D9%2588%25D9%2585%25D8%25B3%25D8%25A7/&amp;amp;source=gmail&amp;amp;ust=1531060164721000&amp;amp;usg=AFQjCNEUNAslHqbZ3rNKBtKjwYvKb5MpZQ&quot;&gt;Bedayya&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Broadcast&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.abudhabitv.ae/vod/for0041315-16830/%D8%B5%D8%A8%D8%A7%D8%AD-%D8%A7%D9%84%D8%AF%D8%A7%D8%B1&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://www.abudhabitv.ae/vod/for0041315-16830/%25D8%25B5%25D8%25A8%25D8%25A7%25D8%25AD-%25D8%25A7%25D9%2584%25D8%25AF%25D8%25A7%25D8%25B1&amp;amp;source=gmail&amp;amp;ust=1531060164721000&amp;amp;usg=AFQjCNGGM-CDSl5ZedFyyqi06OYqgYPppQ&quot;&gt;Abu Dhabi TV – Sabah Al Dar program&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.abudhabitv.ae/vod/lp00029057-16714/%D8%B9%D9%84%D9%88%D9%85-%D8%A7%D9%84%D8%AF%D8%A7%D8%B1&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=http://www.abudhabitv.ae/vod/lp00029057-16714/%25D8%25B9%25D9%2584%25D9%2588%25D9%2585-%25D8%25A7%25D9%2584%25D8%25AF%25D8%25A7%25D8%25B1&amp;amp;source=gmail&amp;amp;ust=1531060164721000&amp;amp;usg=AFQjCNGKZr_D9FU03OZYttQRVcTPp47H-Q&quot;&gt;Abu Dhabi TV – Oloom Al Dar program&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Social media&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/WamdaME/status/99200990756513792&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://twitter.com/WamdaME/status/99200990756513792&amp;amp;source=gmail&amp;amp;ust=1531060164721000&amp;amp;usg=AFQjCNHJY-JHhfBqVknAFeMo05wTNzanFg&quot;&gt;Wamda – Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.instagram.com/p/BiJ7zCFlYzK/?r=wa1&quot; data-saferedirecturl=&quot;https://www.google.com/url?hl=en&amp;amp;q=https://www.instagram.com/p/BiJ7zCFlYzK/?r%3Dwa1&amp;amp;source=gmail&amp;amp;ust=1531060164721000&amp;amp;usg=AFQjCNGARJa6Or1tzWCAS_DP5elXMNmL6w&quot;&gt;Abu Dhabi TV – Instagram&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/hackathon_1.png&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/hackathon_2.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//assets/images/hackathon_6.jpg&quot; alt=&quot;profile&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 07 Jul 2018 06:07:05 +0400</pubDate>
+        <link>http://localhost:4000//hacker/thoughts/experience-winning-an-international-hackathon.html</link>
+        <guid isPermaLink="true">http://localhost:4000//hacker/thoughts/experience-winning-an-international-hackathon.html</guid>
+        
+        
+        <category>hacker</category>
+        
+        <category>thoughts</category>
+        
+      </item>
+    
+  </channel>
+</rss>
