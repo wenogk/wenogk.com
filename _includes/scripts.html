@@ -81,15 +81,15 @@ startPinnedScrollMagicStuff();
               $(".headerx").css("display","none");
             }
           });
-          function floatElement (selectorVal) {
+          function floatElement (selectorVal,xVal =5,yVal=5,rotVal=1) {
             const can = document.querySelectorAll(selectorVal);
 
-            const randomX = random(0, 5);
-            const randomY = random(0, 5);
+            const randomX = random(0, xVal);
+            const randomY = random(0, yVal);
             const randomDelay = random(0, 1);
             const randomTime = random(3, 5);
             const randomTime2 = random(5, 10);
-            const randomAngle = random(0, 0);
+            const randomAngle = random(0, rotVal);
 
             TweenLite.set(can, {
               x: randomX(-1),
@@ -140,7 +140,7 @@ startPinnedScrollMagicStuff();
           for(let x=1;x<9;x++) {
             floatElement(".pin" + x);
           }
-          floatElement(".social_btn");
+          floatElement(".social_btn",5,5,10);
 
 </script>
 {% if site.analytics_code != null %}
