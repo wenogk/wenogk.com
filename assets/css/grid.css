@@ -25,6 +25,7 @@
 }
 .card:hover {
   color: black;
+  background-color:rgba(0, 0, 0, 0.1);
 }
 .blue {
   background: #0275d8;
