@@ -3,7 +3,7 @@ layout: post
 date: 2018-02-17 12:36
 title: "LIGHT ORGAN PROJECT."
 description: Light organ project
-comments: false
+comments: true
 category:
 - engineer
 tags:
