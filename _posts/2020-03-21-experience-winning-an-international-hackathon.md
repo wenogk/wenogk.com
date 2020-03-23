@@ -3,7 +3,7 @@ layout: post
 title: 'Experience: Winning an international hackathon'
 published: true
 author: wenogk
-comments: false
+comments: true
 date: 2018-07-07 02:07:05
 tags: [ ]
 categories:

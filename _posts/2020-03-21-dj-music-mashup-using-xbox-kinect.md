@@ -3,7 +3,7 @@ layout: post
 title: DJ Music Mashup (Using XBOX Kinect)
 published: true
 author: wenogk
-comments: false
+comments: true
 date: 2018-06-28 07:06:10
 tags: [ ]
 categories:

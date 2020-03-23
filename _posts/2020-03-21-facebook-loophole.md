@@ -3,7 +3,7 @@ layout: post
 title: "How I found a loophole in Facebook's messaging system when I was 14"
 published: true
 author: wenogk
-comments: false
+comments: true
 date: 2019-01-20 10:01:23
 tags: [ ]
 categories:

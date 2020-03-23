@@ -3,7 +3,7 @@ layout: post
 title: Designing and Laser Cutting a Cardboard Bicycle
 published: true
 author: wenogk
-comments: false
+comments: true
 date: 2018-09-28 08:09:36
 tags:
     - laser cutter

@@ -3,7 +3,7 @@ layout: post
 title: My Electronic Music Visualizer Project
 published: true
 author: wenogk
-comments: false
+comments: true
 date: 2018-04-02 01:04:50
 tags: [ ]
 categories:

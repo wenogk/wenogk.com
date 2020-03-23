@@ -3,7 +3,7 @@ layout: post
 title: My First Software Enginneering Internship
 published: true
 author: wenogk
-comments: false
+comments: true
 date: 2018-09-08 05:09:58
 tags: [ ]
 categories:

@@ -3,7 +3,7 @@ layout: post
 title: Life or Death Data Visualization (video)
 published: true
 author: wenogk
-comments: false
+comments: true
 date: 2018-04-07 06:04:01
 tags: [ ]
 categories:

@@ -3,7 +3,7 @@ layout: post
 title: "Story: How I got Sean Parker's attention when I was 13."
 published: true
 author: wenogk
-comments: false
+comments: true
 date: 2018-10-17 07:10:50
 tags: [ ]
 categories:

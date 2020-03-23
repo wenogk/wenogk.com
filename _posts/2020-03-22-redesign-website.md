@@ -3,7 +3,7 @@ layout: post
 title: Redesigning this website
 published: true
 author: wenogk
-comments: false
+comments: true
 date: 2020-03-22 06:04:01
 categories:
     - engineer
@@ -24,3 +24,5 @@ All of the previous versions of my website ran on Wordpress which was hosted on 
 I was intrigued by Jekyll when I first read about it.
 
 >Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. Written in Ruby by Tom Preston-Werner, GitHub's co-founder, it is distributed under the open source MIT license. ~ <a href="https://en.wikipedia.org/wiki/Jekyll_(software)" >Wikipedia</a>
+
+I also got a free Github pro account because of the Github student program that gives free pro accounts to college students. Github pages is usually for simple static webpages but jekyll just changed the game. For simple blogs, jekyll provides everything you need and gives you full control
