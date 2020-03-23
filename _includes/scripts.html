@@ -62,7 +62,7 @@ function startPinnedScrollMagicStuff() {
           let scene = new ScrollMagic.Scene({triggerElement: "#scrollTriggerPinnedPosts", duration: 160})
         					// animate color and top border in relation to scroll position
         					.setTween(action) // the tween durtion can be omitted and defaults to 1
-        					.addIndicators({name: "start pinned posts animation"}) // add indicators (requires plugin)
+        				//	.addIndicators({name: "start pinned posts animation"}) // add indicators (requires plugin)
         					.addTo(controller)
                   .on("start", function (e) {
                     startPinStuff();
