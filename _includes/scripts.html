@@ -57,8 +57,8 @@ function startPinnedScrollMagicStuff() {
   startPinStuff()
         	let controller = new ScrollMagic.Controller();
           let pos = $("body").width() - $(".search").width() - $(".user-profile").width();
-          let action = gsap.timeline().to(".pin1",{left:"auto",rotation:90});
-          let scene = new ScrollMagic.Scene({triggerElement: "#scrollTriggerPinnedPosts", duration: 300})
+          let action = gsap.timeline().to(".pin1",{left:"auto",rotation:360});
+          let scene = new ScrollMagic.Scene({triggerElement: "#scrollTriggerPinnedPosts", duration: 80})
         					// animate color and top border in relation to scroll position
         					.setTween(action) // the tween durtion can be omitted and defaults to 1
         					.addIndicators({name: "start pinned posts animation"}) // add indicators (requires plugin)
