@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Posts Tagged - website | Romeno Wenogk &mdash; Hacker </title>
-    <meta property="og:title" content="Posts Tagged - website | Romeno Wenogk &mdash; Hacker " />
-    <meta name="twitter:title" content="Posts Tagged - website | Romeno Wenogk &mdash; Hacker " />
+    <title>Building a youtube commenting bot to win $1000 | Romeno Wenogk &mdash; Hacker </title>
+    <meta property="og:title" content="Building a youtube commenting bot to win $1000 | Romeno Wenogk &mdash; Hacker " />
+    <meta name="twitter:title" content="Building a youtube commenting bot to win $1000 | Romeno Wenogk &mdash; Hacker " />
 
     <meta name="description" content="A rising Senior studying Computer Science. Interested in backend engineering.">
     <meta name="description" property="og:description" content="A rising Senior studying Computer Science. Interested in backend engineering." />
@@ -17,7 +17,7 @@
     
     <meta name="twitter:site" content="@your_handler" />
     
-    <meta property="og:url" content="http://localhost:4000//tag/website/" />
+    <meta property="og:url" content="http://localhost:4000//engineer/beastbot.html" />
 
     <meta property="og:image" content="" />
     <meta name="twitter:image" content="" />
@@ -97,77 +97,13 @@
     <link rel="stylesheet" href="http://localhost:4000//assets/css/main.css">
     <link rel="stylesheet" href="http://localhost:4000//assets/css/grid.css">
 <link rel="stylesheet" href="http://localhost:4000//assets/css/emoji.css">
-    <link rel="canonical" href="http://localhost:4000//tag/website/">
+    <link rel="canonical" href="http://localhost:4000//engineer/beastbot.html">
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000//feed.xml">
 
 </head>
 
 
     <body>
-      <div id="scrollTrigger" ></div>
-        <style>
-  .headerx {
-    position: relative;
-    background-color: black;
-    height: 100vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .headerx video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-
-  .headerx .container {
-    position: relative;
-    z-index: 2;
-  }
-
-  .headerx .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.9;
-    z-index: 1;
-  }
-
-  @media (pointer: coarse) and (hover: none) {
-    .headerx {
-      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-    }
-    .headerx video {
-      display: none;
-    }
-  }</style>
-<script type="text/javascript">
-var animationPls = true;
-</script>
-<div class="headerx">
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="http://localhost:4000//assets/videos/bgVideo.mp4" type="video/mp4">
-    </video>
-    <div class="container h-100">
-      <div class="d-flex h-100 text-center align-items-center">
-
-      </div>
-    </div>
-</div>
-
         <div class="wrapper">
           <div class="sidebarThing">
             <aside class="user-profile fixed" role="complementary">
@@ -252,176 +188,170 @@ var animationPls = true;
     <ul id="results-container" class="results-container"></ul>
 </div>
 
-                
-<article class="post page single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-        <h2 itemprop="name headline">First time here? Check these out.</h2>
+        <ul>
+            <li><time datetime="2018-02-17T14:02:08+04:00" itemprop="datePublished">17 Feb, 2018</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">Building a youtube commenting bot to win $1000</h2>
     </header>
 
-    <div class="row">
+    <div class="post-content">
+        <h1 id="beastbot-the-angry-youtube-commentor-bot-version-2">BeastBot, the angry youtube commentor bot (version 2)</h1>
+<h2 id="trying-to-win-mr-beasts-1000-dollars-for-being-one-of-the-earliest-10-commenters-on-his-youtube-video-that-comes-out-on-the-19th-december-2019">Trying to win Mr Beast’s 1000 dollars for being one of the earliest 10 commenters on his youtube video that comes out on the 19th December 2019.</h2>
 
-      <div class="column">
-        <a href ="/engineer/myslsm.html"><div class="card blue pin1">
-          <p><span class="ec ec-metal"></span>
- Social Network I built for my highschool</p>
-        </div>
-        </a>
-      </div>
+<p><em>*DISCLAIMER* To the best of my knowledge, I am not violating any Youtube Guidelines, please do not replicate unless you know what you’re doing.</em></p>
 
-      <div class="column">
-        <a href ="/hacker/facebook-loophole.html">
-        <div class="card red pin2">
-          <p>Finding a bug on facebook <span class="ec ec-keyboard"></span></p>
-        </div>
-        </a>
-      </div>
+<h2 id="raw-first-thoughts-and-research">Raw first thoughts and research</h2>
+<ul>
+  <li>Set up an interval loop that runs every second as long as we have not already commented on the latest video. Also set up a txt file with just a boolean to show if we have commented on the latest video or not.</li>
+  <li>Write up a function that returns the latest youtube video from Mr. Beast’s channel and check if the latest video is not the, “Last To Stop Biking Wins $1,000,000 (Part 4)” video with video id wMuYiLby3-s as that was the previous video and we’re looking for the one after this.
+    <ul>
+      <li>This API call gives out the latest videos: https://www.googleapis.com/youtube/v3/search?key={your_key_here}&amp;channelId={channel_id_here}&amp;part=snippet,id&amp;order=date&amp;maxResults=20</li>
+    </ul>
+  </li>
+  <li>If latest video is the one we want to comment on from the previous function. We call the comment function which takes in parameters videoId and comment.
+    <ul>
+      <li>This is the API documentation for adding new top level comments to a youtube video:
+https://developers.google.com/youtube/v3/docs/commentThreads/insert</li>
+    </ul>
+  </li>
+  <li>The bot will comment three times and then set the boolean to true, therefore breaking the loop</li>
+</ul>
 
-      <div class="column">
-        <a href ="/hacker/thoughts/experience-winning-an-international-hackathon.html">
-        <div class="card purple pin3">
-          <p><span class="ec ec-trophy"></span>Winning a hackathon </p>
-        </div>
-        </a>
-      </div>
+<h2 id="huge-updates---version-2">Huge updates - Version 2</h2>
+<ul>
+  <li>A simple web interface was made using bootstrap to visualize beastBot</li>
+  <li>In terms of the Youtube Data API quota, each query on the search API takes 100 points per request out of the total 10,000 maximum per day. This quota usage was not good as it would limit the frequency of requests possible therefore had to alternate to the playlist API where the upload playlist of MrBeast’s channel was queried for the latest video, this had a quota of 3 points per request which is a <strong>97% reduction in quota usage</strong></li>
+  <li>Something noticed when testing on my own channel by adding new videos is that the Youtube Data API is very slow in terms of updating its lists of videos (it took around <strong>5 minutes on average</strong> to add a new video) therefore further alternatives were required.</li>
+  <li>The first alternative I found was that youtube has an RSS XML service where they provide channel videos to RSS Readers. For example if you go to https://www.youtube.com/feeds/videos.xml?channel_id={channelIDHere} it would give you a xml list of videos. The cool thing about this method is that it doesn’t require API keys or authorization which is neat. Although accessing it programmatically is only possible through a server (cross browser origin problems) which is why I had to create a node.js express server endpoint to get data from the RSS url. The RSS url was however also not fast enough in terms of getting the latest video as it took around <strong>3 minutes on average</strong> after testing.</li>
+  <li>The second alternative was the one I didn’t think I’d have to implement having the API’s but due to their inefficiency I had to build my own web scraper. If first inspected the youtube channel’s, “videos” page and “featured” page and noticed that the latest video comes up there quite quickly and noted down the classes of the links pointing to the youtube videos. I also noticed after testing that sometimes the video would first pop up in the featured page and sometimes on the videos page which meant using both would be a good idea. I built a scraper that opens the youtube channel videos url, get’s the latest url link and title by finding the first .yt-uix-tile-link class and returns it. I did the same for the youtube featured videos url. This brought down the time to around <strong>1 minute on average</strong>
+    <ul>
+      <li>I used cheerio, which is a “Fast, flexible &amp; lean implementation of core jQuery designed specifically for the server” in order to quickly find elements on the pages I am scraping on.</li>
+      <li>I noticed after a couple thousand scraping requests, my ip used to scraped was blocked from making any further requests. I then used the TOR-request library on node.js that allows requests to be made anonymously using the TOR network, this proved to be a bit slower as the requests go through other people’s computers around the world. Towards the time the video waas released I switched computers and got the code running on that instead as it had a fresh ip instead of using the TOR request.</li>
+    </ul>
+  </li>
+  <li><strong>To make the beast as powerful as possible I used ALL of the methods above into its workflow. I had a total of 6, “hunt” methods that would ALL be run at each loop:</strong>
+    <ol>
+      <li>hunt() method is to request the latest video from the Youtube API through the playlistItems API</li>
+      <li>hunt2() method is to request the latest video from the RSS XML url for a channels videos from Youtube</li>
+      <li>hunt3() method is to request the latest video by scraping the youtube channel’s “videos” page from my local computer</li>
+      <li>hunt4() method is to request the latest video by scraping the youtube channel’s “featured” page from my local computer</li>
+      <li>hunt5() method does the same as the hunt3() except its anonymous using the tor-request module. This method is slower than hunt3() however was put in as a preqecaution in case my local computer ip was blocked.</li>
+      <li>hunt6() method does the same as the hunt4() except its anonymous using the tor-request module. This method is slower than hunt4() however was put in as a preqecaution in case my local computer ip was blocked.
+ At every loop, all 6 of these methods would be carried out and the first to get the latest video would call the execute() method to call the Youtube comment API and comment on the video.</li>
+    </ol>
+    <ul>
+      <li>To make the code more organized, all of the 6 hunt() methods return a json object as follows.
+        <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="p">{</span>
+ <span class="nl">title</span><span class="p">:</span> <span class="s2">"title"</span><span class="p">,</span>
+ <span class="nx">link</span><span class="p">:</span> <span class="s2">"videoID"</span>
+ <span class="p">}</span>
+</code></pre></div>        </div>
+        <p>When an error occurs in any of the hunt methods, the title and link would default to “none” making it easier to ignore when handling the response.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-      <div class="column">
-        <a href ="/engineer/music/dj-music-mashup-using-xbox-kinect.html">
-        <div class="card green pin4">
-          <p><span class="ec ec-twisted-rightwards-arrows"></span>
-Building a DJ mashup software using XBOX Kinect</p>
-        </div>
-        </a>
-      </div>
+<h2 id="steps--pseudocode">Steps / Pseudocode</h2>
+<ol>
+  <li>Google data API key, client ID, Current latest video id, channelID, upload playlistID have to be hardcoded in the webConfig.js file (not on the repo as has sensitive info)</li>
+  <li>Authorize BeastBot to comment by logging in with Youtube account.</li>
+  <li>State is set up, with a commented boolean to set if executed succesfully, current latest video id variable and quota usage variable.</li>
+  <li>Hunting loop
+    <ol>
+      <li>If boolean commented is true,  break loop</li>
+      <li>hunt()
+        <ol>
+          <li>If latest video id returned not equal to current latest video id, call execute(latestVideoID) to comment</li>
+        </ol>
+      </li>
+      <li>hunt2()
+        <ol>
+          <li>If latest video id returned not equal to current latest video id, call execute(latestVideoID) to comment</li>
+        </ol>
+      </li>
+      <li>hunt3()
+        <ol>
+          <li>If latest video id returned not equal to current latest video id, call execute(latestVideoID) to comment</li>
+        </ol>
+      </li>
+      <li>hunt4()
+        <ol>
+          <li>If latest video id returned not equal to current latest video id, call execute(latestVideoID) to comment</li>
+        </ol>
+      </li>
+      <li>hunt5()
+        <ol>
+          <li>If latest video id returned not equal to current latest video id, call execute(latestVideoID) to comment</li>
+        </ol>
+      </li>
+      <li>hunt6()
+        <ol>
+          <li>If latest video id returned not equal to current latest video id, call execute(latestVideoID) to comment</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>Execute function
+    <ol>
+      <li>Youtube data API used to comment on video using videoID passed through argument in function</li>
+      <li>Commented boolean set to true to break loop
+        <h2 id="set-up-webconfigjs-in-the-public-directory-as-follows">Set up webConfig.js in the /public directory as follows:</h2>
+        <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">API_KEY</span> <span class="o">=</span> <span class="s2">"*********"</span> <span class="c1">//Google API key</span>
+<span class="kd">const</span> <span class="nx">CLIENT_ID</span> <span class="o">=</span> <span class="s2">"*********"</span> <span class="c1">//Google Client ID for youtube data API</span>
+<span class="kd">const</span> <span class="nx">SERVER_HOST</span> <span class="o">=</span> <span class="s2">"*********"</span> <span class="c1">//mine was http://localhost:8080</span>
+<span class="kd">const</span> <span class="nx">commentText</span> <span class="o">=</span> <span class="s2">"Hey Mr.Beast, I hope I win the $1000. Excited to watch the video!!"</span> <span class="c1">// The actual comment text</span>
+<span class="kd">const</span> <span class="nx">channelID</span> <span class="o">=</span><span class="s2">"*********"</span> <span class="c1">// The target youtube channel id</span>
+<span class="kd">const</span> <span class="nx">uploadPlaylistID</span> <span class="o">=</span> <span class="s2">"*********"</span> <span class="c1">//The uploads playlist id of the channel</span>
+<span class="kd">const</span> <span class="nx">currentLatestVideoID</span> <span class="o">=</span> <span class="s2">"*********"</span> <span class="c1">//The current latest youtube video id before the new one comes out</span>
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+</ol>
+
     </div>
-    <div class="row">
-      <div class="column">
-        <a href ="/music/creeper.html">
-        <div class="card red pin5">
-          <p>My first music piece <span class="ec ec-headphones"></span>
-</p>
-          <p></p>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Building a youtube commenting bot to win $1000&p[summary]=BeastBot, the angry youtube commentor bot (version 2)
+Trying to win Mr Beast’s 1000 dollars for being one of the earliest 10 commenters o...&p[url]=http://localhost:4000//engineer/beastbot.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000//engineer/beastbot.html&text=BeastBot, the angry youtube commentor bot (version 2)
+Trying to win Mr Beast’s 1000 dollars for being one of the earliest 10 commenters o...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
         </div>
-        </a>
-      </div>
-      <div class="column">
-        <a href ="/thoughts/lifeordeath.html">
-        <div class="card blue pin6">
-          <p><span class="ec ec-coffin"></span> Visualizing death</p>
+        
+        <div class="tags">
+            <ul>
+                
+            </ul>
         </div>
-        </a>
-      </div>
-
-
-
-      <div class="column">
-        <a href ="/engineer/music/my-electronic-music-visualizer-project.html">
-        <div class="card green pin7">
-          <p><span class="ec ec-notes"></span> Building an electronic music visualizer</p>
-        </div>
-        </a>
-      </div>
-
-      <div class="column">
-        <a href ="/engineer/beastbot.html">
-        <div class="card purple pin8">
-          <p><span class="ec ec-robot"></span>
-
-Building a youtube commenting bot to win $1000  <span class="ec ec-moneybag"></span><span class="ec ec-moneybag"></span>
-</p>
-        </div>
-        </a>
-      </div>
-    </div>
-      <h2 itemprop="name headline">Or keep scrolling to see the latest posts.</h2>
+        
+    </footer>
 </article>
 
-                <h1>Posts Tagged - website</h1>
 
+<aside class="comments" role="complementary">
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = 'http://localhost:4000//engineer/beastbot.html';
+            this.page.identifier = '2/17/2018';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
 
-    
-        
-    
-        
-        <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-            <header class="post-header">
-                <ul>
-                    <li><time datetime="2020-03-22T10:04:01+04:00" itemprop="datePublished">22 Mar, 2020</time></li>
-                    
-                </ul>
-                <h2 itemprop="name headline"><a href="http://localhost:4000//engineer/redesign-website.html">Redesigning this website</a></h2>
-            </header>
+            s.src = '//your_disqus_site.disqus.com/embed.js';
 
-            <div class="post-content">
-                <p>I’ve completely redesigned and revamped my website. The stack used is Jekyll with ruby on rails and is now hosted on Github pages.</p>
-
-<p>All of the previous versions of my website ran on Wordpress which was hosted on Hostinger. Let me list out the problems I had with it to explain why I needed this redesign.</p>
-
-
-
-                
-                    <p><a href="/engineer/redesign-website.html" role="button">Read More</a></p>
-                
-            </div>
-
-            <footer class="post-footer">
-                <div class="share">Share
-                    <ul class="social-networks">
-                        <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Redesigning this website&p[summary]=I’ve completely redesigned and revamped my website. The stack used is Jekyll with ruby on rails and is now hosted on Github pages.
-
-All o...&p[url]=http://localhost:4000//engineer/redesign-website.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                        <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/redesign-website.html&text=I’ve completely redesigned and revamped my website. The stack used is Jekyll with ruby on rails and is now hosted on Github pages.
-
-All o...&hashtags=jekyll,website," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
-                    </ul>
-                </div>
-                
-                <div class="tags">
-                    <ul>
-                        
-                        <li><a href="http://localhost:4000//tag/jekyll">jekyll</a></li>
-                        
-                        <li><a href="http://localhost:4000//tag/website">website</a></li>
-                        
-                    </ul>
-                </div>
-                
-            </footer>
-        </article>
-        
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        
-    
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+</aside>
 
 
             </main>
