@@ -33,12 +33,12 @@ function endStuff() {
 
 }
 
-function startScrollMagicStuff() {
+function startBannerScrollMagicStuff() {
 startStuff();
-	var controller = new ScrollMagic.Controller();
+	let controller = new ScrollMagic.Controller();
   let pos = $("body").width() - $(".search").width() - $(".user-profile").width();
-  var action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
-  var scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
+  let action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
+  let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
 					//.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
@@ -50,9 +50,25 @@ startStuff();
               endStuff();
 					});
         }
+function startPinnedScrollMagicStuff() {
+        	let controller = new ScrollMagic.Controller();
+          let pos = $("body").width() - $(".search").width() - $(".user-profile").width();
+          let action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
+          let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
+        					// animate color and top border in relation to scroll position
+        					.setTween(action) // the tween durtion can be omitted and defaults to 1
+        					//.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
+        					.addTo(controller)
+                  .on("start", function (e) {
+                    startStuff();
+                  })
+                  .on("end", function (e) {
+                      endStuff();
+        					});
+                }
         $(function() {
             if (!isMobileDevice()) {
-                if(animationPls === true) {startScrollMagicStuff()};
+                if(animationPls === true) {startBannerScrollMagicStuff()};
             } else {
               $(".headerx").css("display","none");
             }
