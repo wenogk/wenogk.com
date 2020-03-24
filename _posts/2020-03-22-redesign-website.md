@@ -11,7 +11,7 @@ tags:
     - jekyll
     - website
 ---
-<img src="{{site.baseurl}}/assets/images/sonic.gif" style="align:center;width:200px;" />
+<img  src="{{site.baseurl}}/assets/images/sonic.gif" style="padding:5px;align:center;width:200px;" />
 Two main reasons: speed & control. I've completely redesigned and revamped my website. The stack used is Jekyll with Ruby on Rails and is now hosted on Github pages.
 
 All of the previous versions of my website ran on Wordpress which was hosted on Hostinger. Let me list out the problems I had with it to explain why I needed this redesign. <!--more-->
