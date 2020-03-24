@@ -11,7 +11,7 @@ tags:
     - jekyll
     - website
 ---
-<div style="width:200px;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/KctGIT2JHvVRC7ESeR" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+<img src="{{site.baseurl}}/assets/images/sonic.gif" style="align:center;width:200px;" />
 I've completely redesigned and revamped my website. The stack used is Jekyll with ruby on rails and is now hosted on Github pages.
 
 All of the previous versions of my website ran on Wordpress which was hosted on Hostinger. Let me list out the problems I had with it to explain why I needed this redesign. <!--more-->
