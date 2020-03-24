@@ -12,6 +12,7 @@ categories:
 image:
     feature: Forbes-400-Cover1.jpg
 ---
+<img  src="{{site.baseurl}}/assets/images/sean.gif" style="padding:5px;align:center;width:200px;" />
 When I was young I was devious, malicious and didn't know the difference between right and wrong. I was 13 at the time, I had recently gotten the hang of PHP and built a social network for my school from scratch but this isn't about that, this is about a **hack**. <!--more-->
 
 So I was looking at Sean Parkers Facebook Profile Page and reading some posts on it when I spontaneously decided to send him a friend request just for fun knowing that nothing would come of it. A few hours later I get a notification saying the friend request is accepted. I was ecstatic. I tried sending him messages saying hi but he wouldn't see them or reply. The excitement then passed for a few days until I posted a funny meme and tagged some of my friends and Sean Parker in the post, because he is technically my friend now.
