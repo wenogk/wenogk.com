@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Building a youtube commenting bot to win $1000 | Romeno Wenogk &mdash; Hacker </title>
-    <meta property="og:title" content="Building a youtube commenting bot to win $1000 | Romeno Wenogk &mdash; Hacker " />
-    <meta name="twitter:title" content="Building a youtube commenting bot to win $1000 | Romeno Wenogk &mdash; Hacker " />
+    <title>Building a youtube commenting bot to win $1000 (technical writeup) | Romeno Wenogk &mdash; Hacker </title>
+    <meta property="og:title" content="Building a youtube commenting bot to win $1000 (technical writeup) | Romeno Wenogk &mdash; Hacker " />
+    <meta name="twitter:title" content="Building a youtube commenting bot to win $1000 (technical writeup) | Romeno Wenogk &mdash; Hacker " />
 
     <meta name="description" content="A rising Senior studying Computer Science. Interested in backend engineering.">
     <meta name="description" property="og:description" content="A rising Senior studying Computer Science. Interested in backend engineering." />
@@ -191,19 +191,18 @@
                 <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
         <ul>
-            <li><time datetime="2018-02-17T14:02:08+04:00" itemprop="datePublished">17 Feb, 2018</time></li>
+            <li><time datetime="2020-03-24T16:16:08+04:00" itemprop="datePublished">24 Mar, 2020</time></li>
             
         </ul>
-        <h2 itemprop="name headline">Building a youtube commenting bot to win $1000</h2>
+        <h2 itemprop="name headline">Building a youtube commenting bot to win $1000 (technical writeup)</h2>
     </header>
 
     <div class="post-content">
-        <h1 id="beastbot-the-angry-youtube-commentor-bot-version-2">BeastBot, the angry youtube commentor bot (version 2)</h1>
-<p><img src="//assets/images/beast.gif" alt="profile" /></p>
-<h2 id="trying-to-win-mr-beasts-1000-dollars-for-being-one-of-the-earliest-10-commenters-on-his-youtube-video-that-comes-out-on-the-19th-december-2019">Trying to win Mr Beast’s 1000 dollars for being one of the earliest 10 commenters on his youtube video that comes out on the 19th December 2019.</h2>
+        <p><img src="//assets/images/robot.gif" style="padding:5px;align:center;width:200px;" />
+This is the documentation I wrote for the code on my <a href="https://github.com/wenogk/beastBotV2" targer="_blank">Github</a>. I was trying to win Mr Beast’s 1000 dollars for being one of the earliest 10 commenters on his youtube video that comes out on the 19th December 2019. I call this bot the BeastBot, the angry youtube commentor bot (version 2). I coded a bot using node.js that used 6 different methods nonstop to find the latest post in a youtube channel as the updates in the Youtube server and API calls take time to propagate. The six methods include the Youtube API, Youtube RSS, Youtube Channel Videos page scraping, Youtube Channel latest videos page scraping and scraping using the tor protocol to prevent ip banning.</p>
 
-<p><em>*DISCLAIMER* To the best of my knowledge, I am not violating any Youtube Guidelines, please do not replicate unless you know what you’re doing.</em></p>
-
+<p><em>*DISCLAIMER* To the best of my knowledge, I am not violating any Youtube Guidelines, please do not replicate unless you know what you’re doing.</em>
+<!--more--></p>
 <h2 id="raw-first-thoughts-and-research">Raw first thoughts and research</h2>
 <ul>
   <li>Set up an interval loop that runs every second as long as we have not already commented on the latest video. Also set up a txt file with just a boolean to show if we have commented on the latest video or not.</li>
@@ -244,17 +243,17 @@ https://developers.google.com/youtube/v3/docs/commentThreads/insert</li>
  At every loop, all 6 of these methods would be carried out and the first to get the latest video would call the execute() method to call the Youtube comment API and comment on the video.</li>
     </ol>
     <ul>
-      <li>To make the code more organized, all of the 6 hunt() methods return a json object as follows.
-        <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="p">{</span>
- <span class="nl">title</span><span class="p">:</span> <span class="s2">"title"</span><span class="p">,</span>
- <span class="nx">link</span><span class="p">:</span> <span class="s2">"videoID"</span>
- <span class="p">}</span>
-</code></pre></div>        </div>
-        <p>When an error occurs in any of the hunt methods, the title and link would default to “none” making it easier to ignore when handling the response.</p>
-      </li>
+      <li>To make the code more organized, all of the 6 hunt() methods return a json object as follows.</li>
     </ul>
   </li>
 </ul>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"> <span class="p">{</span>
+ <span class="nl">title</span><span class="p">:</span> <span class="s2">"title"</span><span class="p">,</span>
+ <span class="nx">link</span><span class="p">:</span> <span class="s2">"videoID"</span>
+ <span class="p">}</span></code></pre></figure>
+
+<p>When an error occurs in any of the hunt methods, the title and link would default to “none” making it easier to ignore when handling the response.</p>
 
 <h2 id="steps--pseudocode">Steps / Pseudocode</h2>
 <ol>
@@ -301,30 +300,29 @@ https://developers.google.com/youtube/v3/docs/commentThreads/insert</li>
       <li>Youtube data API used to comment on video using videoID passed through argument in function</li>
       <li>Commented boolean set to true to break loop
         <h2 id="set-up-webconfigjs-in-the-public-directory-as-follows">Set up webConfig.js in the /public directory as follows:</h2>
-        <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">API_KEY</span> <span class="o">=</span> <span class="s2">"*********"</span> <span class="c1">//Google API key</span>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">API_KEY</span> <span class="o">=</span> <span class="s2">"*********"</span> <span class="c1">//Google API key</span>
 <span class="kd">const</span> <span class="nx">CLIENT_ID</span> <span class="o">=</span> <span class="s2">"*********"</span> <span class="c1">//Google Client ID for youtube data API</span>
 <span class="kd">const</span> <span class="nx">SERVER_HOST</span> <span class="o">=</span> <span class="s2">"*********"</span> <span class="c1">//mine was http://localhost:8080</span>
 <span class="kd">const</span> <span class="nx">commentText</span> <span class="o">=</span> <span class="s2">"Hey Mr.Beast, I hope I win the $1000. Excited to watch the video!!"</span> <span class="c1">// The actual comment text</span>
 <span class="kd">const</span> <span class="nx">channelID</span> <span class="o">=</span><span class="s2">"*********"</span> <span class="c1">// The target youtube channel id</span>
 <span class="kd">const</span> <span class="nx">uploadPlaylistID</span> <span class="o">=</span> <span class="s2">"*********"</span> <span class="c1">//The uploads playlist id of the channel</span>
-<span class="kd">const</span> <span class="nx">currentLatestVideoID</span> <span class="o">=</span> <span class="s2">"*********"</span> <span class="c1">//The current latest youtube video id before the new one comes out</span>
-</code></pre></div>        </div>
-      </li>
-    </ol>
-  </li>
-</ol>
+<span class="kd">const</span> <span class="nx">currentLatestVideoID</span> <span class="o">=</span> <span class="s2">"*********"</span> <span class="c1">//The current latest youtube video id before the new one comes out</span></code></pre></figure>
+
 
     </div>
 
     <footer class="post-footer">
         <div class="share">Share
             <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Building a youtube commenting bot to win $1000&p[summary]=BeastBot, the angry youtube commentor bot (version 2)
-
-Trying to win Mr Beast’s 1000 dollars for being one of the earliest 10 commenters ...&p[url]=http://localhost:4000//engineer/beastbot.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000//engineer/beastbot.html&text=BeastBot, the angry youtube commentor bot (version 2)
-
-Trying to win Mr Beast’s 1000 dollars for being one of the earliest 10 commenters ...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Building a youtube commenting bot to win $1000 (technical writeup)&p[summary]=
+This is the documentation I wrote for the code on my Github. I was trying to win Mr Beast’s 1000 dollars for being one of the earliest 1...&p[url]=http://localhost:4000//engineer/beastbot.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000//engineer/beastbot.html&text=
+This is the documentation I wrote for the code on my Github. I was trying to win Mr Beast’s 1000 dollars for being one of the earliest 1...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -343,7 +341,7 @@ Trying to win Mr Beast’s 1000 dollars for being one of the earliest 10 comment
     <script>
         var disqus_config = function () {
             this.page.url = 'http://localhost:4000//engineer/beastbot.html';
-            this.page.identifier = '2/17/2018';
+            this.page.identifier = '3/24/2020';
         };
         (function() {
             var d = document, s = d.createElement('script');

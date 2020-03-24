@@ -5,13 +5,141 @@
     <description>A rising Senior studying Computer Science. Interested in backend engineering.</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Mar 2020 00:15:27 +0400</pubDate>
-    <lastBuildDate>Tue, 24 Mar 2020 00:15:27 +0400</lastBuildDate>
+    <pubDate>Tue, 24 Mar 2020 21:05:21 +0400</pubDate>
+    <lastBuildDate>Tue, 24 Mar 2020 21:05:21 +0400</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
-        <title>Redesigning this website</title>
-        <description>&lt;p&gt;I’ve completely redesigned and revamped my website. The stack used is Jekyll with ruby on rails and is now hosted on Github pages.&lt;/p&gt;
+        <title>Building a youtube commenting bot to win $1000 (technical writeup)</title>
+        <description>&lt;p&gt;&lt;img src=&quot;//assets/images/robot.gif&quot; style=&quot;padding:5px;align:center;width:200px;&quot; /&gt;
+This is the documentation I wrote for the code on my &lt;a href=&quot;https://github.com/wenogk/beastBotV2&quot; targer=&quot;_blank&quot;&gt;Github&lt;/a&gt;. I was trying to win Mr Beast’s 1000 dollars for being one of the earliest 10 commenters on his youtube video that comes out on the 19th December 2019. I call this bot the BeastBot, the angry youtube commentor bot (version 2). I coded a bot using node.js that used 6 different methods nonstop to find the latest post in a youtube channel as the updates in the Youtube server and API calls take time to propagate. The six methods include the Youtube API, Youtube RSS, Youtube Channel Videos page scraping, Youtube Channel latest videos page scraping and scraping using the tor protocol to prevent ip banning.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;*DISCLAIMER* To the best of my knowledge, I am not violating any Youtube Guidelines, please do not replicate unless you know what you’re doing.&lt;/em&gt;
+&lt;!--more--&gt;&lt;/p&gt;
+&lt;h2 id=&quot;raw-first-thoughts-and-research&quot;&gt;Raw first thoughts and research&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Set up an interval loop that runs every second as long as we have not already commented on the latest video. Also set up a txt file with just a boolean to show if we have commented on the latest video or not.&lt;/li&gt;
+  &lt;li&gt;Write up a function that returns the latest youtube video from Mr. Beast’s channel and check if the latest video is not the, “Last To Stop Biking Wins $1,000,000 (Part 4)” video with video id wMuYiLby3-s as that was the previous video and we’re looking for the one after this.
+    &lt;ul&gt;
+      &lt;li&gt;This API call gives out the latest videos: https://www.googleapis.com/youtube/v3/search?key={your_key_here}&amp;amp;channelId={channel_id_here}&amp;amp;part=snippet,id&amp;amp;order=date&amp;amp;maxResults=20&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If latest video is the one we want to comment on from the previous function. We call the comment function which takes in parameters videoId and comment.
+    &lt;ul&gt;
+      &lt;li&gt;This is the API documentation for adding new top level comments to a youtube video:
+https://developers.google.com/youtube/v3/docs/commentThreads/insert&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The bot will comment three times and then set the boolean to true, therefore breaking the loop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;huge-updates---version-2&quot;&gt;Huge updates - Version 2&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;A simple web interface was made using bootstrap to visualize beastBot&lt;/li&gt;
+  &lt;li&gt;In terms of the Youtube Data API quota, each query on the search API takes 100 points per request out of the total 10,000 maximum per day. This quota usage was not good as it would limit the frequency of requests possible therefore had to alternate to the playlist API where the upload playlist of MrBeast’s channel was queried for the latest video, this had a quota of 3 points per request which is a &lt;strong&gt;97% reduction in quota usage&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Something noticed when testing on my own channel by adding new videos is that the Youtube Data API is very slow in terms of updating its lists of videos (it took around &lt;strong&gt;5 minutes on average&lt;/strong&gt; to add a new video) therefore further alternatives were required.&lt;/li&gt;
+  &lt;li&gt;The first alternative I found was that youtube has an RSS XML service where they provide channel videos to RSS Readers. For example if you go to https://www.youtube.com/feeds/videos.xml?channel_id={channelIDHere} it would give you a xml list of videos. The cool thing about this method is that it doesn’t require API keys or authorization which is neat. Although accessing it programmatically is only possible through a server (cross browser origin problems) which is why I had to create a node.js express server endpoint to get data from the RSS url. The RSS url was however also not fast enough in terms of getting the latest video as it took around &lt;strong&gt;3 minutes on average&lt;/strong&gt; after testing.&lt;/li&gt;
+  &lt;li&gt;The second alternative was the one I didn’t think I’d have to implement having the API’s but due to their inefficiency I had to build my own web scraper. If first inspected the youtube channel’s, “videos” page and “featured” page and noticed that the latest video comes up there quite quickly and noted down the classes of the links pointing to the youtube videos. I also noticed after testing that sometimes the video would first pop up in the featured page and sometimes on the videos page which meant using both would be a good idea. I built a scraper that opens the youtube channel videos url, get’s the latest url link and title by finding the first .yt-uix-tile-link class and returns it. I did the same for the youtube featured videos url. This brought down the time to around &lt;strong&gt;1 minute on average&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;I used cheerio, which is a “Fast, flexible &amp;amp; lean implementation of core jQuery designed specifically for the server” in order to quickly find elements on the pages I am scraping on.&lt;/li&gt;
+      &lt;li&gt;I noticed after a couple thousand scraping requests, my ip used to scraped was blocked from making any further requests. I then used the TOR-request library on node.js that allows requests to be made anonymously using the TOR network, this proved to be a bit slower as the requests go through other people’s computers around the world. Towards the time the video waas released I switched computers and got the code running on that instead as it had a fresh ip instead of using the TOR request.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;To make the beast as powerful as possible I used ALL of the methods above into its workflow. I had a total of 6, “hunt” methods that would ALL be run at each loop:&lt;/strong&gt;
+    &lt;ol&gt;
+      &lt;li&gt;hunt() method is to request the latest video from the Youtube API through the playlistItems API&lt;/li&gt;
+      &lt;li&gt;hunt2() method is to request the latest video from the RSS XML url for a channels videos from Youtube&lt;/li&gt;
+      &lt;li&gt;hunt3() method is to request the latest video by scraping the youtube channel’s “videos” page from my local computer&lt;/li&gt;
+      &lt;li&gt;hunt4() method is to request the latest video by scraping the youtube channel’s “featured” page from my local computer&lt;/li&gt;
+      &lt;li&gt;hunt5() method does the same as the hunt3() except its anonymous using the tor-request module. This method is slower than hunt3() however was put in as a preqecaution in case my local computer ip was blocked.&lt;/li&gt;
+      &lt;li&gt;hunt6() method does the same as the hunt4() except its anonymous using the tor-request module. This method is slower than hunt4() however was put in as a preqecaution in case my local computer ip was blocked.
+ At every loop, all 6 of these methods would be carried out and the first to get the latest video would call the execute() method to call the Youtube comment API and comment on the video.&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;ul&gt;
+      &lt;li&gt;To make the code more organized, all of the 6 hunt() methods return a json object as follows.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;nl&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+ &lt;span class=&quot;nx&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;videoID&quot;&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;When an error occurs in any of the hunt methods, the title and link would default to “none” making it easier to ignore when handling the response.&lt;/p&gt;
+
+&lt;h2 id=&quot;steps--pseudocode&quot;&gt;Steps / Pseudocode&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Google data API key, client ID, Current latest video id, channelID, upload playlistID have to be hardcoded in the webConfig.js file (not on the repo as has sensitive info)&lt;/li&gt;
+  &lt;li&gt;Authorize BeastBot to comment by logging in with Youtube account.&lt;/li&gt;
+  &lt;li&gt;State is set up, with a commented boolean to set if executed succesfully, current latest video id variable and quota usage variable.&lt;/li&gt;
+  &lt;li&gt;Hunting loop
+    &lt;ol&gt;
+      &lt;li&gt;If boolean commented is true,  break loop&lt;/li&gt;
+      &lt;li&gt;hunt()
+        &lt;ol&gt;
+          &lt;li&gt;If latest video id returned not equal to current latest video id, call execute(latestVideoID) to comment&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;hunt2()
+        &lt;ol&gt;
+          &lt;li&gt;If latest video id returned not equal to current latest video id, call execute(latestVideoID) to comment&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;hunt3()
+        &lt;ol&gt;
+          &lt;li&gt;If latest video id returned not equal to current latest video id, call execute(latestVideoID) to comment&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;hunt4()
+        &lt;ol&gt;
+          &lt;li&gt;If latest video id returned not equal to current latest video id, call execute(latestVideoID) to comment&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;hunt5()
+        &lt;ol&gt;
+          &lt;li&gt;If latest video id returned not equal to current latest video id, call execute(latestVideoID) to comment&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;hunt6()
+        &lt;ol&gt;
+          &lt;li&gt;If latest video id returned not equal to current latest video id, call execute(latestVideoID) to comment&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Execute function
+    &lt;ol&gt;
+      &lt;li&gt;Youtube data API used to comment on video using videoID passed through argument in function&lt;/li&gt;
+      &lt;li&gt;Commented boolean set to true to break loop
+        &lt;h2 id=&quot;set-up-webconfigjs-in-the-public-directory-as-follows&quot;&gt;Set up webConfig.js in the /public directory as follows:&lt;/h2&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;API_KEY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;*********&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Google API key&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CLIENT_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;*********&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Google Client ID for youtube data API&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SERVER_HOST&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;*********&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//mine was http://localhost:8080&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;commentText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hey Mr.Beast, I hope I win the $1000. Excited to watch the video!!&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// The actual comment text&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;channelID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;*********&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// The target youtube channel id&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uploadPlaylistID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;*********&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The uploads playlist id of the channel&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;currentLatestVideoID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;*********&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The current latest youtube video id before the new one comes out&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Tue, 24 Mar 2020 16:16:08 +0400</pubDate>
+        <link>http://localhost:4000//engineer/beastbot.html</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/beastbot.html</guid>
+        
+        
+        <category>engineer</category>
+        
+      </item>
+    
+      <item>
+        <title>Redesigning this website.</title>
+        <description>&lt;p&gt;&lt;img src=&quot;//assets/images/sonic.gif&quot; style=&quot;padding:5px;align:center;width:200px;&quot; /&gt;
+Two main reasons: speed &amp;amp; control. I’ve completely redesigned and revamped my website. The stack used is Jekyll with Ruby on Rails and is now hosted on Github pages.&lt;/p&gt;
 
 &lt;p&gt;All of the previous versions of my website ran on Wordpress which was hosted on Hostinger. Let me list out the problems I had with it to explain why I needed this redesign. &lt;!--more--&gt;&lt;/p&gt;
 
@@ -687,108 +815,6 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
         <category>hacker</category>
         
         <category>thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>DJ Music Mashup (Using XBOX Kinect)</title>
-        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Hx1hjPbIwps&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;em&gt;This is my Intro to Interactive Media - Final Class Project documentation.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Background&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;My final project was a, “DJ Mixer” where the user could use his/her own hands to control and mix two songs together to play at the same time. For example, Ed Sheerans’s shape of you background music could be played with Justin Bieber singing love yourself. 
-&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Timeline&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;1) Used the Minim Processing library to simply play 2 songs at the same time, one kareoke and one acapella, and was working on a volume controller which looked like this initially and worked with the cursor on the computer:&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/klaOZvq5vY8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;2) Integrated it to the kinect using  a library by Dan Shiffman and added pause buttons.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vmfNd11BjaQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;3) Added many more songs, removed pause buttons, instead the currently playing song could be hovered on to pause.  &lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Hx1hjPbIwps&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;4) I then made many improvements to the previous version:
-    * I improved the design a bit.
-    * Cropped the mp3 files of the songs to go directly to the music rather than a pause or an intro as many of the youtube videos had them.
-    * Made the webcam visible in a small area at the bottom.
-    * I also made the volume be always visible to the user as it wasn’t clear to them that that functionality was possible.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/G8BqVScv9_s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;5) The final update was mainly a huge UI and Design bump which I will go over in the next section. I also added a, “DJ Training” stage in order to train users on how to move the hand around the screen to select stuff. (In the video below I use the computer cursor as the pointer for demo purposes)&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/NqFCkTqgUcI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;strong&gt;Technical Aspect&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The base of my project was not hard to make. I am glad I went with the object oriented approach as I’m sure it saved me TONS of time as I started making many upgrades to it. I created a Song class that included the functionality of instantiating the song with its song file, displaying the song on the screen, having on hover functionality for that song, playing and pausing functions. I then made an array of Song objects in a songs array and instantiated them all. This made it trivial to add new songs. Using an object oriented approach allowed me to implement the volume controller class and add in many design improvements such as font and on hover shading easily.   The controlling of the cursor was perhaps the most important part technically as it is what gives the user the ability to interact with my project so it had to be as seamless as possible which is why I focused on it a lot. The kinect integration was simple as I got the code from Dan Shiffmans website. However, the detection of the hand was VERY buggy initially and I had to make many changes to optimize it specifically for my requirement:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The first important thing I did was make the cursor return to a specific spot if there is no depth greater than the threshold value. This reduced some unintentional clicking.&lt;/li&gt;
-  &lt;li&gt;The second is that I optimized Dan Shiffman’s Kinect class to suit my needs by adding 2 counters: one totalArea counter which increments in the for loop and one handArea counter which also increments in the for loop but only when the depth is greater than the threshold value. I then only allowed the movement of the cursor if handArea/totalArea=0.065 as after some testing found that the hand is less than 6.5% of the total kinect screen.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;I made everything hover based, any song, pause button and volume control has its own counter which I use to make it function only when the cursor hovers over that part for some time. This dramatically reduced unintentional clicks.&lt;/p&gt;
-
-    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wyOim_4ckV0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Design and Interactivity&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;As you have seem there was a bump in the design from the 90% ready project and the 100% ready project. Let me take you through some of my decisions.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The adding of icons was important as professor suggested, as it gave the users a clear idea of what would happen when clicked which is why I used icons for pause, and a sound icon near the volume controllers. This worked well in practice as I didn’t have to explain much to the users, they simply knew what to do.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table align=&quot;center&quot;&gt;
-&lt;tr&gt;&lt;td&gt;
-&lt;img src=&quot;//assets/images/dj_1.png&quot; /&gt;
-&lt;/td&gt;&lt;td&gt;
-&lt;img src=&quot;//assets/images/dj_2.png&quot; /&gt;
-&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;I added a hover shade effect when a user hovers over a song name and a color change to the pause buttons when hovered. I did this so that first time users would know that the song is indeed clickable (or pause button). It almost gives the, ‘hyperlink’ feel to the user which is familiar to them and hence serves my project better in terms of interaction.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I worked hard on the volume controller, which is why it has its own class. I wanted to design it just like a volume controller in a dj rack where the user could move a knob along a slider in order to control the volume. I did this so the user could relate what they see to a volume knob in a sound mixer in order to know what the volume controller does.  The background of the volume controller initially were horizontal, equally spaced lines but I decided to make it random constantly moving lines to give it a live feel so that the user knows that something can be done by using it&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table align=&quot;center&quot;&gt;
-&lt;tr&gt;&lt;td&gt;
-&lt;img src=&quot;//assets/images/dj_3.jpg&quot; /&gt;
-&lt;/td&gt;&lt;td&gt;
-&lt;img src=&quot;//assets/images/dj_4.gif&quot; /&gt;
-&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I needed a good font as the one I selected initially wasn’t appealing to many users. I wanted a font that would be:
-    &lt;ul&gt;
-      &lt;li&gt;Easy to read&lt;/li&gt;
-      &lt;li&gt;Had some type of old-school tech feel to it (like how text is displayed on a small LED display)&lt;/li&gt;
-      &lt;li&gt;Seemed intriguing to catch some passer-by’s attention After some considerable research, I found a font called “underwood”, which seemed like a good choice as it fit my criteria.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The background image of a DJ rack that I found on google images was a nice addition as it fit my project well. The two racks seemed cohesive with the two sides (kareoke and acapella) that the user could choose songs from. Many users actually started hovering over the DJ racks themselves thinking it would do something.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 28 Jun 2018 11:06:10 +0400</pubDate>
-        <link>http://localhost:4000//engineer/music/dj-music-mashup-using-xbox-kinect.html</link>
-        <guid isPermaLink="true">http://localhost:4000//engineer/music/dj-music-mashup-using-xbox-kinect.html</guid>
-        
-        
-        <category>engineer</category>
-        
-        <category>music</category>
         
       </item>
     
