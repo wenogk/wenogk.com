@@ -40,14 +40,14 @@ let taylorRocks: Bool = true
 {% endhighlight %}
 ## Day 2
 _4th April 2020_
-    * Learned array declaration
-    * Learned Set declaration:
+  * Learned array declaration
+  * Learned Set declaration:
 {% highlight swift %}
 let colors2 = Set(["red", "green", "blue", "red", "blue"])
 {% endhighlight %}
-    * Tuples allow you to store several values together in a single value. 
-        * You can’t add or remove items from a tuple; they are fixed in size. 
-        * You can’t change the type of items in a tuple; they always have the same types they were created with.
+  * Tuples allow you to store several values together in a single value. 
+      * You can’t add or remove items from a tuple; they are fixed in size. 
+      * You can’t change the type of items in a tuple; they always have the same types they were created with.
 {% highlight swift %}
 var name = (first: "Taylor", last: "Swift")
 name.0
