@@ -25,3 +25,8 @@ over multiple
 lines
 """
 {% endhighlight %}
+  * String interpolation works like this :
+{% highlight swift %}
+var score = 85
+var str = "Your score was \(score)"
+{% endhighlight %}
