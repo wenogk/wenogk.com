@@ -31,3 +31,11 @@ var score = 85
 var str = "Your score was \(score)"
 {% endhighlight %}
     * As opposed to Javascript, the "let" keyword defines constants that cannot be changed after declared.
+    * Type inference is possible by :
+{% highlight swift %}
+let album: String = "Reputation"
+let year: Int = 1989
+let height: Double = 1.78
+let taylorRocks: Bool = true
+{% endhighlight %}
+    
