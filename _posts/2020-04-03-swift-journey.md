@@ -14,7 +14,7 @@ tags:
 <img src="{{site.baseurl}}/assets/images/iphones.gif" style="padding:5px;align:center;width:200px;" />
 I have made the decision to learn Native IOS development using the Swift programming language and produce a portfolio of apps. This page would therefore be updated with everything I learn daily. I am primarily doing this to keep myself accountable to my progress.   <!--more-->
 
-## Day 1 
+## Update 1 
 _3rd April 2020_
   * Learned that Swift is a type-safe programming language like Javascript.
   * Multiline strings would be coded like this
@@ -38,7 +38,7 @@ let year: Int = 1989
 let height: Double = 1.78
 let taylorRocks: Bool = true
 {% endhighlight %}
-## Day 2
+## Update 2
 _4th April 2020_
   * Learned array declaration
   * Learned Set declaration:
@@ -52,4 +52,13 @@ let colors2 = Set(["red", "green", "blue", "red", "blue"])
 var name = (first: "Taylor", last: "Swift")
 name.0
 name.first
-{% endhighlight %}       
+{% endhighlight %}     
+  * Dictionaries can be declared like:
+{% highlight swift %}
+let heights = [
+    "Taylor Swift": 1.78,
+    "Ed Sheeran": 1.73
+]
+heights["Eminem", default: "Unknown"] //will give unknown instead of "nil"
+{% endhighlight %}  
+  * 
