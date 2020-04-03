@@ -12,4 +12,4 @@ tags:
     - IOS
 ---
 <img src="{{site.baseurl}}/assets/images/iphones.gif" style="padding:5px;align:center;width:200px;" />
-I have made the decision to learn Native IOS development using the Swift programming language and produce a portfolio of apps. This page would therefore be updates with everything I learn daily. I am primarily doing this to keep myself accountable to my progress.   <!--more-->
+I have made the decision to learn Native IOS development using the Swift programming language and produce a portfolio of apps. This page would therefore be updated with everything I learn daily. I am primarily doing this to keep myself accountable to my progress.   <!--more-->
