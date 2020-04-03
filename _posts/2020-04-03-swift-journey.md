@@ -17,7 +17,7 @@ I have made the decision to learn Native IOS development using the Swift program
 ## Day 1 
 _3rd April 2020_
   * Learned that Swift is a type-safe programming language like Javascript.
-  * Multiline strings would be coded like This
+  * Multiline strings would be coded like this
 {% highlight swift %}
 var str1 = """
 This goes
