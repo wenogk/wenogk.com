@@ -61,4 +61,13 @@ let heights = [
 ]
 heights["Eminem", default: "Unknown"] //will give unknown instead of "nil"
 {% endhighlight %}  
+  * Learned about enums and enum associated values:
+{% highlight swift %}
+  enum Activity {
+    case bored
+    case running(destination: String)
+    case talking(topic: String)
+    case singing(volume: Int)
+}
+{% endhighlight %}  
   * 
