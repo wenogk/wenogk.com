@@ -103,9 +103,23 @@ for _ in 1...5 { //without using a constant
     print("play")
 }
 {% endhighlight %}  
-	* Learned the _repeat_ loop which is basically the same as a do-while loop in other languages:
+  * Learned the _repeat_ loop which is basically the same as a do-while loop in other languages:
 {% highlight swift %}
 	repeat {
     print("This is false")
 } while false
 {% endhighlight %}  
+  * Learned that it is possible to label for loops and use the break keyword with labels to break outerLoops:
+  {% highlight swift %}
+	outerLoop: for i in 1...10 {
+    for j in 1...10 {
+        let product = i * j
+        print ("\(i) * \(j) is \(product)")
+
+        if product == 50 {
+            print("It's a bullseye!")
+            break outerLoop
+        }
+    }
+}
+{% endhighlight %}
