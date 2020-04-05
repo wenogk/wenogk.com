@@ -87,3 +87,20 @@ default:
     print("You did great!")
 }
 {% endhighlight %}  
+
+## Update 4
+_5th April 2020_
+  * Learned the weird for loop syntax.
+  * Range operators are useful in switch statements:
+  {% highlight swift %}
+let count = 1...10
+for number in count {
+    print("Number is \(number)")
+}
+
+print("Players gonna ")
+
+for _ in 1...5 { //without using a constant
+    print("play")
+}
+{% endhighlight %}  
