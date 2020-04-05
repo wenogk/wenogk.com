@@ -90,8 +90,7 @@ default:
 
 ## Update 4
 _5th April 2020_
-  * Learned the weird for loop syntax.
-  * Range operators are useful in switch statements:
+  * Learned the weird for loop syntax:
   {% highlight swift %}
 let count = 1...10
 for number in count {
@@ -103,4 +102,10 @@ print("Players gonna ")
 for _ in 1...5 { //without using a constant
     print("play")
 }
+{% endhighlight %}  
+	* Learned the _repeat_ loop which is basically the same as a do-while loop in other languages:
+{% highlight swift %}
+	repeat {
+    print("This is false")
+} while false
 {% endhighlight %}  
