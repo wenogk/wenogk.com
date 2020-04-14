@@ -9,9 +9,9 @@
     <meta property="og:title" content="Experience: Winning an international hackathon | Romeno Wenogk &mdash; Hacker " />
     <meta name="twitter:title" content="Experience: Winning an international hackathon | Romeno Wenogk &mdash; Hacker " />
 
-    <meta name="description" content="A rising Senior studying Computer Science. Interested in backend engineering.">
-    <meta name="description" property="og:description" content="A rising Senior studying Computer Science. Interested in backend engineering." />
-    <meta name="twitter:description" content="A rising Senior studying Computer Science. Interested in backend engineering." />
+    <meta name="description" content="A rising Senior studying Computer Science. Interested in backend engineering, IOS Development, Machine learning and anything that has to do with Javascript.">
+    <meta name="description" property="og:description" content="A rising Senior studying Computer Science. Interested in backend engineering, IOS Development, Machine learning and anything that has to do with Javascript." />
+    <meta name="twitter:description" content="A rising Senior studying Computer Science. Interested in backend engineering, IOS Development, Machine learning and anything that has to do with Javascript." />
 
     <meta name="twitter:card" content="summary_large_image" />
     
@@ -124,7 +124,7 @@
 
 
 
-    <p class="about-me">A rising Senior studying Computer Science. Interested in backend engineering.</p>
+    <p class="about-me" style="text-align: justify;text-justify: inter-word;">A rising Senior studying Computer Science. Interested in backend engineering, IOS Development, Machine learning and anything that has to do with Javascript.</p>
     
         
         <div class="mainmenu">
@@ -380,10 +380,10 @@ startStuff();
 	let controller = new ScrollMagic.Controller();
   let pos = $("body").width() - $(".search").width() - $(".user-profile").width();
   let action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
-  let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
+  let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-575),offset:"575"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
-					//.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
+					.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
 					.addTo(controller)
           .on("start", function (e) {
             startStuff();

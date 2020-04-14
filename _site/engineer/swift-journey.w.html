@@ -9,9 +9,9 @@
     <meta property="og:title" content="My IOS Development journey | Romeno Wenogk &mdash; Hacker " />
     <meta name="twitter:title" content="My IOS Development journey | Romeno Wenogk &mdash; Hacker " />
 
-    <meta name="description" content="A rising Senior studying Computer Science. Interested in backend engineering.">
-    <meta name="description" property="og:description" content="A rising Senior studying Computer Science. Interested in backend engineering." />
-    <meta name="twitter:description" content="A rising Senior studying Computer Science. Interested in backend engineering." />
+    <meta name="description" content="A rising Senior studying Computer Science. Interested in backend engineering, IOS Development, Machine learning and anything that has to do with Javascript.">
+    <meta name="description" property="og:description" content="A rising Senior studying Computer Science. Interested in backend engineering, IOS Development, Machine learning and anything that has to do with Javascript." />
+    <meta name="twitter:description" content="A rising Senior studying Computer Science. Interested in backend engineering, IOS Development, Machine learning and anything that has to do with Javascript." />
 
     <meta name="twitter:card" content="summary_large_image" />
     
@@ -124,7 +124,7 @@
 
 
 
-    <p class="about-me">A rising Senior studying Computer Science. Interested in backend engineering.</p>
+    <p class="about-me" style="text-align: justify;text-justify: inter-word;">A rising Senior studying Computer Science. Interested in backend engineering, IOS Development, Machine learning and anything that has to do with Javascript.</p>
     
         
         <div class="mainmenu">
@@ -203,12 +203,115 @@
 
     <div class="post-content">
         <p><img src="//assets/images/iphones.gif" style="padding:5px;align:center;width:200px;" />
-I have made the decision to learn Native IOS development using the Swift programming language and produce a portfolio of apps. This page would therefore be updated with everything I learn daily. I am primarily doing this to keep myself accountable to my progress.   <!--more--></p>
+I have made the decision to learn Native IOS development using the Swift programming language and produce a portfolio of apps. This page would therefore be updated with everything I learn daily. I am primarily doing this to keep myself accountable to my progress. I’ll be updating my progress in reverse chronological order below:   <!--more--></p>
 
-<h4 id="day-1---3rd-april-2020">Day 1 - 3rd April 2020</h4>
+<h2 id="update-4">Update 4</h2>
+<p><em>5th April 2020</em></p>
+<ul>
+  <li>Learned the weird for loop syntax:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">let</span> <span class="nv">count</span> <span class="o">=</span> <span class="mi">1</span><span class="o">...</span><span class="mi">10</span>
+<span class="k">for</span> <span class="n">number</span> <span class="k">in</span> <span class="n">count</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Number is </span><span class="se">\(</span><span class="n">number</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="s">"Players gonna "</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="k">in</span> <span class="mi">1</span><span class="o">...</span><span class="mi">5</span> <span class="p">{</span> <span class="c1">//without using a constant</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"play"</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>Learned the <em>repeat</em> loop which is basically the same as a do-while loop in other languages:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">repeat</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"This is false"</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">while</span> <span class="kc">false</span></code></pre></figure>
+
+<ul>
+  <li>Learned that it is possible to label for loops and use the break keyword with labels to break outerLoops:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="nv">outerLoop</span><span class="p">:</span> <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">...</span><span class="mi">10</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="k">in</span> <span class="mi">1</span><span class="o">...</span><span class="mi">10</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">product</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">j</span>
+        <span class="nf">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">i</span><span class="se">)</span><span class="s"> * </span><span class="se">\(</span><span class="n">j</span><span class="se">)</span><span class="s"> is </span><span class="se">\(</span><span class="n">product</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">product</span> <span class="o">==</span> <span class="mi">50</span> <span class="p">{</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"It's a bullseye!"</span><span class="p">)</span>
+            <span class="k">break</span> <span class="n">outerLoop</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="update-3">Update 3</h2>
+<p><em>4th April 2020</em></p>
+<ul>
+  <li>Learned about range operators. Swift gives us two ways of making ranges: the ..&lt; and … operators. The half-open range operator, ..&lt;, creates ranges up to but excluding the final value, and the closed range operator, …, creates ranges up to and including the final value.</li>
+  <li>Range operators are useful in switch statements:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">let</span> <span class="nv">score</span> <span class="o">=</span> <span class="mi">85</span>
+
+<span class="k">switch</span> <span class="n">score</span> <span class="p">{</span>
+<span class="k">case</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="mi">50</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"You failed badly."</span><span class="p">)</span>
+<span class="k">case</span> <span class="mi">50</span><span class="o">..&lt;</span><span class="mi">85</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"You did OK."</span><span class="p">)</span>
+<span class="k">default</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"You did great!"</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="update-2">Update 2</h2>
+<p><em>4th April 2020</em></p>
+<ul>
+  <li>Learned array declaration</li>
+  <li>Learned Set declaration:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">let</span> <span class="nv">colors2</span> <span class="o">=</span> <span class="kt">Set</span><span class="p">([</span><span class="s">"red"</span><span class="p">,</span> <span class="s">"green"</span><span class="p">,</span> <span class="s">"blue"</span><span class="p">,</span> <span class="s">"red"</span><span class="p">,</span> <span class="s">"blue"</span><span class="p">])</span></code></pre></figure>
+
+<ul>
+  <li>Tuples allow you to store several values together in a single value.
+    <ul>
+      <li>You can’t add or remove items from a tuple; they are fixed in size.</li>
+      <li>You can’t change the type of items in a tuple; they always have the same types they were created with.</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">var</span> <span class="nv">name</span> <span class="o">=</span> <span class="p">(</span><span class="nv">first</span><span class="p">:</span> <span class="s">"Taylor"</span><span class="p">,</span> <span class="nv">last</span><span class="p">:</span> <span class="s">"Swift"</span><span class="p">)</span>
+<span class="n">name</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">name</span><span class="o">.</span><span class="n">first</span></code></pre></figure>
+
+<ul>
+  <li>Dictionaries can be declared like:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">let</span> <span class="nv">heights</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s">"Taylor Swift"</span><span class="p">:</span> <span class="mf">1.78</span><span class="p">,</span>
+    <span class="s">"Ed Sheeran"</span><span class="p">:</span> <span class="mf">1.73</span>
+<span class="p">]</span>
+<span class="n">heights</span><span class="p">[</span><span class="s">"Eminem"</span><span class="p">,</span> <span class="k">default</span><span class="p">:</span> <span class="s">"Unknown"</span><span class="p">]</span> <span class="c1">//will give unknown instead of "nil"</span></code></pre></figure>
+
+<ul>
+  <li>Learned about enums and enum associated values:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift">  <span class="kd">enum</span> <span class="kt">Activity</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="n">bored</span>
+    <span class="k">case</span> <span class="nf">running</span><span class="p">(</span><span class="nv">destination</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span>
+    <span class="k">case</span> <span class="nf">talking</span><span class="p">(</span><span class="nv">topic</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span>
+    <span class="k">case</span> <span class="nf">singing</span><span class="p">(</span><span class="nv">volume</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="update-1">Update 1</h2>
+<p><em>3rd April 2020</em></p>
 <ul>
   <li>Learned that Swift is a type-safe programming language like Javascript.</li>
-  <li>Multiline strings would be coded like This</li>
+  <li>Multiline strings would be coded like this</li>
 </ul>
 
 <figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">var</span> <span class="nv">str1</span> <span class="o">=</span> <span class="s">"""
@@ -216,6 +319,23 @@ This goes
 over multiple
 lines
 """</span></code></pre></figure>
+
+<ul>
+  <li>String interpolation works like this :</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">var</span> <span class="nv">score</span> <span class="o">=</span> <span class="mi">85</span>
+<span class="k">var</span> <span class="nv">str</span> <span class="o">=</span> <span class="s">"Your score was </span><span class="se">\(</span><span class="n">score</span><span class="se">)</span><span class="s">"</span></code></pre></figure>
+
+<ul>
+  <li>As opposed to Javascript, the “let” keyword defines constants that cannot be changed after declared.</li>
+  <li>Type inference is possible by :</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">let</span> <span class="nv">album</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"Reputation"</span>
+<span class="k">let</span> <span class="nv">year</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1989</span>
+<span class="k">let</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mf">1.78</span>
+<span class="k">let</span> <span class="nv">taylorRocks</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre></figure>
 
 
     </div>
@@ -306,10 +426,10 @@ startStuff();
 	let controller = new ScrollMagic.Controller();
   let pos = $("body").width() - $(".search").width() - $(".user-profile").width();
   let action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
-  let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-460),offset:"460"})
+  let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-575),offset:"575"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
-					//.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
+					.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
 					.addTo(controller)
           .on("start", function (e) {
             startStuff();
