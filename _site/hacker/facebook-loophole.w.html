@@ -325,7 +325,7 @@ startStuff();
   let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-575),offset:"575"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
-					.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
+					//.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
 					.addTo(controller)
           .on("start", function (e) {
             startStuff();
