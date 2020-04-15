@@ -463,12 +463,14 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
   $(".user-profile").addClass("fixed");
   $(".mainmenu").css({display : "none"});
   $(".avatar").css({display : "none"});
+
   //$(".socials a").css({background:"#292825"});
 }
 function endStuff() {
   $(".user-profile").addClass("fixed");
   $(".mainmenu").css({display : "block"});
   $(".avatar").css({display : "block"});
+
   $(".user-profile").css({"z-index":"1000",padding:"0px",top:"60px", left: "auto","transform": "none"});
   //$(".profile_pic").attr("src","http://localhost:4000//assets/images/profile2.png");
 }
@@ -493,6 +495,7 @@ startStuff();
 function startPinnedScrollMagicStuff() {
   function startPinStuff() {
     $(".card").css("opacity","0");
+    $(".arrow").css({display : "block"});
   }
   startPinStuff()
         	let controller = new ScrollMagic.Controller();
@@ -508,7 +511,7 @@ function startPinnedScrollMagicStuff() {
                     startPinStuff();
                   })
                   .on("end", function (e) {
-                      //endPinStuff();
+                    $(".arrow").css({display : "none"});
         					});
 
                 }
