@@ -290,7 +290,7 @@ function startBannerScrollMagicStuff() {
 startStuff();
 	let controller = new ScrollMagic.Controller();
   let pos = $("body").width() - $(".search").width() - $(".user-profile").width();
-  let action = gsap.timeline().to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"}).to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
+  let action = gsap.timeline().to(".arrow",{duration:0.25,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"},"firstAnimLabel").to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
   let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-575),offset:"575"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
@@ -306,7 +306,6 @@ startStuff();
 function startPinnedScrollMagicStuff() {
   function startPinStuff() {
     $(".card").css("opacity","0");
-    $(".arrow").css({display : "block"});
   }
   startPinStuff()
         	let controller = new ScrollMagic.Controller();
@@ -322,7 +321,7 @@ function startPinnedScrollMagicStuff() {
                     startPinStuff();
                   })
                   .on("end", function (e) {
-                    $(".arrow").css({display : "none"});
+                    //j
         					});
 
                 }
