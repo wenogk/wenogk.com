@@ -56,7 +56,7 @@ defaults:
       comments: "true"
 
 # Serving
-url: ""
+url: "https://wenogk.github.io"
 baseurl: "/"
 assetbaseurl: "https://wenogk.github.io"
 # Includes
