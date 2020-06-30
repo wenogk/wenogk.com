@@ -24,7 +24,7 @@
 		}
 	}
 	.about-me { font-size: 16px; line-height: 26px; margin: 30px 0 0; }
-	.socials { @include flexbox(); @include justify-content(); margin: 25px 0 0;
+	.socials { @include flexbox(); @include justify-content(); margin: 25px 0 0; z-index: 99;
 		li { margin: 5px;
 			a { @include flexbox(); @include align-items(); @include justify-content(); width: 40px; height: 40px; background: darken($grey-color-lightest, 6%); border-radius: 50%; @include transition(all .1s ease);
 				&:hover { background: $primary-color; }
