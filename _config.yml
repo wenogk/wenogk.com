@@ -56,9 +56,9 @@ defaults:
       comments: "true"
 
 # Serving
-url: "https://www.wenogk.com"
-baseurl: "https://www.wenogk.com"
-
+url: "https://wenogk.github.io/wenogk.com/"
+baseurl: "/"
+assetbaseurl: "https://wenogk.github.io/wenogk.com/"
 # Includes
 include: ["_pages"]
 

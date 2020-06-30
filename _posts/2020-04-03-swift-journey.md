@@ -11,7 +11,7 @@ tags:
     - swift
     - IOS
 ---
-<img src="{{site.baseurl}}/assets/images/iphones.gif" style="padding:5px;align:center;width:200px;" />
+<img src="{{site.assetbaseurl}}/assets/images/iphones.gif" style="padding:5px;align:center;width:200px;" />
 I have made the decision to learn Native IOS development using the Swift programming language and produce a portfolio of apps. This page would therefore be updated with everything I learn daily. I am primarily doing this to keep myself accountable to my progress. I'll be updating my progress in reverse chronological order below:   <!--more-->
 
 ## Update 4
@@ -74,8 +74,8 @@ _4th April 2020_
 {% highlight swift %}
 let colors2 = Set(["red", "green", "blue", "red", "blue"])
 {% endhighlight %}
-  * Tuples allow you to store several values together in a single value. 
-      * You can’t add or remove items from a tuple; they are fixed in size. 
+  * Tuples allow you to store several values together in a single value.
+      * You can’t add or remove items from a tuple; they are fixed in size.
       * You can’t change the type of items in a tuple; they always have the same types they were created with.
 {% highlight swift %}
 var name = (first: "Taylor", last: "Swift")
@@ -99,9 +99,9 @@ heights["Eminem", default: "Unknown"] //will give unknown instead of "nil"
     case singing(volume: Int)
 }
 {% endhighlight %}  
- 
 
-## Update 1 
+
+## Update 1
 _3rd April 2020_
   * Learned that Swift is a type-safe programming language like Javascript.
   * Multiline strings would be coded like this
