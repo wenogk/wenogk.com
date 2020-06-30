@@ -3,15 +3,15 @@
   <channel>
     <title></title>
     <description>A rising Senior studying Computer Science. Interested in backend engineering, IOS Development, Machine learning and anything that has to do with Javascript.</description>
-    <link>https://www.wenogk.com//</link>
-    <atom:link href="https://www.wenogk.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 31 May 2020 17:50:42 +0400</pubDate>
-    <lastBuildDate>Sun, 31 May 2020 17:50:42 +0400</lastBuildDate>
+    <link>http://localhost:4000//</link>
+    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 30 Jun 2020 10:51:37 +0400</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2020 10:51:37 +0400</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
         <title>My IOS Development journey</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://www.wenogk.com//assets/images/iphones.gif&quot; style=&quot;padding:5px;align:center;width:200px;&quot; /&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;https://wenogk.github.io/wenogk.com/assets/images/iphones.gif&quot; style=&quot;padding:5px;align:center;width:200px;&quot; /&gt;
 I have made the decision to learn Native IOS development using the Swift programming language and produce a portfolio of apps. This page would therefore be updated with everything I learn daily. I am primarily doing this to keep myself accountable to my progress. I’ll be updating my progress in reverse chronological order below:   &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;update-4&quot;&gt;Update 4&lt;/h2&gt;
@@ -148,8 +148,8 @@ lines
 
 </description>
         <pubDate>Fri, 03 Apr 2020 10:04:01 +0400</pubDate>
-        <link>https://www.wenogk.com//engineer/swift-journey.w</link>
-        <guid isPermaLink="true">https://www.wenogk.com//engineer/swift-journey.w</guid>
+        <link>http://localhost:4000//engineer/swift-journey.w</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/swift-journey.w</guid>
         
         <category>swift</category>
         
@@ -279,8 +279,8 @@ https://developers.google.com/youtube/v3/docs/commentThreads/insert&lt;/li&gt;
 
 </description>
         <pubDate>Tue, 24 Mar 2020 16:16:08 +0400</pubDate>
-        <link>https://www.wenogk.com//engineer/beastbot.w</link>
-        <guid isPermaLink="true">https://www.wenogk.com//engineer/beastbot.w</guid>
+        <link>http://localhost:4000//engineer/beastbot.w</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/beastbot.w</guid>
         
         
         <category>engineer</category>
@@ -310,8 +310,8 @@ Two main reasons: speed &amp;amp; control. I’ve completely redesigned and reva
 &lt;p&gt;I also got a free Github pro account because of the Github student program that gives free pro accounts to college students. Github pages is usually for simple static webpages but jekyll just changed the game. For simple blogs, jekyll provides everything you need and gives you full control&lt;/p&gt;
 </description>
         <pubDate>Sun, 22 Mar 2020 10:04:01 +0400</pubDate>
-        <link>https://www.wenogk.com//engineer/redesign-website.w</link>
-        <guid isPermaLink="true">https://www.wenogk.com//engineer/redesign-website.w</guid>
+        <link>http://localhost:4000//engineer/redesign-website.w</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/redesign-website.w</guid>
         
         <category>jekyll</category>
         
@@ -347,8 +347,8 @@ Two main reasons: speed &amp;amp; control. I’ve completely redesigned and reva
 
 </description>
         <pubDate>Mon, 11 Nov 2019 06:11:30 +0400</pubDate>
-        <link>https://www.wenogk.com//engineer/igem.w</link>
-        <guid isPermaLink="true">https://www.wenogk.com//engineer/igem.w</guid>
+        <link>http://localhost:4000//engineer/igem.w</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/igem.w</guid>
         
         
         <category>engineer</category>
@@ -396,8 +396,8 @@ Two main reasons: speed &amp;amp; control. I’ve completely redesigned and reva
 &lt;p&gt;What shocked me however, is how the loophole was fixed within a day of my report, and my method never worked again. I felt accomplished even though I wasn’t given credit for the loophole, I felt as though I had made a change to Facebook, a billion dollar company, myself, being the mischievous 14 year old boy I was sitting in my bedroom after school with my mini laptop.&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Jan 2019 14:01:23 +0400</pubDate>
-        <link>https://www.wenogk.com//hacker/facebook-loophole.w</link>
-        <guid isPermaLink="true">https://www.wenogk.com//hacker/facebook-loophole.w</guid>
+        <link>http://localhost:4000//hacker/facebook-loophole.w</link>
+        <guid isPermaLink="true">http://localhost:4000//hacker/facebook-loophole.w</guid>
         
         
         <category>hacker</category>
@@ -458,8 +458,8 @@ This can act as an updated information resource for the school like an online ma
 &lt;p&gt;&lt;img src=&quot;//assets/images/myslsm_homepage.png&quot; alt=&quot;Homepage&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Jan 2019 06:01:17 +0400</pubDate>
-        <link>https://www.wenogk.com//engineer/myslsm.w</link>
-        <guid isPermaLink="true">https://www.wenogk.com//engineer/myslsm.w</guid>
+        <link>http://localhost:4000//engineer/myslsm.w</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/myslsm.w</guid>
         
         
         <category>engineer</category>
@@ -478,8 +478,8 @@ When I was young I was devious, malicious and didn’t know the difference betwe
 &lt;p&gt;&lt;img src=&quot;//assets/images/seanparker_msg.png&quot; alt=&quot;sean&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 17 Oct 2018 11:10:50 +0400</pubDate>
-        <link>https://www.wenogk.com//hacker/thoughts/how-i-hacked-sean-parkers-facebook.w</link>
-        <guid isPermaLink="true">https://www.wenogk.com//hacker/thoughts/how-i-hacked-sean-parkers-facebook.w</guid>
+        <link>http://localhost:4000//hacker/thoughts/how-i-hacked-sean-parkers-facebook.w</link>
+        <guid isPermaLink="true">http://localhost:4000//hacker/thoughts/how-i-hacked-sean-parkers-facebook.w</guid>
         
         
         <category>hacker</category>
@@ -533,8 +533,8 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
 &lt;img src=&quot;//assets/images/bike_8.jpeg&quot; alt=&quot;Bike&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Sep 2018 12:09:36 +0400</pubDate>
-        <link>https://www.wenogk.com//engineer/designing-and-laser-cutting-a-cardboard-bicycle.w</link>
-        <guid isPermaLink="true">https://www.wenogk.com//engineer/designing-and-laser-cutting-a-cardboard-bicycle.w</guid>
+        <link>http://localhost:4000//engineer/designing-and-laser-cutting-a-cardboard-bicycle.w</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/designing-and-laser-cutting-a-cardboard-bicycle.w</guid>
         
         <category>laser cutter</category>
         
@@ -824,8 +824,8 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
 
 </description>
         <pubDate>Fri, 28 Sep 2018 06:09:32 +0400</pubDate>
-        <link>https://www.wenogk.com//engineer/music/Air-music-player.w</link>
-        <guid isPermaLink="true">https://www.wenogk.com//engineer/music/Air-music-player.w</guid>
+        <link>http://localhost:4000//engineer/music/Air-music-player.w</link>
+        <guid isPermaLink="true">http://localhost:4000//engineer/music/Air-music-player.w</guid>
         
         
         <category>engineer</category>
@@ -855,8 +855,8 @@ So I decided I want to make a bicycle, but I didn’t know how a bike worked and
 &lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/wenogk/Almadina_Internship&quot;&gt;https://github.com/wenogk/Almadina_Internship&lt;/a&gt; I couldn’t add the code I wrote for the company as they told me it wouldn’t be a good idea to do so.&lt;/p&gt;
 </description>
         <pubDate>Sat, 08 Sep 2018 09:09:58 +0400</pubDate>
-        <link>https://www.wenogk.com//hacker/thoughts/my-first-software-enginneering-internship.w</link>
-        <guid isPermaLink="true">https://www.wenogk.com//hacker/thoughts/my-first-software-enginneering-internship.w</guid>
+        <link>http://localhost:4000//hacker/thoughts/my-first-software-enginneering-internship.w</link>
+        <guid isPermaLink="true">http://localhost:4000//hacker/thoughts/my-first-software-enginneering-internship.w</guid>
         
         
         <category>hacker</category>
