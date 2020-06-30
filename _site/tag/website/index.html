@@ -455,35 +455,43 @@ Two main reasons: speed &amp; control. I’ve completely redesigned and revamped
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-
+  <!-- <div class="boxTest" style="background:blue; width:50%; height: 100%; opacity: 0.4; position: fixed; top: 0px; left:0; z-index:9999999;" ></div> -->
 <script>
 	// init controller
+  // let pos = (($("body").width() - $(".wrapper").width())/2);
+  // $(".boxTest").css({left : pos});
+  let headerAnimRunning = false;
   function isMobileDevice() {
       return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
   };
   function startStuff() {
-  $(".user-profile").css({padding:"15px","top":"50%", left: "50%","transform": "translate(-50%, -50%)"});
+    headerAnimRunning = true;
+    let leftVal = ($("body").width() - $(".user-profile").width())/2
+    let topVal = ($(".headerx").height() - $(".user-profile").height())/2
+  $(".user-profile").css({"top":topVal, left: leftVal}); // padding:"15px","transform": "translate(-50%, -50%)"
   $(".user-profile").css("background-color","rgba(256, 256, 256, 0.7)");
-  $(".user-profile").addClass("fixed");
+  $(".user-profile").addClass("absolute");
   $(".mainmenu").css({display : "none"});
   $(".avatar").css({display : "none"});
 
   //$(".socials a").css({background:"#292825"});
 }
 function endStuff() {
+  headerAnimRunning = false;
   $(".user-profile").addClass("fixed");
   $(".mainmenu").css({display : "block"});
   $(".avatar").css({display : "block"});
 
-  $(".user-profile").css({"z-index":"1000",padding:"0px",top:"60px", left: "auto","transform": "none"});
+  $(".user-profile").css({"z-index":"1000",padding:"0px", left: "auto","transform": "none"});
   //$(".profile_pic").attr("src","http://localhost:4000//assets/images/profile2.png");
 }
 
 function startBannerScrollMagicStuff() {
 startStuff();
 	let controller = new ScrollMagic.Controller();
-  let pos = $("body").width() - $(".search").width() - $(".user-profile").width();
-  let action = gsap.timeline().to(".arrow",{duration:0.25,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1, left:"300px",  "background-color":"rgba(256, 256, 256, 0)"},"firstAnimLabel").to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
+  let pos = (($("body").width() - $(".wrapper").width())/2);
+  console.log("pos: " + pos)
+  let action = gsap.timeline().to(".arrow",{duration:0.25,rotation: 360,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1,top:"60px", left:pos,  "background-color":"rgba(256, 256, 256, 0)"},"firstAnimLabel").to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
   let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-575),offset:"575"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
@@ -588,6 +596,15 @@ startPinnedScrollMagicStuff();
           }
           floatElement(".social_btn",5,5,10,1,1);
 
+          // $( window ).resize(function() {
+          //   if(headerAnimRunning) {
+          //     let leftVal = ($("body").width() - $(".user-profile").width())/2
+          //     let topVal = ($(".headerx").height() - $(".user-profile").height())/2
+          //     $(".user-profile").css({left: leftVal});
+          //   }
+          //
+          //   });
+
 </script>
 
     <script>
@@ -599,6 +616,7 @@ startPinnedScrollMagicStuff();
         ga('create', 'UA-117257841-1', 'auto');
         ga('send', 'pageview');
     </script>
+
 
 
     </body>

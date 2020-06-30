@@ -5,13 +5,13 @@
     <description>A rising Senior studying Computer Science. Interested in backend engineering, IOS Development, Machine learning and anything that has to do with Javascript.</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jun 2020 10:51:37 +0400</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2020 10:51:37 +0400</lastBuildDate>
+    <pubDate>Tue, 30 Jun 2020 16:51:24 +0400</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2020 16:51:24 +0400</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
         <title>My IOS Development journey</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://wenogk.github.io/wenogk.com/assets/images/iphones.gif&quot; style=&quot;padding:5px;align:center;width:200px;&quot; /&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;https://wenogk.com/assets/images/iphones.gif&quot; style=&quot;padding:5px;align:center;width:200px;&quot; /&gt;
 I have made the decision to learn Native IOS development using the Swift programming language and produce a portfolio of apps. This page would therefore be updated with everything I learn daily. I am primarily doing this to keep myself accountable to my progress. I’ll be updating my progress in reverse chronological order below:   &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;update-4&quot;&gt;Update 4&lt;/h2&gt;
