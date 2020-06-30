@@ -58,7 +58,7 @@ defaults:
 # Serving
 url: ""
 baseurl: "/"
-assetbaseurl: "https://wenogk.github.io/wenogk.com"
+assetbaseurl: "https://wenogk.github.io"
 # Includes
 include: ["_pages"]
 
