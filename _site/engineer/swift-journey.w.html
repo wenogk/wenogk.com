@@ -207,7 +207,7 @@
     </header>
 
     <div class="post-content">
-        <p><img src="https://wenogk.com/assets/images/iphones.gif" style="padding:5px;align:center;width:200px;" />
+        <p><img src="http://localhost:4000/assets/images/iphones.gif" style="padding:5px;align:center;width:200px;" />
 I have made the decision to learn Native IOS development using the Swift programming language and produce a portfolio of apps. This page would therefore be updated with everything I learn daily. I am primarily doing this to keep myself accountable to my progress. I’ll be updating my progress in reverse chronological order below:   <!--more--></p>
 
 <h2 id="update-4">Update 4</h2>
@@ -440,7 +440,7 @@ startStuff();
 	let controller = new ScrollMagic.Controller();
   let pos = (($("body").width() - $(".wrapper").width())/2);
   console.log("pos: " + pos)
-  let action = gsap.timeline().to(".arrow",{duration:0.25,rotation: 360,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1,top:"60px", left:pos,  opacity: 1},"firstAnimLabel");
+  let action = gsap.timeline().to(".arrow",{duration:0.25,rotation: 360,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1,top:"60px", left:pos,  opacity: 1},"firstAnimLabel").to(".headerx",{duration:1,opacity: 0},"firstAnimLabel");
   let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-575),offset:"575"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
@@ -585,6 +585,13 @@ startPinnedScrollMagicStuff();
       el: '.swiper-pagination',
     },
   });
+//.headerx video
+  gsap.timeline()
+  .to(".bannerHugeText",{duration:2, "margin-left":"15vw", opacity: 1},"first")
+  .to(".headerx video",{duration:3, opacity: 1},"first")
+  .to(".bannerHugeText",{delay:1,duration:0.5, opacity: 0})
+  .to(".swiper-container",{duration: 1,opacity:1})
+  .to(".arrowHolder",{delay:3,duration:1,opacity:1});
 </script>
 
 

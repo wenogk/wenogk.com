@@ -582,7 +582,7 @@ startStuff();
 	let controller = new ScrollMagic.Controller();
   let pos = (($("body").width() - $(".wrapper").width())/2);
   console.log("pos: " + pos)
-  let action = gsap.timeline().to(".arrow",{duration:0.25,rotation: 360,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1,top:"60px", left:pos,  opacity: 1},"firstAnimLabel");
+  let action = gsap.timeline().to(".arrow",{duration:0.25,rotation: 360,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1,top:"60px", left:pos,  opacity: 1},"firstAnimLabel").to(".headerx",{duration:1,opacity: 0},"firstAnimLabel");
   let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-575),offset:"575"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
@@ -727,6 +727,13 @@ startPinnedScrollMagicStuff();
       el: '.swiper-pagination',
     },
   });
+//.headerx video
+  gsap.timeline()
+  .to(".bannerHugeText",{duration:2, "margin-left":"15vw", opacity: 1},"first")
+  .to(".headerx video",{duration:3, opacity: 1},"first")
+  .to(".bannerHugeText",{delay:1,duration:0.5, opacity: 0})
+  .to(".swiper-container",{duration: 1,opacity:1})
+  .to(".arrowHolder",{delay:3,duration:1,opacity:1});
 </script>
 
 

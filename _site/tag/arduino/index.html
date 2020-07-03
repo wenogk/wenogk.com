@@ -117,6 +117,7 @@
   }
 
   .headerx video {
+    opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -158,6 +159,7 @@
         width: 100%;
         padding-top: 25vh;
         padding-bottom: 50px;
+        opacity: 0;
       }
 
       .swiper-slide {
@@ -168,6 +170,22 @@
         width: 400px;
         height: 50vh;
         background: rgb(255,255,255,0.9);
+      }
+
+      .bannerHugeTextContainer {
+        position:absolute;
+        height: 40vh;
+        top:30vh;
+        width:100%;
+      }
+      .bannerHugeText {
+        color: black;
+        text-shadow: 0 0 20px #fff;
+        opacity: 0;
+        font-size: 8vw;
+        margin-left : 100%;
+        width: 70vw;
+        text-align: center;
       }
 </style>
 <script type="text/javascript">
@@ -187,6 +205,11 @@ var animationPls = true;
     <div class="arrow bounce">
     <a class="fa fa-arrow-down fa-2x" href="#"></a>
     </div>
+    </div>
+    <div class="bannerHugeTextContainer ">
+      <div class="bannerHugeText text-center">
+        Hi I'm Romeno!
+      </div>
     </div>
     <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -533,7 +556,7 @@ startStuff();
 	let controller = new ScrollMagic.Controller();
   let pos = (($("body").width() - $(".wrapper").width())/2);
   console.log("pos: " + pos)
-  let action = gsap.timeline().to(".arrow",{duration:0.25,rotation: 360,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1,top:"60px", left:pos,  opacity: 1},"firstAnimLabel");
+  let action = gsap.timeline().to(".arrow",{duration:0.25,rotation: 360,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1,top:"60px", left:pos,  opacity: 1},"firstAnimLabel").to(".headerx",{duration:1,opacity: 0},"firstAnimLabel");
   let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-575),offset:"575"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
@@ -678,6 +701,13 @@ startPinnedScrollMagicStuff();
       el: '.swiper-pagination',
     },
   });
+//.headerx video
+  gsap.timeline()
+  .to(".bannerHugeText",{duration:2, "margin-left":"15vw", opacity: 1},"first")
+  .to(".headerx video",{duration:3, opacity: 1},"first")
+  .to(".bannerHugeText",{delay:1,duration:0.5, opacity: 0})
+  .to(".swiper-container",{duration: 1,opacity:1})
+  .to(".arrowHolder",{delay:3,duration:1,opacity:1});
 </script>
 
 

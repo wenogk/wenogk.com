@@ -56,9 +56,9 @@ defaults:
       comments: "true"
 
 # Serving
-url: "https://wenogk.com"
+url: "http://localhost:4000"
 baseurl: "/"
-assetbaseurl: "https://wenogk.com"
+assetbaseurl: "http://localhost:4000"
 # Includes
 include: ["_pages"]
 
