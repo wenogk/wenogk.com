@@ -100,7 +100,7 @@
     <link rel="canonical" href="http://localhost:4000//tag/arduino/">
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000//feed.xml">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
 </head>
 
 
@@ -157,7 +157,7 @@
   }
   .swiper-container {
         width: 100%;
-        padding-top: 25vh;
+        padding-top: 15vh;
         padding-bottom: 50px;
         opacity: 0;
       }
@@ -167,7 +167,7 @@
         background-position: center;
         background-size: cover;
         width: 400px;
-        height: 50vh;
+        height: 70vh;
         background: rgb(255,255,255,0.9);
       }
       .swiper-content {
@@ -189,7 +189,9 @@
       }
       .bannerHugeText {
         color: black;
-        text-shadow: 0 0 20px #fff;
+        /* text-shadow: 0 0 20px #fff; */
+        background: white;
+        border-radius: 15px;
         opacity: 0;
         font-size: 8vw;
         margin-left : 100%;
@@ -215,6 +217,27 @@
         background:black;
         cursor: pointer;
       }
+      .projectScreenshot {
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+image-rendering:   -o-crisp-edges;         /* Opera */
+image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+image-rendering: crisp-edges;
+-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+border: solid 2px black;
+      }
+
+    .projectInfo {
+    }
+
+    .projectTechnology {
+      background: black;
+      color: white;
+      border-radius: 5px;
+      padding: 3px;
+      font-size: 20px;
+      /* white-space: nowrap; */
+      margin:2px;
+    }
 </style>
 <script type="text/javascript">
 var animationPls = true;
@@ -236,14 +259,28 @@ var animationPls = true;
     </div>
     <div class="bannerHugeTextContainer ">
       <div class="bannerHugeText text-center">
-        Hi I'm Romeno!
+        Hi! I'm Romeno.
       </div>
     </div>
     <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide" >
         <div class="swiper-content">
-          <div><h1 >Rivermouth</h1></div>
+          <div class="projectInfo">
+            <h1 >Rivermouth</h1>
+            <img class="projectScreenshot" src="../assets/images/rivermouth.png" class="img-fluid" />
+            <div >
+              <br/><br/>
+              <p>A web app that allows users to build their own choose-your-own-path films/comics/novels. Inspired by the netflix show, 'bandersnatch'</p>
+              <br/><br/>
+              <span class="projectTechnology">MongoDB</span>
+              <span class="projectTechnology">Express.js</span>
+              <span class="projectTechnology">React</span>
+              <span class="projectTechnology">Node.js</span>
+              <span class="projectTechnology">Rest API</span>
+            </div>
+          </div>
+
           <div>
           <button class="bannerButton blue">View live project</button>
           <button class="bannerButton green">View code</button>
@@ -734,7 +771,7 @@ startPinnedScrollMagicStuff();
         ga('create', 'UA-117257841-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
 
     <script>
   var swiper = new Swiper('.swiper-container', {
