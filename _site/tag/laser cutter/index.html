@@ -161,6 +161,7 @@
       }
 
       .swiper-slide {
+        border-radius: 10px;
         background-position: center;
         background-size: cover;
         width: 400px;
@@ -188,13 +189,6 @@ var animationPls = true;
     </div>
     <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" ></div>
-      <div class="swiper-slide" ></div>
-      <div class="swiper-slide" ></div>
-      <div class="swiper-slide" ></div>
-      <div class="swiper-slide" ></div>
-      <div class="swiper-slide" ></div>
-      <div class="swiper-slide" ></div>
       <div class="swiper-slide" ></div>
       <div class="swiper-slide" ></div>
       <div class="swiper-slide" ></div>
@@ -660,6 +654,7 @@ startPinnedScrollMagicStuff();
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 'auto',
+    slideToClickedSlide: true,
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
