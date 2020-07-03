@@ -55,15 +55,24 @@
       }
 
       .swiper-slide {
-        border-radius: 10px;
-        padding: 10px;
+        /* border-radius: 10px; */
         background-position: center;
         background-size: cover;
         width: 400px;
         height: 50vh;
         background: rgb(255,255,255,0.9);
       }
-
+      .swiper-content {
+        padding: 10px;
+        pointer-events: auto;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .swiperButtonHolder {
+        max-width: 100%;
+      }
       .bannerHugeTextContainer {
         position:absolute;
         height: 40vh;
@@ -78,6 +87,25 @@
         margin-left : 100%;
         width: 70vw;
         text-align: center;
+      }
+      .bannerButton {
+        position:relative;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        text-transform: uppercase;
+        border: none;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width:100%;
+        margin-top: 5px;
+      }
+      .bannerButton:hover {
+        background:black;
+        cursor: pointer;
       }
 </style>
 <script type="text/javascript">
@@ -106,10 +134,35 @@ var animationPls = true;
     <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide" >
-        <h1 >Rivermouth</h1>
+        <div class="swiper-content">
+          <div><h1 >Rivermouth</h1></div>
+          <div>
+          <button class="bannerButton blue">View live project</button>
+          <button class="bannerButton green">View code</button>
+          <button class="bannerButton purple">View blog post</button>
+          </div>
+        </div>
       </div>
-      <div class="swiper-slide" ></div>
-      <div class="swiper-slide" ></div>
+      <div class="swiper-slide" >
+        <div class="swiper-content">
+          <h1 >ASL-NET-API</h1>
+          <div class="swiperButtonHolder">
+          <button class="bannerButton blue">View live project</button>
+          <button class="bannerButton green">View code</button>
+          <button class="bannerButton purple">View blog post</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" >
+        <div class="swiper-content">
+          <h1 >Terminal</h1>
+          <div class="swiperButtonHolder">
+          <button class="bannerButton blue">View live project</button>
+          <button class="bannerButton green">View code</button>
+          <button class="bannerButton purple">View blog post</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
