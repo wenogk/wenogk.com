@@ -100,7 +100,7 @@
     <link rel="canonical" href="http://localhost:4000//categories/engineer/">
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000//feed.xml">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 </head>
 
 
@@ -165,6 +165,10 @@
             
                 
             
+                
+            
+                
+            
         </div>
         
     
@@ -195,6 +199,56 @@
 
                 <h1>Posts From Category: engineer</h1>
 
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2020-07-02T10:04:01+04:00" itemprop="datePublished">2 Jul, 2020</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000//engineer/cs-videos.w">Building CS Explainer Videos with Code</a></h2>
+    </header>
+
+    <div class="post-content">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6nrcEe-GuZM?autoplay=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+
+<p>I decided to make an animated computer science explainer video similar to the 3Blue1Brown channel that does the same for Math</p>
+
+
+
+        
+            <p><a href="/engineer/cs-videos.w" role="button">Read More</a></p>
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Building CS Explainer Videos with Code&p[summary]=
+
+I decided to make an animated computer science explainer video similar to the 3Blue1Brown channel that does the same for Math
+
+&p[url]=http://localhost:4000//engineer/cs-videos.w" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/engineer/cs-videos.w&text=
+
+I decided to make an animated computer science explainer video similar to the 3Blue1Brown channel that does the same for Math
+
+&hashtags=youtube,video," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000//assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000//tag/youtube">youtube</a></li>
+                
+                <li><a href="http://localhost:4000//tag/video">video</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
 
 <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
@@ -665,19 +719,19 @@ I started tapping on my desk to a beat, and felt like I wanted to make a “beat
     let leftVal = ($("body").width() - $(".user-profile").width())/2
     let topVal = ($(".headerx").height() - $(".user-profile").height())/2
   $(".user-profile").css({"top":topVal, left: leftVal}); // padding:"15px","transform": "translate(-50%, -50%)"
-  $(".user-profile").css("background-color","rgba(256, 256, 256, 0.7)");
+  //$(".user-profile").css("background-color","rgba(256, 256, 256, 0.7)");
   $(".user-profile").addClass("absolute");
-  $(".mainmenu").css({display : "none"});
-  $(".avatar").css({display : "none"});
+
+
+  $(".user-profile").css({opacity : "0"});
+  $(".user-profile").css({"pointer-events" : "none"});
 
   //$(".socials a").css({background:"#292825"});
 }
 function endStuff() {
   headerAnimRunning = false;
   $(".user-profile").addClass("fixed");
-  $(".mainmenu").css({display : "block"});
-  $(".avatar").css({display : "block"});
-
+  $(".user-profile").css({"pointer-events" : "auto"});
   $(".user-profile").css({"z-index":"1000",padding:"0px", left: "auto","transform": "none"});
   //$(".profile_pic").attr("src","http://localhost:4000//assets/images/profile2.png");
 }
@@ -687,7 +741,7 @@ startStuff();
 	let controller = new ScrollMagic.Controller();
   let pos = (($("body").width() - $(".wrapper").width())/2);
   console.log("pos: " + pos)
-  let action = gsap.timeline().to(".arrow",{duration:0.25,rotation: 360,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1,top:"60px", left:pos,  "background-color":"rgba(256, 256, 256, 0)"},"firstAnimLabel").to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
+  let action = gsap.timeline().to(".arrow",{duration:0.25,rotation: 360,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1,top:"60px", left:pos,  opacity: 1},"firstAnimLabel");
   let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-575),offset:"575"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
@@ -812,6 +866,26 @@ startPinnedScrollMagicStuff();
         ga('create', 'UA-117257841-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
 
 
 

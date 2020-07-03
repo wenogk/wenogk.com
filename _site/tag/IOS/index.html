@@ -100,7 +100,7 @@
     <link rel="canonical" href="http://localhost:4000//tag/IOS/">
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000//feed.xml">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 </head>
 
 
@@ -153,7 +153,21 @@
     .headerx video {
       display: none;
     }
-  }</style>
+  }
+  .swiper-container {
+        width: 100%;
+        padding-top: 25vh;
+        padding-bottom: 50px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 50vh;
+        background: rgb(255,255,255,0.9);
+      }
+</style>
 <script type="text/javascript">
 var animationPls = true;
 </script>
@@ -172,6 +186,22 @@ var animationPls = true;
     <a class="fa fa-arrow-down fa-2x" href="#"></a>
     </div>
     </div>
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" ></div>
+      <div class="swiper-slide" ></div>
+      <div class="swiper-slide" ></div>
+      <div class="swiper-slide" ></div>
+      <div class="swiper-slide" ></div>
+      <div class="swiper-slide" ></div>
+      <div class="swiper-slide" ></div>
+      <div class="swiper-slide" ></div>
+      <div class="swiper-slide" ></div>
+      <div class="swiper-slide" ></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
 </div>
 
         <div class="wrapper">
@@ -208,6 +238,10 @@ var animationPls = true;
             
                 
                     <a href="http://localhost:4000//resume/" >Resume</a>
+                
+            
+                
+            
                 
             
                 
@@ -353,6 +387,12 @@ Building a youtube commenting bot to win $1000  <span class="ec ec-moneybag"></s
         
     
         
+    
+
+    
+        
+    
+        
         <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
             <header class="post-header">
                 <ul>
@@ -467,19 +507,19 @@ I have made the decision to learn Native IOS development using the Swift program
     let leftVal = ($("body").width() - $(".user-profile").width())/2
     let topVal = ($(".headerx").height() - $(".user-profile").height())/2
   $(".user-profile").css({"top":topVal, left: leftVal}); // padding:"15px","transform": "translate(-50%, -50%)"
-  $(".user-profile").css("background-color","rgba(256, 256, 256, 0.7)");
+  //$(".user-profile").css("background-color","rgba(256, 256, 256, 0.7)");
   $(".user-profile").addClass("absolute");
-  $(".mainmenu").css({display : "none"});
-  $(".avatar").css({display : "none"});
+
+
+  $(".user-profile").css({opacity : "0"});
+  $(".user-profile").css({"pointer-events" : "none"});
 
   //$(".socials a").css({background:"#292825"});
 }
 function endStuff() {
   headerAnimRunning = false;
   $(".user-profile").addClass("fixed");
-  $(".mainmenu").css({display : "block"});
-  $(".avatar").css({display : "block"});
-
+  $(".user-profile").css({"pointer-events" : "auto"});
   $(".user-profile").css({"z-index":"1000",padding:"0px", left: "auto","transform": "none"});
   //$(".profile_pic").attr("src","http://localhost:4000//assets/images/profile2.png");
 }
@@ -489,7 +529,7 @@ startStuff();
 	let controller = new ScrollMagic.Controller();
   let pos = (($("body").width() - $(".wrapper").width())/2);
   console.log("pos: " + pos)
-  let action = gsap.timeline().to(".arrow",{duration:0.25,rotation: 360,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1,top:"60px", left:pos,  "background-color":"rgba(256, 256, 256, 0)"},"firstAnimLabel").to(".user-profile",{duration:1,  "background-color":"rgba(256, 256, 256, 0)"});
+  let action = gsap.timeline().to(".arrow",{duration:0.25,rotation: 360,opacity:"0"},"firstAnimLabel").to(".user-profile",{duration:1,top:"60px", left:pos,  opacity: 1},"firstAnimLabel");
   let scene = new ScrollMagic.Scene({triggerElement: "#scrollTrigger", duration: ($(".headerx").height()-575),offset:"575"})
 					// animate color and top border in relation to scroll position
 					.setTween(action) // the tween durtion can be omitted and defaults to 1
@@ -614,6 +654,26 @@ startPinnedScrollMagicStuff();
         ga('create', 'UA-117257841-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
 
 
 

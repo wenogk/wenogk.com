@@ -54,7 +54,7 @@
 }
 .arrow {
   text-align: center;
-  margin: 8% 0;
+  /* margin: 8% 0; */
   color: white;
   text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 55px #ffffff, 0 0 75px #ffffff;
 }
